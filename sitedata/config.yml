@@ -1,0 +1,42 @@
+name: ICWSM-2021
+tagline: ICWSM-2021 <br><br> FIFTEENTH INTERNATIONAL CONFERENCE<br> ON WEB AND SOCIAL MEDIA
+date: June 07th - 10th 2021
+citation_date: June 2021
+proceedings_title: Proceedings of the Fifteenth International Conference on Web and Social Media
+analytics: UA-
+logo:
+  image: static/images/icwsm_logo.png
+  width: 180px
+  height: auto
+# uncomment the following line to show the site title next to the logo image
+# site_title: MiniConf
+page_title:
+  prefix: 'ICWSM 2021'
+  separator: ': '
+background_image: static/images/main.jpg
+organization: ICWSM Organization Committee
+
+# Remove or change to your chat server.
+chat_server: miniconf.sloppy.zone
+default_presentation_id: 38922815
+default_poster_pdf: /static/images/GLTR_poster.pdf
+
+
+# Configuration for auth
+#Test user
+#user: miniconf@miniconf.com
+#pass: mIniconf1_
+
+use_auth0:
+auth0_client_id : JIdr6wi0z27LyLgwkJF0fpk700aj7MNH
+auth0_domain : miniconf.auth0.com
+
+calendar:
+  colors: #  Colors for the different event hashtags:
+    ---: '#ffffff'
+    key: "#ca5670"
+    spo: "#ab62c0"
+    pan: "#72a555"
+    soc: "#DA7D3B"
+    pos: "#CCCCCC"
+  sunday_saturday: false  #  Include Sunday and Saturday

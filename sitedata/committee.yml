@@ -1,0 +1,111 @@
+committee:
+- role: General Chair
+  name: Jason Nurse
+  aff: 
+  link: https://jasonnurse.github.io
+  im: https://icwsm.org/2021/img/oc_chairs/Jason_Nurse.jpg
+- role: PC Chair
+  name: Ella Haig
+  aff: 
+  link: http://haige.myweb.port.ac.uk/
+  im: https://icwsm.org/2021/img/oc_chairs/Ella_Haig.jpg
+- role: PC Chair
+  name: Kenny Joseph
+  aff: 
+  link: https://kennyjoseph.github.io/
+  im: https://icwsm.org/2021/img/oc_chairs/Kenny_Joseph.jpg
+- role: PC Chair
+  name: Afra Mashhadi
+  aff: 
+  link: https://www.uwb.edu/css/faculty/bios/amashhadi
+  im: https://icwsm.org/2021/img/oc_chairs/Afra_Mashadi.jpg
+- role: VC Chair
+  name: Kokil Jaidka
+  aff: 
+  link: https://profile.nus.edu.sg/fass/cnmkj/
+  im: https://icwsm.org/2021/img/oc_chairs/Kokil_Jaidka.jpg
+- role: VC Chair
+  name: Eni Mustafaraj
+  aff: 
+  link: http://cs.wellesley.edu/~eni/
+  im: https://icwsm.org/2021/img/oc_chairs/Eni_Mustafaraj.jpg
+- role: VC Chair
+  name: David Schoch
+  aff: 
+  link: http://mr.schochastics.net/
+  im: https://icwsm.org/2021/img/oc_chairs/David_Schoch.jpg
+- role: Workshop Chair
+  name: Oana Balalau
+  aff: 
+  link: https://oanabalalau.com
+  im: https://icwsm.org/2021/img/oc_chairs/Oana_Balalau.jpg
+- role: Workshop Chair
+  name: Katherine Ognyanova
+  aff: 
+  link: https://kateto.net/
+  im: https://icwsm.org/2021/img/oc_chairs/Katherine_Ognyanova.jpg
+- role: Workshop Chair
+  name: Daniel Romero
+  aff: 
+  link: http://dromero.org/
+  im: https://icwsm.org/2021/img/oc_chairs/Daniel_Romero.jpg
+- role: Tutorial Chair
+  name: Jisun An
+  aff: 
+  link: https://jisun.me
+  im: https://icwsm.org/2021/img/oc_chairs/Jisun_An.jpeg
+- role: Tutorial Chair
+  name: Sauvik Das
+  aff: 
+  link: https://sauvikdas.com
+  im: https://icwsm.org/2021/img/oc_chairs/Sauvik_Das.jpg
+- role: Tutorial Chair
+  name: Shaomei Wu
+  aff: 
+  link: https://research.fb.com/people/wu-shaomei
+  im: https://icwsm.org/2021/img/oc_chairs/Shaomei_Wu.jpg
+- role: Data Chair
+  name: Duncan Hodges
+  aff: 
+  link: https://www.linkedin.com/in/duncan-hodges-cyber/
+  im: https://icwsm.org/2021/img/oc_chairs/Duncan_Hodges.png
+- role: Data Chair
+  name: Dong Nguyen
+  aff: 
+  link: https://www.dongnguyen.nl/
+  im: https://icwsm.org/2021/img/oc_chairs/Dong_Nguyen.jpg
+- role: Data Chair
+  name: Savvas Zannettou
+  aff: 
+  link: https://zsavvas.github.io/
+  im: https://icwsm.org/2021/img/oc_chairs/Savvas_Zannettou.png
+- role: Data Challenge Chair
+  name: Ghita Mezzour
+  aff: 
+  link: http://www.ghitamezzour.com/
+  im: https://icwsm.org/2021/img/oc_chairs/Ghita_Mezzour.jpg
+- role: Data Challenge Chair
+  name: Kai Shu
+  aff: 
+  link: http://www.cs.iit.edu/~kshu/
+  im: https://icwsm.org/2021/img/oc_chairs/Kai_Shu.png
+- role: Data Challenge Chair
+  name: Gianluca Stringhini
+  aff: 
+  link: https://seclab.bu.edu/people/gianluca/index.html
+  im: https://icwsm.org/2021/img/oc_chairs/Gianluca_Stringhini.jpg
+- role: Sponsorship Chair
+  name: Kiran Garimella
+  aff: 
+  link: https://users.ics.aalto.fi/kiran/
+  im: https://icwsm.org/2021/img/oc_chairs/Kiran_Garimella.jpg
+- role: Social Media & Publicity Chair
+  name: Talayeh Aledavood
+  aff: 
+  link: http://talayeh.xyz/
+  im: https://icwsm.org/2021/img/oc_chairs/Talayeh_Aledavood.png
+- role: Web Chair
+  name: Keenan Jones
+  aff: 
+  link: https://www.cs.kent.ac.uk/people/rpg/ksj5/
+  im: https://icwsm.org/2021/img/oc_chairs/Keenan_Jones.jpg

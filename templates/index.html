@@ -1,0 +1,66 @@
+{% set active_page = "Home" %}
+{% extends "base.html" %}
+
+{% block top %}
+<style>
+  .back {
+    background: url("{{config.background_image}}") no-repeat center;
+    background-size: cover;
+  }
+  .back h2 {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+  }
+</style>
+
+<div class="jumbotron jumbotron-fluid back" style="padding-bottom: 20px;">
+  <div class="row header p-6 m-5">
+    <div class="p-1 mx-auto text-center text-white col-md-9 col-sm-12">
+      <h2>
+        {{config.tagline|safe}}
+      </h2>
+      <h2 class="p-5">
+        {{config.date|safe}}
+      </h2>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<!-- {{ readme | markdown }} -->
+<h2>Welcome to the Virtual ICWSM 2021</h2>
+<div class="row">
+  <div class="col-md-8 col-sm-12">
+    <p>The conference comprises the following elements:</p>
+    <dl>
+      <dt>Format</dt>
+      <dd>All talks from keynotes and authors are pre-recorded and available before the conference on our <a class="text-muted" href="https://www.youtube.com/playlist?list=PLfNOQlmqSceVLXrBkjxLzBb2wfalJ4iJu">YouTube</a> channel. Full papers have 10 minute talks, demos/poster/data papers have 3 minutes.</dd>
+      <dd>
+      </dd>
+      <dt>Live Q&A</dt>
+      <dd>There are three types of live Zoom sessions scheduled: </dd>
+      <dd> 1. Keynotes will have hour-long "fire-side chats" using a Zoom webinar. Participants can ask questions via the Q&A feature of Zoom. </dd>
+      <dd> 2. Spotlight papers (the top nine scoring papers) will each have a dedicated 20 minute Q&A session using a Zoom webinar. </dd>              
+      <dd> 3. All other papers will have Zoom poster sessions. These are hour-long Zoom sessions, one per paper, with up to eight sessions in parallel. Participants are encouraged to "hop" to sessions of their choosing and engage in lively discussions. BYOWOC (Bring Your Own Wine Or Coffee, depending on time zone!) </dd>              
+      <dt>Chat</dt>
+      <dd>You can interact with the authors of the papers through our Slack channel. All registrants have been invited to the appropriate workspace.
+      <dt>Schedule</dt>
+      <dd>You can find the times for all the live sessions using the <a class="text-muted" href="calendar.html">Schedule</a>, where you can choose your timezone and find live sessions that work for you.</dd>
+      <dt>Site</dt>
+      <dd>This site is a fork of <a class="text-muted" href="http://www.mini-conf.org/index.html">Mini-Conf</a>.
+      </dd>
+      <dt> Social Media</dt>
+      <dd> Share papers,  workshops, and demos by using the hashtag  <span style="font-weight: bold; font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;">#ICWSM2021</span></dd>
+
+    </dl>
+  </div>
+</div>
+
+
+<!-- Organizers -->
+{{ components.section("Organizers") }}
+{{ components.organizergroup(committee) }}
+
+{% endblock %}
