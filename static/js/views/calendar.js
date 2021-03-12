@@ -50,44 +50,56 @@ async function make_cal(handleResize = true) {
   const all_cals = [];
   const timezoneName = current_tz;
 
-  // determine min date
+  //determine min date
   const min_date = d3.min(events.map((e) => e.start));
-  let min_hours =
-    d3.min(events.map((e) => moment(e.start).tz(timezoneName).hours())) - 1;
-  let max_hours =
-    d3.max(events.map((e) => moment(e.end).tz(timezoneName).hours())) + 1;
-  if (min_hours < 0 || max_hours > 24) {
-    min_hours = 0;
-    max_hours = 24;
-  }
+  // let min_hours =
+  //   d3.min(events.map((e) => moment(e.start).tz(timezoneName).hours())) - 1;
+  // let max_hours =
+  //   d3.max(events.map((e) => moment(e.end).tz(timezoneName).hours())) + 1;
+  // if (min_hours < 0 || max_hours > 24) {
+  //   min_hours = 0;
+  //   max_hours = 24;
+  // }
 
   const {Calendar} = tui;
   const calendar = new Calendar("#calendar", {
     defaultView: "week",
     isReadOnly: true,
-    // useDetailPopup: true,
     taskView: false,
     scheduleView: ["time"],
     usageStatistics: false,
     week: {
       workweek: !config.calendar.sunday_saturday,
-      hourStart: min_hours,
-      hourEnd: max_hours,
+      daynames: ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      // hourStart: min_hours,
+      // hourEnd: max_hours
+      hourStart: 0,
+      hourEnd: 24
     },
-    timezones: [
-      {
-        timezoneOffset: -moment.tz
-          .zone(timezoneName)
-          .utcOffset(moment(min_date)),
-        displayLabel: timezoneName,
-        tooltip: timezoneName,
+    timezone: {
+      zones: [
+        {
+          timezoneName: timezoneName,
+          displayLabel: timezoneName,
+          tooltip: timezoneName
+        }
+      ],
+      offsetCalculator: function(timezoneName, timestamp){
+        // matches 'getTimezoneOffset()' of Date API
+        // e.g. +09:00 => -540, -04:00 => 240
+        return moment.tz.zone(timezoneName).utcOffset(timestamp);
       },
-    ],
-    // timezones: [{
-    //     getTimezoneOffset: 540,
-    //     displayLabel: 'a',
-    //     tooltip: timezoneName
-    // }],
+    },
+    theme: {
+      'common.backgroundColor': 'white',
+      'common.dayname.color': 'white',
+      'week.dayname.backgroundColor': 'black',
+      'week.dayname.textAlign': 'center',
+      'week.dayname.borderTop': '1px solid white',
+      'week.dayname.borderBottom': '1px solid white',
+      'week.dayname.borderLeft': '1px solid white',
+      'week.dayname.height': '45px'
+    },
     template: {
       monthDayname(dayname) {
         return `<span class="calendar-week-dayname-name">${dayname.label}</span>`;
@@ -95,14 +107,14 @@ async function make_cal(handleResize = true) {
       time(schedule) {
         return `<strong>${moment(schedule.start.getTime())
           .tz(timezoneName)
-          .format("hh:mm")}</strong> ${schedule.title}`;
+          .format("HH:mm")}</strong> ${schedule.title}`;
       },
       milestone(schedule) {
         return `<span class="calendar-font-icon ic-milestone-b"></span> <span style="background-color: ${schedule.bgColor}"> M: ${schedule.title}</span>`;
       },
       weekDayname(model) {
         const parts = model.renderDate.split("-");
-        return `<span class="tui-full-calendar-dayname-name"> ${parts[1]}/${parts[2]}</span>&nbsp;&nbsp;<span class="tui-full-calendar-dayname-name">${model.dayName}</span>`;
+        return `<span class="tui-full-calendar-dayname-name" style="font-size:14px">${model.dayName}</span>&nbsp;&nbsp;<span class="tui-full-calendar-dayname-name " style="font-size:14px"> ${parts[1]}/${parts[2]}</span>`;
       },
     },
   });
@@ -128,6 +140,7 @@ async function make_cal(handleResize = true) {
         id: k,
         name: k,
         bgColor: v,
+        borderColor: "#000000"
       });
     });
     calendar.setCalendars(cals);
@@ -182,6 +195,7 @@ async function make_cal(handleResize = true) {
           id: k,
           name: k,
           bgColor: v,
+          borderColor: "#000000"
         });
       });
 
