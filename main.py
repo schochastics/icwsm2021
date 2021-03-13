@@ -28,7 +28,7 @@ def main(site_data_path):
         elif typ == "yml":
             site_data[name] = yaml.load(open(f).read(), Loader=yaml.SafeLoader)
 
-    for typ in ["papers", "speakers", "workshops"]:
+    for typ in ["papers", "speakers", "workshops","tutorials"]:
         by_uid[typ] = {}
         for p in site_data[typ]:
             by_uid[typ][p["UID"]] = p
@@ -115,6 +115,13 @@ def workshops():
     ]
     return render_template("workshops.html", **data)
 
+@app.route("/tutorials.html")
+def tutorials():
+    data = _data()
+    data["tutorials"] = [
+        format_tutorial(tutorial) for tutorial in site_data["tutorials"]
+    ]
+    return render_template("tutorials.html", **data)
 
 def extract_list_field(v, key):
     value = v.get(key, "")
@@ -122,7 +129,6 @@ def extract_list_field(v, key):
         return value
     else:
         return value.split("|")
-
 
 def format_paper(v):
     list_keys = ["authors", "keywords", "sessions"]
@@ -164,6 +170,19 @@ def format_workshop(v):
         "logo": v["logo"]
     }
 
+def format_tutorial(v):
+    list_keys = ["authors"]
+    list_fields = {}
+    for key in list_keys:
+        list_fields[key] = extract_list_field(v, key)
+
+    return {
+        "id": v["UID"],
+        "title": v["title"],
+        "organizers": list_fields["authors"],
+        "abstract": v["abstract"],
+        "link": v["link"]
+    }
 
 # ITEM PAGES
 
@@ -194,11 +213,19 @@ def workshop(workshop):
     data["workshop"] = format_workshop(v)
     return render_template("workshop.html", **data)
 
-
-@app.route("/chat.html")
-def chat():
+@app.route("/tutorial_<tutorial>.html")
+def tutorial(tutorial):
+    uid = tutorial
+    v = by_uid["tutorials"][uid]
     data = _data()
-    return render_template("chat.html", **data)
+    data["tutorial"] = format_tutorial(v)
+    return render_template("tutorial.html", **data)
+
+
+# @app.route("/chat.html")
+# def chat():
+#     data = _data()
+#     return render_template("chat.html", **data)
 
 
 # FRONT END SERVING
@@ -234,6 +261,8 @@ def generator():
         yield "speaker", {"speaker": str(speaker["UID"])}
     for workshop in site_data["workshops"]:
         yield "workshop", {"workshop": str(workshop["UID"])}
+    for tutorial in site_data["tutorials"]:
+        yield "tutorial", {"tutorial": str(tutorial["UID"])}
 
     for key in site_data:
         yield "serve", {"path": key}
