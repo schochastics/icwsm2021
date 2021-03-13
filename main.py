@@ -156,8 +156,12 @@ def format_workshop(v):
     return {
         "id": v["UID"],
         "title": v["title"],
+        "longtitle": v["longtitle"],
         "organizers": list_fields["authors"],
         "abstract": v["abstract"],
+        "length": v["length"],
+        "link": v["link"],
+        "logo": v["logo"]
     }
 
 

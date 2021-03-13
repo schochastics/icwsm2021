@@ -1,0 +1,73 @@
+---
+-
+    UID: a
+    title: "Emoji 2021: Emoji Understanding and Applications in Social Media"
+    longtitle: "4th​ International Workshop on Emoji Understanding and Applications in Social Media"
+    authors: "Sanjaya Wijeratne|Jennifer Lee|Horacio Saggion|Amit Sheth"
+    length: full
+    link: http://emoji2021.aiisc.ai/
+    logo: https://i.imgur.com/LHtjeQ3.png
+    abstract: "Pictographs, commonly referred to as emoji, have become a popular way to enhance electronic communication. With their introduction in the late 1990''s, emoji have been widely used to enhance the sentiment, emotion, and sarcasm expressed in social media messages. They often play distinct social and communicative roles compared to other forms of written language while taking over language constructs such as slang terms and emoticons. The ability to automatically process, derive meaning and interpret text fused with emoji will be essential as society embraces emoji as a standard form of online communication. Yet the pictorial nature of emoji, the fact that (the same) emoji may be used in different contexts to express different meanings, and that emoji are used in different cultures and communities over the world who interpret emoji differently, make it especially difficult to apply traditional Natural Language Processing (NLP) techniques to analyze them. To meet these challenges, Emoji aims to stimulate research on understanding social, cultural, communicative, and linguistic roles of emoji and developing novel computational approaches to analyze, interpret and understand emoji and their usage in social media applications. It will provide a forum to bring together researchers and practitioners from both academia and industry in the areas of computer science, social network analysis and mining, natural language processing, computational linguistics, human-computer interaction, and computational social sciences to discuss high-quality research and emerging applications, to exchange ideas and experience, and to identify new opportunities for collaboration."
+-
+    UID: b
+    title: "Cyber Social Threats (CySoc 2021)"
+    longtitle: "International Workshop on Cyber Social Threats (CySoc 2021)"
+    authors: "Ugur Kursuncu|Yelena Mejova|Megan Squire|Jeremy Blackburn|Amit Sheth"
+    length: full
+    link: http://cysoc.aiisc.ai/
+    logo: https://i.imgur.com/K2nucGg.png
+    abstract: "The role of online platforms as a prime, daily communication tool is coincident with a sharp rise in its misuse, threatening our society in large. These platforms have been implicated for promoting hate speech, radicalization, harassment, cyberbullying, fake news, human trafficking, drug dealing, gender-based stereotyping and violence among other ills, with a significant impact on individual and community well-being. Such content and behaviors are inherently multi-faceted, making the recognition of their narratives challenging for researchers as well as social media companies. The implications to individuals and communities require reliable models and algorithms for detecting, understanding and countering the malevolent behavior in such communications. These challenges have led to a rising prominence of analysis of online communications in academia, politics, homeland security, and industry using computational techniques from natural language processing, statistics, network science, data mining, machine learning, computational linguistics, human-computer interaction, and cognitive science. To meet these challenges, this workshop aims to stimulate research on social, cultural, emotional, communicative, and linguistic aspects of harmful conversations on online platforms and developing novel approaches to analyze, interpret and understand them. The workshop welcomes for consideration papers that employ quantitative and/or qualitative, analytical, theoretical approaches examining a diverse range of issues related to online harmful communications. Papers on resources/data and tools will also be welcome either for demos or for short/regular talks."
+-
+    UID: c
+    title: "Participatory Development of Quality Guidelines for Social Media Research"
+    longtitle: "Participatory Development of Quality Guidelines for Social Media Research: A Structured, Hands-on Design Workshop"
+    authors: "Indira Sen|Katrin Weller|Fabian Floeck"
+    length: full
+    link: https://icwsm.org/2021/index.html#workshops_schedule
+    logo: https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png
+    abstract: 
+-
+    UID: d
+    title: "Social Sensing (SocialSens 2021): Special Edition on Information Operations on Social Media"
+    longtitle: "6th International Workshop on Social Sensing (SocialSens 2021): Special Edition on Information Operations on Social Media"
+    authors: "Kathleen McKeown|Tarek Abdelzaher|Adriana Iamnitchi|George Mohler"
+    length: full
+    link: http://socialsens.web.illinois.edu/
+    logo: https://i.imgur.com/97fU4TL.png
+    abstract: "The social sensing workshop (started in 2015) is a multidisciplinary meeting place that brings together social scientists and computer scientists, interested in social media analysis, around research that interprets social media as measurement instruments. Social media democratized information production offering an unprecedented view into human habits, customs, culture, stances, and indeed descriptions of physical events that transpire in the world. They also give unprecedented opportunities to spread misinformation, influence opinion, distract from the truth, or advance specific agendas, hidden or overt. The potential of social media to influence populations has brought about an interest in understanding information operations; namely, coordinated efforts on social media meant to alter people’s opinions, emotions, or understanding of events. What are scientific foundations for modeling this new communication, measurement, and influence channel? How to utilize information media signals to better understand social systems, communities, and each other? How to identify and mitigate misuse of this medium? What specifically can one measure or influence, what underlying theoretical framework allows one to do so, and what applications are enabled by the endeavor?  Since measurement and influence operations are well-studied in many physical domains, what can one learn from the physical domain (e.g., from the signal processing literature) to enable novel social media analysis methods? This scope brings about new interdisciplinary research challenges and opportunities at the intersection of communication and sensing, social network analysis, information theory, data mining, natural language processing, artificial intelligence, and social sciences. "
+-
+    UID: e
+    title: "Data for the Wellbeing of Most Vulnerable"
+    longtitle: ""
+    authors: "Yelena Mejova|Kyriaki Kalimeri|Daniela Paolotti|Rumi Chunara"
+    length: half
+    link: https://icwsm.org/2021/index.html#workshops_schedule
+    logo: https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png
+    abstract: 
+-
+    UID: f
+    title: "Information Credibility and Alternative Realities in Troubled Democracies"
+    longtitle: ""
+    authors: "Maurice Jakesch|Manon Revel|Ziv Epstein"
+    length: half
+    link: https://zivepstein.github.io/info-credibility-workshop/
+    logo: https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png
+    abstract: "Fake news, conspiracies, manipulated media, selective reporting, facts derided as lies: citizens of democracies encounter wildly conflicting information about the supposedly factual world. Think of Pizzagate, a well-known and extensively discredited conspiracy theory about an abuse circle run by high-ranking Democratic Party officials. Or of the recent 2020 United States presidential election, where most Republican voters said they believed that Trump won and the official results were fraudulent. COVID-19 has produced its own myriad of false beliefs, for example that the virus was engineered in China. Even outright denials of the pandemic or other complex phenomena such as climate change are not uncommon. The borders between fact and opinion are blurring, and the prospects of deliberative democracy and collective action become increasingly bleak. Of course, truth has always been precarious - neither misinformation nor widespread false beliefs are unique to our time. But the web and social media technologies have distinctly rearranged the struggles over truth and falsehood. Through its unfiltered publication process, breakneck pace, and obsession with engagement (rather than accuracy), the modern web has created not only decentralized modes of expression but also novel vectors for misinformation and disinformation. We therefore need new tools, concepts and technologies to ensure the integrity of information ecosystems. This workshop aims to bring together leaders across industry and academia to discuss what tools for measurement and mitigation could look like."
+-
+    UID: g
+    title: "Mediate 2021: News Media and Computational Journalism"
+    longtitle: ""
+    authors: "Panayiotis Smeros|Jeremie Rappaz|Marya Bazzi|Elena Kochkina|Maria Liakata|Karl Aberer"
+    length: half
+    link: https://digitalmediasig.github.io/Mediate2021
+    logo: https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png
+    abstract: "The second Mediate workshop will be held virtually on June 7th, 2021, as part of the International AAAI Conference on Web and Social Media (ICWSM). The main goal of the workshop is to bring together media practitioners and technologists to discuss new opportunities and obstacles that arise in the modern era of information diffusion. This year's theme is: Misinformation: automation, uptake, and digital governance"
+-
+    UID: h
+    title: "Mining Actionable Insights from Social Networks: Special Edition on Healthcare Social Analytics"
+    longtitle: ""
+    authors: "Ebrahim Bagheri|Diana Inkpen|Christopher C. Yang|Fattane Zarrinkalam"
+    length: half
+    link: https://www.maisonworkshop.org/
+    logo: https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png
+    abstract: " In this workshop, we aim to to invite and gather researchers and practitioners from across the world and, in particular, from diﬀerent disciplines, such as information retrieval, data mining, machine learning, data science, network science, social network analysis and other related areas to share their ideas and research achievements in order to deliver technology and solutions for healthcare social analytics."
