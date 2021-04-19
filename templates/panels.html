@@ -1,0 +1,15 @@
+{% set active_page = "Panels" %}
+{% set page_title = "Panels" %}
+{% extends "base.html" %}
+
+{% block content %}
+<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+  <div id="day">
+    <!-- Panels -->
+    {{ components.section("Panels") }}
+    <div class="speakers">
+      {{ components.panelgroup(panels) }}
+    </div>
+  </div>
+</div>
+{% endblock %}

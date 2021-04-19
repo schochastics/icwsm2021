@@ -109,3 +109,28 @@ committee:
   aff: 
   link: https://www.cs.kent.ac.uk/people/rpg/ksj5/
   im: https://icwsm.org/2021/img/oc_chairs/Keenan_Jones.jpg
+- role: Accessibility Chair
+  name: Amira Ghenai
+  aff: 
+  link: https://aghenai.github.io/
+  im: https://icwsm.org/2021/img/oc_chairs/Amira_Ghenai.png
+- role: Diversity, Equity, & Inclusion Chair
+  name: Naeemul Hassan
+  aff: 
+  link: http://naeemulhassan.info/
+  im: https://icwsm.org/2021/img/oc_chairs/Naeemul_Hassan.jpg
+- role: Diversity, Equity, & Inclusion Chair
+  name: Francielle Vargas
+  aff: 
+  link: https://www.linkedin.com/in/francielleavargas/
+  im: https://icwsm.org/2021/img/oc_chairs/Francielle_Vargas.jpg
+- role: Global Equity Chair
+  name: Panagiotis Andriotis
+  aff: 
+  link: https://www.andrio.eu/
+  im: https://icwsm.org/2021/img/oc_chairs/Panagiotis_Andriotis.jpg
+- role: Global Equity Chair
+  name: Dakuo Wang
+  aff: 
+  link: https://researcher.watson.ibm.com/researcher/view.php?person=ibm-Dakuo.Wang
+  im: https://icwsm.org/2021/img/oc_chairs/Dakuo_Wang.jpg

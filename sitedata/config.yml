@@ -34,9 +34,13 @@ auth0_domain : miniconf.auth0.com
 calendar:
   colors: #  Colors for the different event hashtags:
     ---: '#ffffff'
-    key: "#ca5670"
-    spo: "#ab62c0"
-    pan: "#72a555"
-    soc: "#DA7D3B"
-    pos: "#CCCCCC"
+    key: "#b80058" #"#ca5670"
+    spo: "#ebac23" #"#ab62c0"
+    pan: "#008cf9" #"#72a555"
+    soc: "#00bbad" #"#DA7D3B"
+    pos: "#bdbdbd" #"#CCCCCC"
+    moz: "#ff9400"
+    wor: "#d163e6"
+    tut: "#ff9287"
+    dat: "#878500"
   sunday_saturday: false  #  Include Sunday and Saturday

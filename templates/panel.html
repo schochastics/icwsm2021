@@ -1,4 +1,4 @@
-{% set page_title = speaker.title %}
+{% set page_title = panel.title %}
 {% extends "base.html" %}
 {% block content %}
 
@@ -6,17 +6,14 @@
 <div class="pp-card m-3" style="">
   <div class="card-header">
     <h2 class="card-title main-title text-center" style="">
-      {{speaker.title}}
+      {{panel.title}}
     </h2>
     <h3 class="card-subtitle mb-2 text-muted text-center">
-      {{speaker.speaker}} / {{speaker.institution}}
+      {{ panel.organizers | join(", ") }}
     </h3>
     <div class="text-center p-3">
-      <img src="{{speaker.image}}">
-    </div>
-    <div class="text-center p-3">
       <a class="card-link" data-toggle="collapse" role="button" href="#details">
-        Abstract & Bio
+        Description
       </a>
     </div>
   </div>
@@ -25,11 +22,8 @@
   <div class="card-body">
     <div class="card-text">
       <div id="abstractExample">
-        <span class="font-weight-bold">Abstract:</span>
-        {{speaker.abstract|safe}} <br /><br />
-
-        <span class="font-weight-bold">Bio:</span>
-        {{speaker.bio|safe}}
+        <span class="font-weight-bold">Description:</span>
+        {{panel.abstract|safe}} <br /><br />
       </div>
     </div>
     <p></p>

@@ -28,7 +28,7 @@ def main(site_data_path):
         elif typ == "yml":
             site_data[name] = yaml.load(open(f).read(), Loader=yaml.SafeLoader)
 
-    for typ in ["papers", "speakers", "workshops","tutorials"]:
+    for typ in ["papers", "speakers", "workshops","tutorials","panels"]:
         by_uid[typ] = {}
         for p in site_data[typ]:
             by_uid[typ][p["UID"]] = p
@@ -98,8 +98,23 @@ def paper_vis():
 @app.route("/calendar.html")
 def schedule():
     data = _data()
-    data["day"] = {
-        "speakers": site_data["speakers"],
+    data["day1"] = {
+        "speakers": [s for s in site_data["speakers"]
+                if s["day"] == "Tuesday"],
+        "highlighted": [
+            format_paper(by_uid["papers"][h["UID"]]) for h in site_data["highlighted"]
+        ],
+    }
+    data["day2"] = {
+        "speakers": [s for s in site_data["speakers"]
+                if s["day"] == "Wednesday"],
+        "highlighted": [
+            format_paper(by_uid["papers"][h["UID"]]) for h in site_data["highlighted"]
+        ],
+    }
+    data["day3"] = {
+        "speakers": [s for s in site_data["speakers"]
+                if s["day"] == "Thursday"],
         "highlighted": [
             format_paper(by_uid["papers"][h["UID"]]) for h in site_data["highlighted"]
         ],
@@ -122,6 +137,14 @@ def tutorials():
         format_tutorial(tutorial) for tutorial in site_data["tutorials"]
     ]
     return render_template("tutorials.html", **data)
+
+@app.route("/panels.html")
+def panels():
+    data = _data()
+    data["panels"] = [
+        format_panel(panels) for panels in site_data["panels"]
+    ]
+    return render_template("panels.html", **data)
 
 def extract_list_field(v, key):
     value = v.get(key, "")
@@ -184,6 +207,21 @@ def format_tutorial(v):
         "link": v["link"]
     }
 
+def format_panel(v):
+    list_keys = ["authors"]
+    list_fields = {}
+    for key in list_keys:
+        list_fields[key] = extract_list_field(v, key)
+
+    return {
+        "id": v["UID"],
+        "title": v["title"],
+        "organizers": list_fields["authors"],
+        "abstract": v["abstract"],
+        "short": v["short"],
+    }
+
+
 # ITEM PAGES
 
 
@@ -221,6 +259,13 @@ def tutorial(tutorial):
     data["tutorial"] = format_tutorial(v)
     return render_template("tutorial.html", **data)
 
+@app.route("/panel_<panel>.html")
+def panel(panel):
+    uid = panel
+    v = by_uid["panels"][uid]
+    data = _data()
+    data["panel"] = format_panel(v)
+    return render_template("panel.html", **data)
 
 # @app.route("/chat.html")
 # def chat():
@@ -263,6 +308,8 @@ def generator():
         yield "workshop", {"workshop": str(workshop["UID"])}
     for tutorial in site_data["tutorials"]:
         yield "tutorial", {"tutorial": str(tutorial["UID"])}
+    for panel in site_data["panels"]:
+        yield "panel", {"panel": str(panel["UID"])}
 
     for key in site_data:
         yield "serve", {"path": key}

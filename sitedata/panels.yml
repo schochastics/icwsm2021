@@ -1,0 +1,19 @@
+---
+-
+    UID: p1
+    title: "Publication Panel"
+    authors: "Panelist A|Panelist B|Panelist C|Panelist D"
+    short: "Panel about Publishing"
+    abstract: "Panel about Publishing"
+-
+    UID: p2
+    title: "Women Panel"
+    authors: "Panelist A|Panelist B|Panelist C|Panelist D"
+    short: "Panel about Women and ICWSM"
+    abstract: "Panel about Women in ICWSM"
+-
+    UID: p3
+    title: "Global Research Panel"
+    authors: "Panelist A|Panelist B|Panelist C|Panelist D"
+    short: "Panel about Global Research"
+    abstract: "Panel about Global Research"
