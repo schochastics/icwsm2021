@@ -269,7 +269,7 @@ tutorialgroup
 {% macro panelgroup(panels) -%}
 <div class="cards row">
   {% for panel in panels %}
-  <div class="col-md-6 col-sm-12 p-3" style="box-sizing: border-box;">
+  <div class="col-md-12 col-sm-12 p-3" style="box-sizing: border-box;">
     <div class="card" style="display: block; overflow: hidden; width: 100%;">
       <div
         class="card-header text-center"
@@ -280,10 +280,13 @@ tutorialgroup
             {{panel.title}}
           </h3>
         </a>
-        <div class="card-subtitle text-muted">
+        <div class="card-subtitle text-loud">
           {{ panel.organizers | join(", ") }}
         </div>
-        <div class="m-3 text-center card-subtitle font-italic">
+        <div class="card-subtitle text-loud">
+          Moderator: {{ panel.moderator }}
+        </div>
+        <div class="m-3 text-left card-subtitle">
           {{ panel.short}}
         </div>
       </div>

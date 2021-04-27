@@ -217,6 +217,8 @@ def format_panel(v):
         "id": v["UID"],
         "title": v["title"],
         "organizers": list_fields["authors"],
+        "moderator": v["moderator"],
+        "link": v["link"],
         "abstract": v["abstract"],
         "short": v["short"],
     }

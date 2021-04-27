@@ -11,10 +11,14 @@
     <h3 class="card-subtitle mb-2 text-muted text-center">
       {{ panel.organizers | join(", ") }}
     </h3>
+    <h3 class="card-subtitle mb-2 text-muted text-center">
+      Moderator: {{ panel.moderator }}
+    </h3>
     <div class="text-center p-3">
       <a class="card-link" data-toggle="collapse" role="button" href="#details">
         Description
       </a>
+      <a href="{{panel.link}}">   Ask a question</a>
     </div>
   </div>
 </div>
@@ -23,7 +27,7 @@
     <div class="card-text">
       <div id="abstractExample">
         <span class="font-weight-bold">Description:</span>
-        {{panel.abstract|safe}} <br /><br />
+        {{panel.abstract|safe}} <br /><br/>
       </div>
     </div>
     <p></p>

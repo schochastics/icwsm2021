@@ -146,6 +146,11 @@ h3.card-subtitle.text-muted {
   font-size: 13px;
 }
 
+.card-subtitle.text-loud {
+  text-align: center;
+  font-size: 18px;
+}
+
 .main-title {
   font-weight: 700;
   color: #2294e0;
