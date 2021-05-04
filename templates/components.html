@@ -228,7 +228,7 @@ tutorialgroup
         </div>
         <div class="m-3 text-center card-subtitle font-italic">
           <!-- {{workshop.abstract|safe}} -->
-          <img src="{{workshop.logo}}" height="60" style="padding-bottom: 15px;">
+          <img src="{{workshop.logo}}" height="70" style="padding-bottom: 15px;">
           <br>
           {{workshop.longtitle}}
           
@@ -258,6 +258,7 @@ tutorialgroup
           {{ tutorial.organizers | join(", ") }}
         </div>
         <div class="m-3 text-center card-subtitle font-italic">
+          <img src="{{tutorial.logo}}" height="70" style="padding-bottom: 15px;">
         </div>
       </div>
     </div>
@@ -283,8 +284,16 @@ tutorialgroup
         <div class="card-subtitle text-loud">
           {{ panel.organizers | join(", ") }}
         </div>
+        <div class="text-center p-3">
+          {% for image in panel.images %}
+            <img src={{image}} height=150>
+          {% endfor %}
+        </div>
         <div class="card-subtitle text-loud">
           Moderator: {{ panel.moderator }}
+        </div>
+        <div class="text-center p-3">
+            <img src={{panel.modimg}} height=150>
         </div>
         <div class="m-3 text-left card-subtitle">
           {{ panel.short}}

@@ -46,6 +46,14 @@
             >{{ "," if not loop.last }}
             {% endfor %}
         </p>
+        <p class="card-text text-center">
+            {{paper.track}} 
+            <strong>Session: </strong>
+            {%for session in paper.sessions%}
+            <a href="/papers.html?filter=sessions&search={{session}}">{{session}}</a>
+            {%endfor%}
+            ({{paper.topic}})
+        </p>
         <div class="text-center p-3">
             <a class="card-link" data-toggle="collapse" role="button"
                href="#details">
@@ -54,11 +62,17 @@
             <a class="card-link" target="_blank" href="{{paper.link}}">
                 Paper
             </a>
+            <a class="card-link" target="_blank" href="{{paper.slack}}">
+                Slack
+            </a>
             {% if paper.code_link != blank %}
             <a href="{{paper.code_link}}" target="_blank" class="card-link">
                 Code
             </a>
             {% endif %}
+        </div>
+        <div class="text-center p-3">
+            {{paper.date}} <span class="session_times">{{paper.time}}</span>
         </div>
     </div>
 </div>
@@ -93,10 +107,10 @@
 
 <!-- Slides Live-->
 
-{{ components.section("Example SlidesLive") }}
+{{ components.section("Recording (provided by SlidesLive)") }}
 
 <div class="col-md-12 col-xs-12 my-auto p-2">
-    <div id="presentation-embed" class="slp my-auto"></div>
+    <div id="presentation-embed"></div>
     <script src='https://slideslive.com/embed_presentation.js'></script>
     <script>
       embed = new SlidesLiveEmbed("presentation-embed", {
@@ -112,9 +126,7 @@
 </div>
 
 
-<!-- Chat -->
-
-{{ components.section("Example Poster") }}
+{{ components.section("Poster") }}
 
 <div role="main" id="pdf_view"></div>
 
@@ -131,5 +143,33 @@
   });
 </script>
 
+<script>
+    add_local_tz = selector  => {
+      const regex_time = new RegExp('\\((.*)-(.*) (.*)\\)')
+      const guess_tz = moment.tz.guess(true);
+  
+  
+      $(selector).each(function(){
+          const t = $(this).text()
+          const res = regex_time.exec(t)
+          if (res){
+              const start_time = moment.utc('2020-04-30 '+res[1]);
+              const end_time = moment.utc('2020-04-30 '+res[2]);
+              // console.log(start_time,end_time,"--- start_time,end_time");
+              // console.log(start_time.tz(guess_tz).format('h:mm A'),"--- start_time.");
+              // console.log(end_time.tz(guess_tz).format('h:mm A z'),"--- start_time.");
+              const local_start = start_time.tz(guess_tz).format('HH:mm');
+              const local_end_and_tz = end_time.tz(guess_tz).format('HH:mm z');
+              $(this).text(`(${res[1]}-${res[2]} ${res[3]} / ${local_start}-${local_end_and_tz})`)
+  
+          }
+      })
+  }
+  </script>
+  <script>
+    $(document).ready(()=>{
+      add_local_tz('.session_times');
+    })
+  </script>
 
 {% endblock %}

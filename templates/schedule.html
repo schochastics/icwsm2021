@@ -8,7 +8,8 @@
 
 {% block tabs %}
 {{ components.tabs([
-  ("calendar", "Calendar", "active"), 
+  ("calendar", "Schedule", "active"), 
+  ("help","Help",""),
   ("day1", "Tuesday", ""),
   ("day2", "Wednesday", ""),
   ("day3", "Thursday", "")
@@ -36,6 +37,80 @@
     <!-- small cal for smart phones-->
     <div id="calendar_small" class="d-sm-none"></div>
   </div>
+<!-- HELP-->
+<div
+class="tab-pane fade"
+id="tab-help"
+role="tabpanel"
+aria-labelledby="nav-profile-tab"
+>
+  <div id="day">
+    <h3>Types of sessions this year</h3>
+    <style type="text/css">
+      .tg  {border-collapse:collapse;border-spacing:0;}
+      .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+        overflow:hidden;padding:10px 5px;word-break:normal;}
+      .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+        font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+      .tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
+      .tg .tg-0lax{text-align:left;vertical-align:top}
+      </style>
+      <table class="tg">
+      <thead>
+        <tr>
+          <th class="tg-1wig"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Name</span></th>
+          <th class="tg-1wig"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Description</span></th>
+          <th class="tg-1wig"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Availability checkmarks</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Attendee guide tutorial</span></td>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">A recorded video shared a few days before the conference and posted on the conference website with other attendee guides</span></td>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Lite, Deluxe</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Spotlight sessions (2)</span></td>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">5 best papers of the day showcased for one hour on June 9 and 10.  </span></td>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Lite, Deluxe</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Keynote sessions (2)</span></td>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">A talk from a renowned speaker in computational social science</span></td>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Lite, Deluxe</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Panel sessions (3)</span></td>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">A panel of experts and their host conversing about a chosen topic with one another and the audience. Topics this year include publishing at ICWSM, women in computational social science, and global research in computational social science</span></td>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Deluxe</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Paper sessions (13?)</span></td>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Except for the spotlighted papers, all other </span><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">papers, demos, and short papers</span><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">  will be presented through pre-recorded talks and live Q&amp;A sessions at a specific time. Thumbnails and videos are posted in a “gallery” where participants can walk around and explore each paper. If you missed talking to the authors during the live session, you can still watch the video on the virtual conference website or contact the paper’s authors through Gathertown or Slack.</span></td>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Lite, Deluxe</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Social sessions (4)</span></td>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Informal interactions between hosts and participants</span></td>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Lite, Deluxe</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Sponsor session</span></td>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Where people can mingle and find out about jobs</span></td>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Deluxe</span></td>
+        </tr>
+        <tr>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Townhall</span></td>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">The traditional ICWSM closing session. Add more details here</span></td>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Lite, Deluxe</span></td>
+        </tr>
+      </tbody>
+      </table>
+  </div>
+
+</div>
+
+
 
 <!-- daily-->
   <!-- Day1 Tab -->
@@ -51,9 +126,16 @@
       <div class="speakers">
         {{ components.speakergroup(day1.speakers) }}
       </div>
-      {{ components.section("Highlighted Papers") }}
-      <div class="papers">
-        {{ components.highlightgroup(day1.highlighted, 1) }}
+      {{ components.section("Paper Sessions") }}
+      <div class="papers" style="font-size: 36px;">
+          <a href="/papers.html?filter=sessions&search=P1">Session P1 <span class="session_times">(15:30 - 16:30 GMT)</span></a><br>
+          <a href="/papers.html?filter=sessions&search=P2">Session P2 <span class="session_times">(15:30 - 16:30 GMT)</span></a><br>
+          <a href="/papers.html?filter=sessions&search=P3">Session P3 <span class="session_times">(15:30 - 16:30 GMT)</span></a><br>
+          <a href="/papers.html?filter=sessions&search=P4">Session P4 <span class="session_times">(15:30 - 16:30 GMT)</span></a><br>
+          <a href="/papers.html?filter=sessions&search=P5">Session P5 <span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+          <a href="/papers.html?filter=sessions&search=P6">Session P6 <span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+          <a href="/papers.html?filter=sessions&search=P7">Session P7 <span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+          <a href="/papers.html?filter=sessions&search=P8">Session P8 <span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
       </div>
     </div>
   <script type="text/javascript">
@@ -95,9 +177,16 @@
       <div class="speakers">
         {{ components.speakergroup(day2.speakers) }}
       </div>
-      {{ components.section("Highlighted Papers") }}
+      {{ components.section("Spotlight Papers") }}
       <div class="papers">
         {{ components.highlightgroup(day2.highlighted, 1) }}
+      </div>
+      {{ components.section("Paper Sessions") }}
+      <div class="papers" style="font-size: 36px;">
+          <a href="/papers.html?filter=sessions&search=P9">Session P9 <span class="session_times"> (16:45 - 17:45 GMT)</span></a><br>
+          <a href="/papers.html?filter=sessions&search=P10">Session P10 <span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+          <a href="/papers.html?filter=sessions&search=P11">Session P11 <span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+          <a href="/papers.html?filter=sessions&search=P12">Session P12 <span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
       </div>
     </div>
   <script type="text/javascript">
@@ -135,13 +224,19 @@ aria-labelledby="nav-profile-tab"
 >
 
 <div id="day">
-  {{ components.section("Speakers") }}
-  <div class="speakers">
-    {{ components.speakergroup(day3.speakers) }}
-  </div>
-  {{ components.section("Highlighted Papers") }}
+  {{ components.section("Spotlight Papers") }}
   <div class="papers">
     {{ components.highlightgroup(day3.highlighted, 1) }}
+  </div>
+  {{ components.section("Paper Sessions") }}
+  <div class="papers" style="font-size: 36px;">
+      <a href="/papers.html?filter=sessions&search=P17">Posters/Demos <span class="session_times">(14:15 - 15:15 GMT)</span></a><br>
+      <a href="/papers.html?filter=sessions&search=DS1">Datasets 1 <span class="session_times">(14:15 - 15:15 GMT)</span></a><br>
+      <a href="/papers.html?filter=sessions&search=DS2">Datasets 2 <span class="session_times">(14:15 - 15:15 GMT)</span></a><br><br>
+      <a href="/papers.html?filter=sessions&search=P13">Session P13 <span class="session_times"> (16:45 - 17:45 GMT)</span></a><br>
+      <a href="/papers.html?filter=sessions&search=P14">Session P14 <span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+      <a href="/papers.html?filter=sessions&search=P15">Session P15 <span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+      <a href="/papers.html?filter=sessions&search=P16">Session P16 <span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
   </div>
 </div>
 <script type="text/javascript">
@@ -170,4 +265,32 @@ window.onload = () => {
 </script>
 </div>
 
+<script>
+  add_local_tz = selector  => {
+    const regex_time = new RegExp('\\((.*)-(.*) (.*)\\)')
+    const guess_tz = moment.tz.guess(true);
+
+
+    $(selector).each(function(){
+        const t = $(this).text()
+        const res = regex_time.exec(t)
+        if (res){
+            const start_time = moment.utc('2020-04-30 '+res[1]);
+            const end_time = moment.utc('2020-04-30 '+res[2]);
+            // console.log(start_time,end_time,"--- start_time,end_time");
+            // console.log(start_time.tz(guess_tz).format('h:mm A'),"--- start_time.");
+            // console.log(end_time.tz(guess_tz).format('h:mm A z'),"--- start_time.");
+            const local_start = start_time.tz(guess_tz).format('HH:mm');
+            const local_end_and_tz = end_time.tz(guess_tz).format('HH:mm z');
+            $(this).text(`(${res[1]}-${res[2]} ${res[3]} / ${local_start}-${local_end_and_tz})`)
+
+        }
+    })
+}
+</script>
+<script>
+  $(document).ready(()=>{
+    add_local_tz('.session_times');
+  })
+</script>
 {% endblock %}

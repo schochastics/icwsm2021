@@ -10,6 +10,16 @@ from flask import Flask, jsonify, redirect, render_template, send_from_directory
 from flask_frozen import Freezer
 from flaskext.markdown import Markdown
 
+# for auth
+from authlib.integrations.flask_client import OAuth
+from six.moves.urllib.parse import urlencode
+from flask import url_for
+from dotenv import load_dotenv, find_dotenv
+from functools import wraps
+import json
+from os import environ as env
+from werkzeug.exceptions import HTTPException
+
 site_data = {}
 by_uid = {}
 
@@ -102,21 +112,21 @@ def schedule():
         "speakers": [s for s in site_data["speakers"]
                 if s["day"] == "Tuesday"],
         "highlighted": [
-            format_paper(by_uid["papers"][h["UID"]]) for h in site_data["highlighted"]
+            format_paper(by_uid["papers"][h["UID"]]) for h in site_data["highlighted"] if h["session"]=="S0"
         ],
     }
     data["day2"] = {
         "speakers": [s for s in site_data["speakers"]
                 if s["day"] == "Wednesday"],
         "highlighted": [
-            format_paper(by_uid["papers"][h["UID"]]) for h in site_data["highlighted"]
+            format_paper(by_uid["papers"][h["UID"]]) for h in site_data["highlighted"] if h["session"]=="S1"
         ],
     }
     data["day3"] = {
         "speakers": [s for s in site_data["speakers"]
-                if s["day"] == "Thursday"],
+                if s["day"] == "Wednesday"],
         "highlighted": [
-            format_paper(by_uid["papers"][h["UID"]]) for h in site_data["highlighted"]
+            format_paper(by_uid["papers"][h["UID"]]) for h in site_data["highlighted"] if h["session"]=="S2"
         ],
     }
     return render_template("schedule.html", **data)
@@ -154,7 +164,7 @@ def extract_list_field(v, key):
         return value.split("|")
 
 def format_paper(v):
-    list_keys = ["authors", "keywords", "sessions"]
+    list_keys = ["authors", "keywords","session"]
     list_fields = {}
     for key in list_keys:
         list_fields[key] = extract_list_field(v, key)
@@ -166,13 +176,18 @@ def format_paper(v):
         "authors": list_fields["authors"],
         "keywords": list_fields["keywords"],
         "abstract": v["abstract"],
-        "TLDR": v["abstract"],
-        "recs": [],
-        "sessions": list_fields["sessions"],
+        "track":v["track"],
+        "sessions": list_fields["session"],
+        "slack": v["slack"],
+        "date":v["date"],
+        "time": v["time"],
+        "topic": v["topic"]
+        # "TLDR": v["abstract"]
+        # "recs": [],
         # links to external content per poster
-        "pdf_url": v.get("pdf_url", ""),  # render poster from this PDF
-        "code_link": "https://github.com/Mini-Conf/Mini-Conf",  # link to code
-        "link": "https://arxiv.org/abs/2007.12238",  # link to paper
+        #"pdf_url": v.get("pdf_url", ""),  # render poster from this PDF
+        #"code_link": "",  # link to code
+        #"link": ""  # link to paper
     }
 
 
@@ -204,11 +219,12 @@ def format_tutorial(v):
         "title": v["title"],
         "organizers": list_fields["authors"],
         "abstract": v["abstract"],
-        "link": v["link"]
+        "link": v["link"],
+        "logo": v["logo"]
     }
 
 def format_panel(v):
-    list_keys = ["authors"]
+    list_keys = ["authors","images"]
     list_fields = {}
     for key in list_keys:
         list_fields[key] = extract_list_field(v, key)
@@ -217,7 +233,9 @@ def format_panel(v):
         "id": v["UID"],
         "title": v["title"],
         "organizers": list_fields["authors"],
+        "images": list_fields["images"],
         "moderator": v["moderator"],
+        "modimg": v["modimg"],
         "link": v["link"],
         "abstract": v["abstract"],
         "short": v["short"],
@@ -340,6 +358,67 @@ def parse_arguments():
     args = parser.parse_args()
     return args
 
+
+#---------------------------------try auth0----------------------------------------------#
+oauth = OAuth(app)
+
+auth0 = oauth.register(
+    'auth0',
+    client_id='wzQPlS2Lox3frXC2EtEfnGgWEzG6b03f',
+    client_secret='Ve7CgZGu55kmNgwowagx6FLfh3cQdiRFmKfYzrfX9kNE0IBUtq0KQkrh2vy5Gj3F',
+    api_base_url='https://icwsm2021.us.auth0.com',
+    access_token_url='https://icwsm2021.us.auth0.com/oauth/token',
+    authorize_url='https://icwsm2021.us.auth0.com/authorize',
+    client_kwargs={
+        'scope': 'openid profile email',
+    },
+)
+
+# Here we're using the /callback route.
+@app.route('/callback')
+def callback_handling():
+    # Handles response from token endpoint
+    auth0.authorize_access_token()
+    resp = auth0.get('userinfo')
+    userinfo = resp.json()
+
+    # Store the user information in flask session.
+    session['jwt_payload'] = userinfo
+    session['profile'] = {
+        'user_id': userinfo['sub'],
+        'name': userinfo['name'],
+        'picture': userinfo['picture']
+    }
+    return redirect('/dashboard')
+
+@app.route('/login')
+def login():
+    return auth0.authorize_redirect(redirect_uri='http://localhost:5000/callback')
+
+def requires_auth(f):
+  @wraps(f)
+  def decorated(*args, **kwargs):
+    if 'profile' not in session:
+      # Redirect to Login page here
+      return redirect('/')
+    return f(*args, **kwargs)
+
+  return decorated
+
+@app.route('/dashboard')
+@requires_auth
+def dashboard():
+    return render_template('dashboard.html',
+                           userinfo=session['profile'],
+                           userinfo_pretty=json.dumps(session['jwt_payload'], indent=4))
+                           
+@app.route('/logout')
+def logout():
+    # Clear session stored data
+    session.clear()
+    # Redirect user to logout endpoint
+    params = {'returnTo': url_for('home', _external=True), 'client_id': 'wzQPlS2Lox3frXC2EtEfnGgWEzG6b03f'}
+    return redirect(auth0.api_base_url + '/v2/logout?' + urlencode(params))
 
 if __name__ == "__main__":
     args = parse_arguments()

@@ -24,7 +24,7 @@
     authors: "Indira Sen|Katrin Weller|Fabian Floeck"
     length: full
     link: https://indiiigo.github.io/participatory-compsocsci-documentation/
-    logo: https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png
+    logo: https://i.imgur.com/3XbRBGU.png
     abstract: 
 -
     UID: d
@@ -42,8 +42,8 @@
     authors: "Yelena Mejova|Kyriaki Kalimeri|Daniela Paolotti|Rumi Chunara"
     length: half
     link: https://sites.google.com/view/dataforvulnerable21
-    logo: https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png
-    abstract: 
+    logo: https://i.imgur.com/iKeviDP.png
+    abstract: "The scale, reach, and real-time nature of the Internet is opening new frontiers for understanding the vulnerabilities in our societies, including inequalities and fragility in the face of a changing world. From tracking seasonal illnesses like the flu across countries and populations, to understanding the context of mental conditions such as anorexia and bulimia, web data has the potential to capture the struggles and wellbeing of diverse groups of people. Further, the very absence of these populations in data can reveal areas of concern, indicating potential lack of access to vital technologies, and potentially being overlooked by algorithms trained on such data. The recent developments around COVID-19 epidemic makes these issues even more urgent, with an unequal share of both disease and economic burden among various populations. Thus, the aim of this workshop is to encourage the community to use new sources of data to study the wellbeing of vulnerable populations including children, elderly, racial or ethnic minorities, socioeconomically disadvantaged, underinsured or those with certain medical conditions. The selection of appropriate data sources, identification of vulnerable groups, and ethical considerations in the subsequent analysis are of great importance in the extension of the benefits of big data revolution to these populations. As such, the topic is highly multidisciplinary, bringing together researchers and practitioners in computer science, epidemiology, demography, linguistics, and many others."
 -
     UID: f
     title: "Information Credibility and Alternative Realities in Troubled Democracies"
@@ -51,7 +51,7 @@
     authors: "Maurice Jakesch|Manon Revel|Ziv Epstein"
     length: half
     link: https://zivepstein.github.io/info-credibility-workshop/
-    logo: https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png
+    logo: https://i.imgur.com/6ZpLW5z.png
     abstract: "Fake news, conspiracies, manipulated media, selective reporting, facts derided as lies: citizens of democracies encounter wildly conflicting information about the supposedly factual world. Think of Pizzagate, a well-known and extensively discredited conspiracy theory about an abuse circle run by high-ranking Democratic Party officials. Or of the recent 2020 United States presidential election, where most Republican voters said they believed that Trump won and the official results were fraudulent. COVID-19 has produced its own myriad of false beliefs, for example that the virus was engineered in China. Even outright denials of the pandemic or other complex phenomena such as climate change are not uncommon. The borders between fact and opinion are blurring, and the prospects of deliberative democracy and collective action become increasingly bleak. Of course, truth has always been precarious - neither misinformation nor widespread false beliefs are unique to our time. But the web and social media technologies have distinctly rearranged the struggles over truth and falsehood. Through its unfiltered publication process, breakneck pace, and obsession with engagement (rather than accuracy), the modern web has created not only decentralized modes of expression but also novel vectors for misinformation and disinformation. We therefore need new tools, concepts and technologies to ensure the integrity of information ecosystems. This workshop aims to bring together leaders across industry and academia to discuss what tools for measurement and mitigation could look like."
 -
     UID: g
@@ -60,7 +60,7 @@
     authors: "Panayiotis Smeros|Jeremie Rappaz|Marya Bazzi|Elena Kochkina|Maria Liakata|Karl Aberer"
     length: half
     link: https://digitalmediasig.github.io/Mediate2021
-    logo: https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png
+    logo: https://i.imgur.com/pljqDHz.png
     abstract: "The second Mediate workshop will be held virtually on June 7th, 2021, as part of the International AAAI Conference on Web and Social Media (ICWSM). The main goal of the workshop is to bring together media practitioners and technologists to discuss new opportunities and obstacles that arise in the modern era of information diffusion. This year's theme is: Misinformation: automation, uptake, and digital governance"
 -
     UID: h
@@ -69,5 +69,5 @@
     authors: "Ebrahim Bagheri|Diana Inkpen|Christopher C. Yang|Fattane Zarrinkalam"
     length: half
     link: https://www.maisonworkshop.org/
-    logo: https://upload.wikimedia.org/wikipedia/commons/5/59/Empty.png
+    logo: https://i.imgur.com/bijpJIk.png
     abstract: " In this workshop, we aim to to invite and gather researchers and practitioners from across the world and, in particular, from diﬀerent disciplines, such as information retrieval, data mining, machine learning, data science, network science, social network analysis and other related areas to share their ideas and research achievements in order to deliver technology and solutions for healthcare social analytics."

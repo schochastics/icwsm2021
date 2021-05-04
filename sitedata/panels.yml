@@ -1,25 +1,34 @@
 ---
 -
     UID: p1
-    title: "Publish your research at ICWSM"
+    title: "Publish your Research at ICWSM"
     authors: "Ceren Budak|Afra Mashhadi|Kenny Joseph|Lexing Xie" 
+    images: https://icwsm.org/2021/img/steering/ceren.jpg|https://icwsm.org/2021/img/oc_chairs/Afra_Mashadi.jpg|https://icwsm.org/2021/img/oc_chairs/Kenny_Joseph.jpg|https://icwsm.org/2021/img/steering/lexing.jpg
     moderator: "James Caverlee"
+    modimg: https://icwsm.org/2021/img/panels/publish_at_icwsm/James_Caverlee.jpg
     link: http://bit.ly/ICWSM2021-panels
-    short: "Are you new to ICWSM? Are you curious about the year-long submission cycles (May, September, and January deadlines)? Do you want to learn more about what makes for a successful submission for the ICWSM journal? Two of the ICWSM editors-in-chief (Budak and Xie) and two of the 2021 ICWSM program chairs will answer your questions about the publishing process at ICWSM. If you cannot attend the panel in person, please submit your questions at the provided link. A recording of the panel will be made available for later viewing."
-    abstract: "Are you new to ICWSM? Are you curious about the year-long submission cycles (May, September, and January deadlines)? Do you want to learn more about what makes for a successful submission for the ICWSM journal? Two of the ICWSM editors-in-chief (Budak and Xie) and two of the 2021 ICWSM program chairs will answer your questions about the publishing process at ICWSM. If you cannot attend the panel in person, please submit your questions at the provided link. A recording of the panel will be made available for later viewing. "
+    short: "Are you new to ICWSM? Are you curious about the year-long submission cycles (May, September, and January deadlines)? Do you want to learn more about what makes for a successful submission for the ICWSM journal? Two of the ICWSM editors-in-chief (Budak and Xie) and two of the 2021 ICWSM program chairs will answer your questions about the publishing process at ICWSM. If you cannot attend the panel in person, please submit your questions at the above-provided link. A recording of the panel will be made available for later viewing."
+    abstract: "Are you new to ICWSM? Are you curious about the year-long submission cycles (May, September, and January deadlines)? Do you want to learn more about what makes for a successful submission for the ICWSM journal? Two of the ICWSM editors-in-chief (Budak and Xie) and two of the 2021 ICWSM program chairs will answer your questions about the publishing process at ICWSM. If you cannot attend the panel in person, please submit your questions at the above-provided link. A recording of the panel will be made available for later viewing. "
 -
     UID: p2
     title: "Women in Social Computing"
     authors: "Lada Adamic|Meeyoung Cha|Munmun De Choudhury|Natalie Glance|Sandra González-Bailón"
+    images: https://www.icwsm.org/2019/images/speakers/lada.jpg|https://icwsm.org/2020/img/steering/meeyoung.jpg|https://icwsm.org/2020/img/steering/munmun.jpg|https://icwsm.org/2021/img/panels/women_social_computing/natalie_glance.png|https://icwsm.org/2020/img/steering/sandra.jpg
     moderator: "Eni Mustafaraj"
+    modimg: https://icwsm.org/2021/img/panels/women_social_computing/Eni_Mustafaraj.jpg
     link: http://bit.ly/ICWSM2021-panels
-    short: " ICWSM has always been a conference that has uplifted women researchers and highlighted their excellent contributions to social computing/computational social science. For the 15th anniversary of the conference, we bring together some of the women who have shaped the conference and left their mark in the community. They will have a conversation with the audience about the past, present, and future of social computing. If you cannot attend the panel in person, please submit your questions at the provided link. A recording of the panel will be made available for later viewing."
-    abstract: " ICWSM has always been a conference that has uplifted women researchers and highlighted their excellent contributions to social computing/computational social science. For the 15th anniversary of the conference, we bring together some of the women who have shaped the conference and left their mark in the community. They will have a conversation with the audience about the past, present, and future of social computing. If you cannot attend the panel in person, please submit your questions at the provided link. A recording of the panel will be made available for later viewing."
+    short: " ICWSM has always been a conference that has uplifted women researchers and highlighted their excellent contributions to social computing/computational social science. For the 15th anniversary of the conference, we bring together some of the women who have shaped the conference and left their mark in the community. They will have a conversation with the audience about the past, present, and future of social computing. If you cannot attend the panel in person, please submit your questions at the above-provided link. A recording of the panel will be made available for later viewing."
+    abstract: " ICWSM has always been a conference that has uplifted women researchers and highlighted their excellent contributions to social computing/computational social science. For the 15th anniversary of the conference, we bring together some of the women who have shaped the conference and left their mark in the community. They will have a conversation with the audience about the past, present, and future of social computing. If you cannot attend the panel in person, please submit your questions at the above-provided link. A recording of the panel will be made available for later viewing."
 -
     UID: p3
     title: "Global Research Panel"
-    authors: "Panelist A|Panelist B|Panelist C|Panelist D"
-    moderator: ""
+    authors: "Anicia Peters|Francisco J. Marmolejo Cossío|Brooke Foucault Welles|Kokil Jaidka"
+    images: https://icwsm.org/2021/img/panels/icwsm_global/ancia_peters.jpg|https://icwsm.org/2021/img/panels/icwsm_global/Francisco_Marmolejo.jpg|https://icwsm.org/2021/img/panels/icwsm_global/brooke.png|https://icwsm.org/2021/img/panels/icwsm_global/Kokil_Jaidka.jpg
+    moderator: "Jason Nurse"
+    modimg: https://icwsm.org/2021/img/panels/icwsm_global/Jason_Nurse.jpg
     link: http://bit.ly/ICWSM2021-panels
-    short: "Panel about Global Research"
-    abstract: "Panel about Global Research"
+    short: "ICWSM is an international and diverse community. As we seek to grow and mature further, it is important to reflect on where we are now and whether there are opportunities to improve our global equity and diversity efforts. This panel brings together a series of experts within, and outside of, the core ICWSM community to critically reflect on the first 15 years of ICWSM, and how diverse and inclusive the conference has been. With this basis we then discuss how ICWSM can develop in these areas in the future, including identifying key steps to facilitate this global growth. If you cannot attend the panel in person, please submit your questions at the above-provided link. A recording of the panel will be made available for later viewing."
+    abstract: "ICWSM is an international and diverse community. As we seek to grow and mature further, it is important to reflect on where we are now and whether there are opportunities to improve our global equity and diversity efforts. This panel brings together a series of experts within, and outside of, the core ICWSM community to critically reflect on the first 15 years of ICWSM, and how diverse and inclusive the conference has been. With this basis we then discuss how ICWSM can develop in these areas in the future, including identifying key steps to facilitate this global growth. If you cannot attend the panel in person, please submit your questions at the above-provided link. A recording of the panel will be made available for later viewing."
+
+
+    

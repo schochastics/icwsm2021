@@ -3,3 +3,7 @@ frozen-flask
 Flask-Markdown
 tqdm
 PyYAML
+python-dotenv
+requests
+authlib
+six

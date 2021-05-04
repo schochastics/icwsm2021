@@ -11,18 +11,23 @@
     <h3 class="card-subtitle mb-2 text-muted text-center">
       {{ panel.organizers | join(", ") }}
     </h3>
+    <div class="text-center p-3">
+      {% for image in panel.images %}
+      <img src={{image}} height=150>
+      {% endfor %}
+    </div>
     <h3 class="card-subtitle mb-2 text-muted text-center">
       Moderator: {{ panel.moderator }}
     </h3>
     <div class="text-center p-3">
-      <a class="card-link" data-toggle="collapse" role="button" href="#details">
-        Description
-      </a>
-      <a href="{{panel.link}}">   Ask a question</a>
+      <img src={{panel.modimg}} height=150>
+    </div>
+    <div class="text-center p-3">
+      <a href="{{panel.link}}" style="font-size: 18px; color:brown; font-weight: bold;">   Submit a question for discussion at the panel</a>
     </div>
   </div>
 </div>
-<div id="details" class="pp-card m-3 collapse">
+<div id="details" class="pp-card m-3">
   <div class="card-body">
     <div class="card-text">
       <div id="abstractExample">
