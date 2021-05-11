@@ -65,6 +65,11 @@
             <a class="card-link" target="_blank" href="{{paper.slack}}">
                 Slack
             </a>
+            {%for session in paper.sessions%}
+            <a class="card-link" target="_blank" href="static/ics/session_{{session}}.ics">
+                ics
+            </a>
+            {%endfor%}
             {% if paper.code_link != blank %}
             <a href="{{paper.code_link}}" target="_blank" class="card-link">
                 Code
@@ -153,8 +158,8 @@
           const t = $(this).text()
           const res = regex_time.exec(t)
           if (res){
-              const start_time = moment.utc('2020-04-30 '+res[1]);
-              const end_time = moment.utc('2020-04-30 '+res[2]);
+              const start_time = moment.utc('2020-04-30 '+res[1],'YYYY-MM-DD HH:mm');
+              const end_time = moment.utc('2020-04-30 '+res[2],'YYYY-MM-DD HH:mm');
               // console.log(start_time,end_time,"--- start_time,end_time");
               // console.log(start_time.tz(guess_tz).format('h:mm A'),"--- start_time.");
               // console.log(end_time.tz(guess_tz).format('h:mm A z'),"--- start_time.");

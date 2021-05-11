@@ -67,6 +67,12 @@ tutorialgroup
                 {{speaker.speaker}}  /  {{speaker.institution}}
               </span>
             </div>
+            <div class="m-3 text-muted">
+              <span class="card-title h3">
+                {{speaker.date1}} <span class="session_times">{{speaker.time1}}</span> <br>
+                Replay: {{speaker.date2}} <span class="session_times">{{speaker.time2}}</span> <br>
+              </span>
+            </div>
             <div class="m-3">
               {{speaker.abstract|safe}}
             </div>
@@ -294,6 +300,9 @@ tutorialgroup
         </div>
         <div class="text-center p-3">
             <img src={{panel.modimg}} height=150>
+        </div>
+        <div class="text-center p-3">
+          {{panel.date}} <span class="session_times">{{panel.time}}</span>
         </div>
         <div class="m-3 text-left card-subtitle">
           {{ panel.short}}

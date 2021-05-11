@@ -128,6 +128,7 @@ async function make_cal(handleResize = true) {
       }
     },
   });
+  
 
   all_cals.push(calendar);
 

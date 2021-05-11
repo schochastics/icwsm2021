@@ -13,16 +13,17 @@ from flaskext.markdown import Markdown
 # for auth
 from authlib.integrations.flask_client import OAuth
 from six.moves.urllib.parse import urlencode
-from flask import url_for
+from flask import url_for, session
 from dotenv import load_dotenv, find_dotenv
 from functools import wraps
 import json
 from os import environ as env
 from werkzeug.exceptions import HTTPException
 
+import constants
+
 site_data = {}
 by_uid = {}
-
 
 def main(site_data_path):
     global site_data, extra_files
@@ -54,9 +55,45 @@ app.config.from_object(__name__)
 freezer = Freezer(app)
 markdown = Markdown(app)
 
+# --------------------init auth0
+ENV_FILE = find_dotenv()
+if ENV_FILE:
+    load_dotenv(ENV_FILE)
+
+AUTH0_CALLBACK_URL = env.get(constants.AUTH0_CALLBACK_URL)
+AUTH0_CLIENT_ID = env.get(constants.AUTH0_CLIENT_ID)
+AUTH0_CLIENT_SECRET = env.get(constants.AUTH0_CLIENT_SECRET)
+AUTH0_DOMAIN = env.get(constants.AUTH0_DOMAIN)
+AUTH0_BASE_URL = 'https://' + AUTH0_DOMAIN
+AUTH0_AUDIENCE = env.get(constants.AUTH0_AUDIENCE)
+
+app.secret_key = constants.SECRET_KEY
+
+oauth = OAuth(app)
+
+auth0 = oauth.register(
+    'auth0',
+    client_id=AUTH0_CLIENT_ID,
+    client_secret=AUTH0_CLIENT_SECRET,
+    api_base_url=AUTH0_BASE_URL,
+    access_token_url=AUTH0_BASE_URL + '/oauth/token',
+    authorize_url=AUTH0_BASE_URL + '/authorize',
+    client_kwargs={
+        'scope': 'openid profile email',
+    },
+)
+
+
+def requires_auth(f):
+    @wraps(f)
+    def decorated(*args, **kwargs):
+        if constants.PROFILE_KEY not in session:
+            return redirect('/login')
+        return f(*args, **kwargs)
+
+    return decorated
 
 # MAIN PAGES
-
 
 def _data():
     data = {}
@@ -67,6 +104,7 @@ def _data():
 @app.route("/")
 def index():
     return redirect("/index.html")
+    # return redirect("/home.html")
 
 
 @app.route("/favicon.ico")
@@ -76,13 +114,18 @@ def favicon():
 
 # TOP LEVEL PAGES
 
+# @app.route('/')
+# def home():
+#     return render_template('home.html')
 
 @app.route("/index.html")
+#@requires_auth
 def home():
     data = _data()
     data["readme"] = open("README.md").read()
     data["committee"] = site_data["committee"]["committee"]
     return render_template("index.html", **data)
+    # return render_template('home.html')
 
 
 @app.route("/help.html")
@@ -100,6 +143,7 @@ def papers():
 
 
 @app.route("/paper_vis.html")
+#@requires_auth
 def paper_vis():
     data = _data()
     return render_template("papers_vis.html", **data)
@@ -155,6 +199,14 @@ def panels():
         format_panel(panels) for panels in site_data["panels"]
     ]
     return render_template("panels.html", **data)
+
+@app.route("/speakers.html")
+def speakers():
+    data = _data()
+    data["speakers"] = [
+        format_speaker(speakers) for speakers in site_data["speakers"]
+    ]
+    return render_template("speakers.html", **data)
 
 def extract_list_field(v, key):
     value = v.get(key, "")
@@ -239,13 +291,32 @@ def format_panel(v):
         "link": v["link"],
         "abstract": v["abstract"],
         "short": v["short"],
+        "date":v["date"],
+        "time": v["time"]
     }
 
+def format_speaker(v):
+    return {
+        "UID": v["UID"],
+        "day": v["day"],
+        "date1": v["date1"],
+        "date2": v["date2"],
+        "time1": v["time1"],
+        "time2": v["time2"],
+        "image": v["image"],
+        "title": v["title"],
+        "institution": v["institution"],
+        "speaker": v["speaker"],
+        "abstract": v["abstract"],
+        "bio": v["bio"],
+        "session": v["session"]
+    }
 
 # ITEM PAGES
 
 
 @app.route("/poster_<poster>.html")
+#@requires_auth
 def poster(poster):
     uid = poster
     v = by_uid["papers"][uid]
@@ -255,6 +326,7 @@ def poster(poster):
 
 
 @app.route("/speaker_<speaker>.html")
+#@requires_auth
 def speaker(speaker):
     uid = speaker
     v = by_uid["speakers"][uid]
@@ -280,18 +352,13 @@ def tutorial(tutorial):
     return render_template("tutorial.html", **data)
 
 @app.route("/panel_<panel>.html")
+#@requires_auth
 def panel(panel):
     uid = panel
     v = by_uid["panels"][uid]
     data = _data()
     data["panel"] = format_panel(v)
     return render_template("panel.html", **data)
-
-# @app.route("/chat.html")
-# def chat():
-#     data = _data()
-#     return render_template("chat.html", **data)
-
 
 # FRONT END SERVING
 
@@ -359,66 +426,48 @@ def parse_arguments():
     return args
 
 
-#---------------------------------try auth0----------------------------------------------#
-oauth = OAuth(app)
+#---------------------------------auth0 pages----------------------------------------------#
+# Controllers API
+# @app.route('/')
+# def home():
+#     return render_template('home.html')
 
-auth0 = oauth.register(
-    'auth0',
-    client_id='wzQPlS2Lox3frXC2EtEfnGgWEzG6b03f',
-    client_secret='Ve7CgZGu55kmNgwowagx6FLfh3cQdiRFmKfYzrfX9kNE0IBUtq0KQkrh2vy5Gj3F',
-    api_base_url='https://icwsm2021.us.auth0.com',
-    access_token_url='https://icwsm2021.us.auth0.com/oauth/token',
-    authorize_url='https://icwsm2021.us.auth0.com/authorize',
-    client_kwargs={
-        'scope': 'openid profile email',
-    },
-)
 
-# Here we're using the /callback route.
 @app.route('/callback')
 def callback_handling():
-    # Handles response from token endpoint
     auth0.authorize_access_token()
     resp = auth0.get('userinfo')
     userinfo = resp.json()
 
-    # Store the user information in flask session.
-    session['jwt_payload'] = userinfo
-    session['profile'] = {
+    session[constants.JWT_PAYLOAD] = userinfo
+    session[constants.PROFILE_KEY] = {
         'user_id': userinfo['sub'],
         'name': userinfo['name'],
         'picture': userinfo['picture']
     }
-    return redirect('/dashboard')
+    return redirect('/') #redirect to home auth0
+
 
 @app.route('/login')
 def login():
-    return auth0.authorize_redirect(redirect_uri='http://localhost:5000/callback')
+    return auth0.authorize_redirect(redirect_uri=AUTH0_CALLBACK_URL, audience=AUTH0_AUDIENCE)
 
-def requires_auth(f):
-  @wraps(f)
-  def decorated(*args, **kwargs):
-    if 'profile' not in session:
-      # Redirect to Login page here
-      return redirect('/')
-    return f(*args, **kwargs)
 
-  return decorated
-
-@app.route('/dashboard')
-@requires_auth
-def dashboard():
-    return render_template('dashboard.html',
-                           userinfo=session['profile'],
-                           userinfo_pretty=json.dumps(session['jwt_payload'], indent=4))
-                           
 @app.route('/logout')
 def logout():
-    # Clear session stored data
     session.clear()
-    # Redirect user to logout endpoint
-    params = {'returnTo': url_for('home', _external=True), 'client_id': 'wzQPlS2Lox3frXC2EtEfnGgWEzG6b03f'}
-    return redirect(auth0.api_base_url + '/v2/logout?' + urlencode(params))
+    params = {'returnTo': url_for('home', _external=True), 'client_id': AUTH0_CLIENT_ID}
+    return redirect("https://www.icwsm.org")
+
+
+@app.route('/dashboard')
+#@requires_auth
+def dashboard():
+    return render_template('dashboard.html',
+                           userinfo=session[constants.PROFILE_KEY],
+                           userinfo_pretty=json.dumps(session[constants.JWT_PAYLOAD], indent=4))
+                           
+#-------------------------------end try auth0 ---------------------------------------------------------
 
 if __name__ == "__main__":
     args = parse_arguments()

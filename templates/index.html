@@ -11,17 +11,120 @@
     font-family: "Lato", sans-serif;
     font-weight: 900;
   }
+
+  a.darken {
+    display: inline-block;
+    padding: 0;
+    position:relative;
+  }
+
+  a.darken img {
+    display: block;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+
+  a.darken:hover img {
+    opacity: 0.1;           
+  }
+  a.darken span{
+    visibility:hidden; 
+    font-size:22px;
+    font-weight: 700;
+    color:#ebac23;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    line-height: 100%;
+  }
+  a.darken:hover span{
+    color:#ebac23; 
+    visibility:visible;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+
+  .myButton {
+	box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	background-color:#fe1a00;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:28px;
+	font-weight:bold;
+	padding:8px 76px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+	background-color:#ce0100;
+  color: white;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
 </style>
 
-<div class="jumbotron jumbotron-fluid back" style="padding-bottom: 20px;">
+<div class="jumbotron jumbotron-fluid back" style="margin-bottom: 0rem !important;">
   <div class="row header p-6 m-5">
     <div class="p-1 mx-auto text-center text-white col-md-9 col-sm-12">
-      <h2>
-        {{config.tagline|safe}}
-      </h2>
-      <h2 class="p-5">
-        {{config.date|safe}}
-      </h2>
+      <h2>AAAI ICWSM-21</h2>
+      <br>
+      <h1>
+        15TH INTERNATIONAL CONFERENCE<br> ON WEB AND SOCIAL MEDIA
+      </h1>
+      <h4>THE VIRTUAL CONFERENCE WEBSITE</h4>
+      <a href="speakers.html" class="darken">
+        <img 
+        src="static/images/button_key.png"height="150" 
+        alt="button to go to keynotes">
+        <span>Keynotes</span>
+      </a>
+      <a href="panels.html" class="darken">
+        <img 
+        src="static/images/button_panel.png"
+        height="150" alt="button to go to panels">
+        <span>Panels</span>
+      </a>
+      <a href="papers.html?filter=topic&search=Spotlight" class="darken">
+        <img 
+        src="static/images/button_spotlight.png"
+        height="150" alt="button to go to spotlight paper">
+        <span>Spotlight</span>
+      </a>
+      <a href="papers.html" class="darken">
+        <img 
+        src="static/images/button_papers.png"
+        height="150" alt="button to go to all papers">
+        <span>Papers</span>
+      </a>
+      <a href="https://store.steampowered.com/" class="darken">
+        <img 
+        src="static/images/button_socials.png"
+        height="150" 
+        alt="button to go to social events">
+        <span>Socials</span>
+      </a>
+    </div>
+  </div>
+  <div class="row header p-6 m-5" style="background-color: white;">
+    <div class="p-1 mx-auto text-center text-white col-md-9 col-sm-12">
+      <a href="https://www.virtualchair.net/events/icwsm-2021"
+      class="myButton">Enter Virtual Space</a>
     </div>
   </div>
 </div>
@@ -68,7 +171,11 @@
       your timezone and find live sessions that work for you.</dd>
       <dt> Social Media</dt>
       <dd> Share papers,  workshops, and demos by using the hashtag  <span style="font-weight: bold; font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;">#ICWSM2021</span></dd>
-
+      <dt>Code of Conduct</dt>
+      <dd>
+        Participants are encouraged to read and follow <a href="https://aaai.org/Conferences/AAAI-19/wp-content/uploads/2019/01/AAAI-19-Code-of-Conduct.1.28.19.Final_.pdf">AAAI's Code of Conduct</a> for Conferences and Events. Additionally, participants are encouraged to be courteous when sharing screen captures and photographs of conference events. Seek permission when possible and respect requests to take down images if those featured ask.
+        Concerns around code of conduct or inclusion may be sent to icwsm21@aaai.org.
+      </dd>
     </dl>
   </div>
 </div>

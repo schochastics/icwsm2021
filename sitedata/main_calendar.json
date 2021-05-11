@@ -90,7 +90,7 @@
         "calendarId": "key"
     },
     {
-        "title": "Paper Session P1",
+        "title": "P1",
         "start": "2021-06-08T16:30:00+01:00",
         "end": "2021-06-08T17:30:00+01:00",
         "location": "/papers.html?filter=sessions&search=P1",
@@ -99,7 +99,7 @@
         "calendarId": "pos"
     },
     {
-        "title": "Paper Session P2",
+        "title": "P2",
         "start": "2021-06-08T16:30:00+01:00",
         "end": "2021-06-08T17:30:00+01:00",
         "location": "/papers.html?filter=sessions&search=P2",
@@ -108,7 +108,7 @@
         "calendarId": "pos"
     },
     {
-        "title": "Paper Session P3",
+        "title": "P3",
         "start": "2021-06-08T16:30:00+01:00",
         "end": "2021-06-08T17:30:00+01:00",
         "location": "/papers.html?filter=sessions&search=P3",
@@ -117,7 +117,7 @@
         "calendarId": "pos"
     },
     {
-        "title": "Paper Session P4",
+        "title": "P4",
         "start": "2021-06-08T16:30:00+01:00",
         "end": "2021-06-08T17:30:00+01:00",
         "location": "/papers.html?filter=sessions&search=P4",
@@ -135,7 +135,7 @@
         "calendarId": "soc"
     },
     {
-        "title": "Paper Session P5",
+        "title": "P5",
         "start": "2021-06-08T17:45:00+01:00",
         "end": "2021-06-08T18:45:00+01:00",
         "location": "/papers.html?filter=sessions&search=P5",
@@ -144,7 +144,7 @@
         "calendarId": "pos"
     },
     {
-        "title": "Paper Session P6",
+        "title": "P6",
         "start": "2021-06-08T17:45:00+01:00",
         "end": "2021-06-08T18:45:00+01:00",
         "location": "/papers.html?filter=sessions&search=P6",
@@ -153,7 +153,7 @@
         "calendarId": "pos"
     },
     {
-        "title": "Paper Session P7",
+        "title": "P7",
         "start": "2021-06-08T17:45:00+01:00",
         "end": "2021-06-08T18:45:00+01:00",
         "location": "/papers.html?filter=sessions&search=P7",
@@ -162,7 +162,7 @@
         "calendarId": "pos"
     },
     {
-        "title": "Paper Session P8",
+        "title": "P8",
         "start": "2021-06-08T17:45:00+01:00",
         "end": "2021-06-08T18:45:00+01:00",
         "location": "/papers.html?filter=sessions&search=P8",
@@ -252,7 +252,7 @@
         "calendarId": "pan"
     },
     {
-        "title": "Paper Session P9",
+        "title": "P9",
         "start": "2021-06-09T17:45:00+01:00",
         "end": "2021-06-09T18:45:00+01:00",
         "location": "/papers.html?filter=sessions&search=P9",
@@ -261,7 +261,7 @@
         "calendarId": "pos"
     },
     {
-        "title": "Paper Session P10",
+        "title": "P10",
         "start": "2021-06-09T17:45:00+01:00",
         "end": "2021-06-09T18:45:00+01:00",
         "location": "/papers.html?filter=sessions&search=P10",
@@ -270,7 +270,7 @@
         "calendarId": "pos"
     },
     {
-        "title": "Paper Session P11",
+        "title": "P11",
         "start": "2021-06-09T17:45:00+01:00",
         "end": "2021-06-09T18:45:00+01:00",
         "location": "/papers.html?filter=sessions&search=P11",
@@ -279,7 +279,7 @@
         "calendarId": "pos"
     },
     {
-        "title": "Paper Session P12",
+        "title": "P12",
         "start": "2021-06-09T17:45:00+01:00",
         "end": "2021-06-09T18:45:00+01:00",
         "location": "/papers.html?filter=sessions&search=P12",
@@ -351,29 +351,38 @@
         "calendarId": "spo"
     },
     {
-        "title": "Demos and Posters",
+        "title": "Demos and Posters 1",
         "start": "2021-06-10T15:15:00+01:00",
         "end": "2021-06-10T16:15:00+01:00",
-        "location": "/papers.html?filter=sessions&search=P17",
-        "link": "/papers.html?filter=sessions&search=P17",
+        "location": "/papers.html?filter=sessions&search=D1",
+        "link": "/papers.html?filter=sessions&search=D1",
         "category": "time",
         "calendarId": "pos"
     },
     {
-        "title": "Datasets 1",
+        "title": "Demos and Posters 2",
         "start": "2021-06-10T15:15:00+01:00",
         "end": "2021-06-10T16:15:00+01:00",
-        "location": "/papers.html?filter=sessions&search=DS1",
-        "link": "/papers.html?filter=sessions&search=DS1",
+        "location": "/papers.html?filter=sessions&search=D2",
+        "link": "/papers.html?filter=sessions&search=D2",
         "category": "time",
         "calendarId": "pos"
     },
     {
-        "title": "Datasets 2",
+        "title": "Demos and Posters 3",
         "start": "2021-06-10T15:15:00+01:00",
         "end": "2021-06-10T16:15:00+01:00",
-        "location": "/papers.html?filter=sessions&search=DS2",
-        "link": "/papers.html?filter=sessions&search=DS2",
+        "location": "/papers.html?filter=sessions&search=D3",
+        "link": "/papers.html?filter=sessions&search=D3",
+        "category": "time",
+        "calendarId": "pos"
+    },
+    {
+        "title": "Demos and Posters 4",
+        "start": "2021-06-10T15:15:00+01:00",
+        "end": "2021-06-10T16:15:00+01:00",
+        "location": "/papers.html?filter=sessions&search=D4",
+        "link": "/papers.html?filter=sessions&search=D4",
         "category": "time",
         "calendarId": "pos"
     },
@@ -387,7 +396,7 @@
         "calendarId": "pan"
     },
     {
-        "title": "Paper Session P13",
+        "title": "P13",
         "start": "2021-06-10T17:45:00+01:00",
         "end": "2021-06-10T18:45:00+01:00",
         "location": "/papers.html?filter=sessions&search=P13",
@@ -396,7 +405,7 @@
         "calendarId": "pos"
     },
     {
-        "title": "Paper Session P14",
+        "title": "P14",
         "start": "2021-06-10T17:45:00+01:00",
         "end": "2021-06-10T18:45:00+01:00",
         "location": "/papers.html?filter=sessions&search=P14",
@@ -405,7 +414,7 @@
         "calendarId": "pos"
     },
     {
-        "title": "Paper Session P15",
+        "title": "P15",
         "start": "2021-06-10T17:45:00+01:00",
         "end": "2021-06-10T18:45:00+01:00",
         "location": "/papers.html?filter=sessions&search=P15",
@@ -414,7 +423,7 @@
         "calendarId": "pos"
     },
     {
-        "title": "Paper Session P16",
+        "title": "P16",
         "start": "2021-06-10T17:45:00+01:00",
         "end": "2021-06-10T18:45:00+01:00",
         "location": "/papers.html?filter=sessions&search=P16",
