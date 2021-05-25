@@ -27,14 +27,14 @@ default_poster_pdf: /static/images/GLTR_poster.pdf
 #user: miniconf@miniconf.com
 #pass: mIniconf1_
 
-use_auth0: 
+use_auth0: true
 auth0_client_id : wzQPlS2Lox3frXC2EtEfnGgWEzG6b03f
 auth0_domain : icwsm2021.us.auth0.com
 
 calendar:
   colors: #  Colors for the different event hashtags:
     ---: '#ffffff'
-    key: "#b80058" #"#ca5670"
+    key: "#f30074" #"#b80058" #"#ca5670"
     spo: "#ebac23" #"#ab62c0"
     pan: "#008cf9" #"#72a555"
     soc: "#00bbad" #"#DA7D3B"

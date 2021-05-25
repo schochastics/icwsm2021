@@ -26,16 +26,21 @@
     aria-labelledby="nav-profile-tab"
   >
     <div class="form-group col">
+      <a href="https://www.icwsm.org/2021/program/icwsm_program.pdf" target="_blank"
+      class="myButton-small">Download PDF Version</a>
       <label for="tzOptions">Timezone:</label>
       <select id="tzOptions" class="selectpicker" data-live-search="true">
       </select>
     </div>
 
     <!-- full cal for browser-->
-    <div id="calendar" class="d-none d-sm-block"></div>
+    <div id="calendar" class="d-none d-sm-block" style="width: 100% !important;position: absolute;left: 0;">
+    </div>
 
     <!-- small cal for smart phones-->
-    <div id="calendar_small" class="d-sm-none"></div>
+    <div id="calendar_small" class="d-sm-none">
+
+    </div>
   </div>
 <!-- HELP-->
 <div
@@ -71,7 +76,7 @@ aria-labelledby="nav-profile-tab"
         </tr>
         <tr>
           <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Spotlight sessions (2)</span></td>
-          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">5 best papers of the day showcased for one hour on June 9 and 10.  </span></td>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">4 best papers of the day showcased for one hour on June 9 and 10.  </span></td>
           <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Lite, Deluxe</span></td>
         </tr>
         <tr>
@@ -101,7 +106,7 @@ aria-labelledby="nav-profile-tab"
         </tr>
         <tr>
           <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Townhall</span></td>
-          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">The traditional ICWSM closing session. Add more details here</span></td>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">The traditional ICWSM closing session</span></td>
           <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Lite, Deluxe</span></td>
         </tr>
       </tbody>
@@ -127,15 +132,15 @@ aria-labelledby="nav-profile-tab"
         {{ components.speakergroup(day1.speakers) }}
       </div>
       {{ components.section("Paper Sessions") }}
-      <div class="papers" style="font-size: 36px;">
-          <a href="/papers.html?filter=sessions&search=P1">Session P1 <span class="session_times">(15:30 - 16:30 GMT)</span></a><br>
-          <a href="/papers.html?filter=sessions&search=P2">Session P2 <span class="session_times">(15:30 - 16:30 GMT)</span></a><br>
-          <a href="/papers.html?filter=sessions&search=P3">Session P3 <span class="session_times">(15:30 - 16:30 GMT)</span></a><br>
-          <a href="/papers.html?filter=sessions&search=P4">Session P4 <span class="session_times">(15:30 - 16:30 GMT)</span></a><br>
-          <a href="/papers.html?filter=sessions&search=P5">Session P5 <span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
-          <a href="/papers.html?filter=sessions&search=P6">Session P6 <span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
-          <a href="/papers.html?filter=sessions&search=P7">Session P7 <span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
-          <a href="/papers.html?filter=sessions&search=P8">Session P8 <span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+      <div class="papers" style="font-size: 24px;">
+          <a href="/papers.html?filter=sessions&search=P1">Session P1 (Politics and Trump)<span class="session_times">(15:30 - 16:30 GMT)</span></a><br>
+          <a href="/papers.html?filter=sessions&search=P2">Session P2 (Patterns in User Attention)<span class="session_times">(15:30 - 16:30 GMT)</span></a><br>
+          <a href="/papers.html?filter=sessions&search=P3">Session P3 (NLP)<span class="session_times">(15:30 - 16:30 GMT)</span></a><br>
+          <a href="/papers.html?filter=sessions&search=P4">Session P4 (Networks)<span class="session_times">(15:30 - 16:30 GMT)</span></a><br>
+          <a href="/papers.html?filter=sessions&search=P5">Session P5 (User Dynamics)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+          <a href="/papers.html?filter=sessions&search=P6">Session P6 (Privacy and Moderation)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+          <a href="/papers.html?filter=sessions&search=P7">Session P7 (Memes and Misinfo)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+          <a href="/papers.html?filter=sessions&search=P8">Session P8 (Applications)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
       </div>
     </div>
   <script type="text/javascript">
@@ -182,11 +187,11 @@ aria-labelledby="nav-profile-tab"
         {{ components.highlightgroup(day2.highlighted, 1) }}
       </div>
       {{ components.section("Paper Sessions") }}
-      <div class="papers" style="font-size: 36px;">
-          <a href="/papers.html?filter=sessions&search=P9">Session P9 <span class="session_times"> (16:45 - 17:45 GMT)</span></a><br>
-          <a href="/papers.html?filter=sessions&search=P10">Session P10 <span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
-          <a href="/papers.html?filter=sessions&search=P11">Session P11 <span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
-          <a href="/papers.html?filter=sessions&search=P12">Session P12 <span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+      <div class="papers" style="font-size: 24px;">
+          <a href="/papers.html?filter=sessions&search=P9"> Session P9  (Sentiment Analysis)<span class="session_times"> (16:45 - 17:45 GMT)</span></a><br>
+          <a href="/papers.html?filter=sessions&search=P10">Session P10 (Trust and Credibility) <span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+          <a href="/papers.html?filter=sessions&search=P11">Session P11 (Demographic (Dis)parities)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+          <a href="/papers.html?filter=sessions&search=P12">Session P12 (Economy)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
       </div>
     </div>
   <script type="text/javascript">
@@ -229,15 +234,15 @@ aria-labelledby="nav-profile-tab"
     {{ components.highlightgroup(day3.highlighted, 1) }}
   </div>
   {{ components.section("Paper Sessions") }}
-  <div class="papers" style="font-size: 36px;">
+  <div class="papers" style="font-size: 24px;">
       <a href="/papers.html?filter=sessions&search=D1">Posters/Demos 1 <span class="session_times">(14:15 - 15:15 GMT)</span></a><br>
       <a href="/papers.html?filter=sessions&search=D2">Posters/Demos 2 <span class="session_times">(14:15 - 15:15 GMT)</span></a><br>
       <a href="/papers.html?filter=sessions&search=D3">Posters/Demos 3 <span class="session_times">(14:15 - 15:15 GMT)</span></a><br>
       <a href="/papers.html?filter=sessions&search=D4">Posters/Demos 4 <span class="session_times">(14:15 - 15:15 GMT)</span></a><br><br>
-      <a href="/papers.html?filter=sessions&search=P13">Session P13 <span class="session_times"> (16:45 - 17:45 GMT)</span></a><br>
-      <a href="/papers.html?filter=sessions&search=P14">Session P14 <span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
-      <a href="/papers.html?filter=sessions&search=P15">Session P15 <span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
-      <a href="/papers.html?filter=sessions&search=P16">Session P16 <span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+      <a href="/papers.html?filter=sessions&search=P13">Session P13 (Misinformation)<span class="session_times"> (16:45 - 17:45 GMT)</span></a><br>
+      <a href="/papers.html?filter=sessions&search=P14">Session P14 (Text and Bias)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+      <a href="/papers.html?filter=sessions&search=P15">Session P15 (Social Networks)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+      <a href="/papers.html?filter=sessions&search=P16">Session P16 (Computation and Psychology)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
   </div>
 </div>
 <script type="text/javascript">

@@ -10,18 +10,13 @@ from flask import Flask, jsonify, redirect, render_template, send_from_directory
 from flask_frozen import Freezer
 from flaskext.markdown import Markdown
 
-# for auth
-from authlib.integrations.flask_client import OAuth
-from six.moves.urllib.parse import urlencode
-from flask import url_for, session
-from dotenv import load_dotenv, find_dotenv
-from functools import wraps
-import json
-from os import environ as env
-from werkzeug.exceptions import HTTPException
+# ------------- SERVER CODE -------------------->
+app = Flask(__name__)
+app.config.from_object(__name__)
+freezer = Freezer(app)
+markdown = Markdown(app)
 
-import constants
-
+# data
 site_data = {}
 by_uid = {}
 
@@ -48,51 +43,6 @@ def main(site_data_path):
     return extra_files
 
 
-# ------------- SERVER CODE -------------------->
-
-app = Flask(__name__)
-app.config.from_object(__name__)
-freezer = Freezer(app)
-markdown = Markdown(app)
-
-# --------------------init auth0
-ENV_FILE = find_dotenv()
-if ENV_FILE:
-    load_dotenv(ENV_FILE)
-
-AUTH0_CALLBACK_URL = env.get(constants.AUTH0_CALLBACK_URL)
-AUTH0_CLIENT_ID = env.get(constants.AUTH0_CLIENT_ID)
-AUTH0_CLIENT_SECRET = env.get(constants.AUTH0_CLIENT_SECRET)
-AUTH0_DOMAIN = env.get(constants.AUTH0_DOMAIN)
-AUTH0_BASE_URL = 'https://' + AUTH0_DOMAIN
-AUTH0_AUDIENCE = env.get(constants.AUTH0_AUDIENCE)
-
-app.secret_key = constants.SECRET_KEY
-
-oauth = OAuth(app)
-
-auth0 = oauth.register(
-    'auth0',
-    client_id=AUTH0_CLIENT_ID,
-    client_secret=AUTH0_CLIENT_SECRET,
-    api_base_url=AUTH0_BASE_URL,
-    access_token_url=AUTH0_BASE_URL + '/oauth/token',
-    authorize_url=AUTH0_BASE_URL + '/authorize',
-    client_kwargs={
-        'scope': 'openid profile email',
-    },
-)
-
-
-def requires_auth(f):
-    @wraps(f)
-    def decorated(*args, **kwargs):
-        if constants.PROFILE_KEY not in session:
-            return redirect('/login')
-        return f(*args, **kwargs)
-
-    return decorated
-
 # MAIN PAGES
 
 def _data():
@@ -101,10 +51,10 @@ def _data():
     return data
 
 
+
 @app.route("/")
 def index():
     return redirect("/index.html")
-    # return redirect("/home.html")
 
 
 @app.route("/favicon.ico")
@@ -114,19 +64,17 @@ def favicon():
 
 # TOP LEVEL PAGES
 
-# @app.route('/')
-# def home():
-#     return render_template('home.html')
-
 @app.route("/index.html")
-#@requires_auth
 def home():
     data = _data()
     data["readme"] = open("README.md").read()
     data["committee"] = site_data["committee"]["committee"]
     return render_template("index.html", **data)
-    # return render_template('home.html')
 
+@app.route("/mozilla.html")
+def mozilla():
+    data = _data()
+    return render_template("mozilla.html",**data)
 
 @app.route("/help.html")
 def about():
@@ -143,7 +91,6 @@ def papers():
 
 
 @app.route("/paper_vis.html")
-#@requires_auth
 def paper_vis():
     data = _data()
     return render_template("papers_vis.html", **data)
@@ -233,7 +180,8 @@ def format_paper(v):
         "slack": v["slack"],
         "date":v["date"],
         "time": v["time"],
-        "topic": v["topic"]
+        "topic": v["topic"],
+        "presentation_id": v["presentation_id"]
         # "TLDR": v["abstract"]
         # "recs": [],
         # links to external content per poster
@@ -298,6 +246,7 @@ def format_panel(v):
 def format_speaker(v):
     return {
         "UID": v["UID"],
+        "slack": v["slack"],
         "day": v["day"],
         "date1": v["date1"],
         "date2": v["date2"],
@@ -309,14 +258,14 @@ def format_speaker(v):
         "speaker": v["speaker"],
         "abstract": v["abstract"],
         "bio": v["bio"],
-        "session": v["session"]
+        "session": v["session"],
+        "presentation_id":v["presentation_id"]
     }
 
 # ITEM PAGES
 
 
 @app.route("/poster_<poster>.html")
-#@requires_auth
 def poster(poster):
     uid = poster
     v = by_uid["papers"][uid]
@@ -326,7 +275,6 @@ def poster(poster):
 
 
 @app.route("/speaker_<speaker>.html")
-#@requires_auth
 def speaker(speaker):
     uid = speaker
     v = by_uid["speakers"][uid]
@@ -352,7 +300,6 @@ def tutorial(tutorial):
     return render_template("tutorial.html", **data)
 
 @app.route("/panel_<panel>.html")
-#@requires_auth
 def panel(panel):
     uid = panel
     v = by_uid["panels"][uid]
@@ -424,50 +371,6 @@ def parse_arguments():
 
     args = parser.parse_args()
     return args
-
-
-#---------------------------------auth0 pages----------------------------------------------#
-# Controllers API
-# @app.route('/')
-# def home():
-#     return render_template('home.html')
-
-
-@app.route('/callback')
-def callback_handling():
-    auth0.authorize_access_token()
-    resp = auth0.get('userinfo')
-    userinfo = resp.json()
-
-    session[constants.JWT_PAYLOAD] = userinfo
-    session[constants.PROFILE_KEY] = {
-        'user_id': userinfo['sub'],
-        'name': userinfo['name'],
-        'picture': userinfo['picture']
-    }
-    return redirect('/') #redirect to home auth0
-
-
-@app.route('/login')
-def login():
-    return auth0.authorize_redirect(redirect_uri=AUTH0_CALLBACK_URL, audience=AUTH0_AUDIENCE)
-
-
-@app.route('/logout')
-def logout():
-    session.clear()
-    params = {'returnTo': url_for('home', _external=True), 'client_id': AUTH0_CLIENT_ID}
-    return redirect("https://www.icwsm.org")
-
-
-@app.route('/dashboard')
-#@requires_auth
-def dashboard():
-    return render_template('dashboard.html',
-                           userinfo=session[constants.PROFILE_KEY],
-                           userinfo_pretty=json.dumps(session[constants.JWT_PAYLOAD], indent=4))
-                           
-#-------------------------------end try auth0 ---------------------------------------------------------
 
 if __name__ == "__main__":
     args = parse_arguments()

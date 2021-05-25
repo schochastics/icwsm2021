@@ -288,12 +288,12 @@ const card_time_detail = (paper, show) => {
 // language=HTML
 const card_html = (paper) =>
   `
-        <div class="pp-card pp-mode-${render_mode} " style="box-shadow: 0 0 12px 0 ${paper.track=="Full Paper" ? "#ebac23":"#ebac23"}!important">
+        <div class="pp-card pp-mode-${render_mode} ">
             <div class="pp-card-header" style="">
             <div class="checkbox-paper fas ${paper.read ? "selected" : ""}" 
             style="display: block;position: absolute; bottom:${render_mode === MODE.detail ? 375 : 35}px;left: 35px;">&#xf00c;</div>
             <div class="checkbox-bookmark fas  ${paper.bookmarked ? "selected" : ""}" 
-            style="display: block;position: absolute; top:-5px;right: 25px;">&#xf02e;</div>
+            style="display: block;position: absolute; top:-3px;right: 28px;">&#xf02e;</div>
             
 <!--                ✓-->
                 <a href="${API.posterLink(paper)}"

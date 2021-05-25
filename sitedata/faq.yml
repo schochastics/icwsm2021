@@ -3,49 +3,81 @@ FAQ:
   - Section: Getting Started
     QA:
       - Question: How should I navigate this site?
-        Answer: "Visit the Schedule and Papers pages. Each paper has its landing page with links to pdf, abstract, YouTube video to view talk, Slack channel for asynchronous discussion, Zoom meeting for synchronous discussion, and a calendar link."
+        Answer: "Visit the Schedule and Papers pages. 
+        Each paper has its landing page with a link to the pdf pdf, abstract,
+        embedded video to view the talk, slack channel for asynchronous
+        discussion, and a calendar link."
       - Question: How can I best plan my time and engage with the conference?
-        Answer: "Before the conference, browse the site and watch the videos of interest. We also have a list of recommended papers on each paper page, to help you find more interesting papers. Then you can bookmark and/or add to your calendar the Zoom session for that talk, and be sure to visit to interact with the authors then."
+        Answer: "Before the conference, browse this site and you can already
+        watch some of the videos of interest. Our visualization with papers with
+        similar content can help you to navigate all papers or find more
+        interesting papers. Additionally or alternatively, you can walk around
+        in the virtual space and find the content you are most interested in/"
       - Question: How can I best engage from my timezone?
-        Answer: "View videos before the conference, then pick Zoom sessions that work for you. We have tried to spread sessions across different time zones, but it is difficult to accommodate all times. Each paper also has a Slack channel for asynchronous Q&A."
+        Answer: "We have tried to spread sessions across different time zones,
+        but it is difficult to accommodate all times. Content is streamed 12h
+        apart and authors of papers can choose the most convenient time to be
+        present for Q&A."
       - Question: What if I have a problem?
-        Answer: "If you have any technical difficulties, please contact #help. If you have a problem with inappropriate conduct, please see the below about Accessibility and Safety."
+        Answer: "If you have any technical difficulties, please contact #help on slack. If you have any problems with accessing gather town, please contact help+icwsm-2021@virtualchair.net or check https://www.virtualchair.net/guide for help. If you have a problem with inappropriate conduct, please see the below about Accessibility and Safety."
       - Question: What tools and logins do I need?
-        Answer: "You need accounts on Slack and Zoom. You should have received an invitation to join the Slack workspace (icwsm20.slack.com). For Zoom, you can create your own free account. Please be sure you have updated to the latest version of Zoom to have the latest security features."
+        Answer: "You need accounts on Slack and Zoom. You should have received
+        an invitation to join the Slack workspace (icwsm2021.slack.com). For
+        Zoom, you can create your own free account. Please be sure you have
+        updated to the latest version of Zoom to have the latest security
+        features. For the virtual space, you will receive your login details via
+        email."
       - Question: How can I find other people to chat with during the conference?
-        Answer: "Participants are encouraged to interact and discuss with others on Slack. In addition to the #social channel, participants may create their own breakout rooms for additional conversation. Please be advised to be careful about harassment and follow the Code of Conduct (https://icwsm.org/virtual/v/calendar.html#tab-coc)."
+        Answer: "Participants are encouraged to interact and discuss with others
+        on gathertown in the designated spots. Alternatively, pparticipants can
+        also chat on slack in the #social channel.
+        Please be advised to be careful about harassment and follow the Code of Conduct (LINK)."
         
   - Section: Live Interaction
     QA:
       - Question: What parts of ICWSM are live?
-        Answer: "The Poster Zoom Sessions, Q&A with Invited Speakers, and Q&A for Spotlight Papers. These live sessions occur at specific times, so make sure you look at the Calendar to see what is live right now (see Schedule in menu). You can also use this Calendar to add sessions that you are interested in, to your own personal calendar."
+        Answer: "Panels and Keynote are live. The recording is available
+        straight afterwards. Presentations for papers are recorded but for each
+        paper, there is a 3 minute Q&A session on gather town. Presenters are
+        also advised to be available for questions next to their poster 15 minutes after the
+        session"
       - Question: How do I talk to an author at a poster?
-        Answer: "Each paper has an associated Zoom link. You can only talk to the authors during these live poster sessions. On the page for that paper, you can click the Zoom link for the currently active poster session, and you will join the Zoom session. Please `Raise Your Hand’ to indicate that you would like to ask the author questions. This will put you in a queue, so that the author can keep track of who wants to ask a question next. We also recommend that you watch the video for the poster first, which replaces the typical poster spiel. We want to remind you to be respectful during these conversations (see https://icwsm.org/virtual/vcalendar.html#tab-coc)."
-      - Question: When I join a Zoom link for a poster, I am put into a waiting room instead of joining. What is wrong?
-        Answer: "If an author does not show up for their poster video session, then there is no host for the Zoom link. All non-author participants are put in the waiting room until one of the authors opens the 'start' link. If this happens, please notify #help."
+        Answer: "There is a 3 minute Q&A session after each presentation and
+        authors are advised to stay at their poster after the session for 15
+        minutes. You can also talk to authors if you 'bump' into them in the
+        virtual space."
+      - Question: How do I ask questions of the panel speakers, offline before their live Q&A?
+        Answer: "You can submit your question before for any panel here: http://bit.ly/ICWSM2021-panels"
+      - Question: Can I ask questions of the panel speakers live on Zoom?
+        Answer: "The live Q&As allow for questions to be typed. In most cases,
+        especially if there are many questions, the session chair will simply
+        read out the question, for simplicity. However, this is up to the
+        session chair, and in some cases they will allow you to ask a question."
       - Question: How do I ask questions of the invited speakers, offline before their live Q&A?
-        Answer: "Each invited speaker has a Slack channel. Questions for the invited speaker can be posted there."
+        Answer: ""
       - Question: Can I ask questions of the invited speakers live on Zoom?
         Answer: "The live Q&As allow for questions to be typed. In most cases, especially if there are many questions, the session chair will simply read out the question, for simplicity. However, this is up to the session chair, and in some cases they will allow you to ask a question."
       
   - Section: Accessibility and Safety
     QA:
       - Question: How do you ensure safe online engagement?
-        Answer: "All participants are bound and expected to uphold the conference’s Code of Conduct, which  can be found online at https://icwsm.org/virtual/v/calendar.html#tab-coc. We have taken several steps to safeguard against `Zoom Bombing` by changing the permissions, types of calls we use, and having moderators with ability to evict participants, amongst others."
+        Answer: "All participants are bound and expected to uphold the
+        conference’s 
+        Code of Conduct, which  can be found online at https://aaai.org/Conferences/AAAI-19/wp-content/uploads/2019/01/AAAI-19-Code-of-Conduct.1.28.19.Final_.pdf"
       - Question:  General data protection
-        Answer: "This site has a single cookie for session management. The live Zoom Q&A sessions for keynotes and spotlights are recorded, but the individual poster sessions are not. The Slack logs will be deleted after the conference. The videos are unlisted on YouTube, but will be released publicly after the conference."
+        Answer: "This site has a single cookie for session management. 
+        The live Zoom Q&A sessions for keynotes and panels are recorded.
+        The Slack logs will be deleted after the conference. 
+        The videos are only available for registered participants, 
+        but will be released publicly after the conference."
 
   - Section: For Authors
     QA:
-      - Question: What do I need to know to present my poster?
-        Answer: "As an author on the paper, you will be hosting a Zoom session using your own Zoom account. When you join, it will start the meeting and it will allow others to join. Please join the link 5 minutes early, to be ready to start the session on time. We ask that you pay attention to Raised Hands, and try to discuss with people in the order that they raised their hand. This way they have a rough estimate of how long they might have to wait, and makes for respectful interaction. If someone is monopolizing your time, and you notice many hands are raised, do feel free to say ‘Unfortunately, I have to give some of the other participants an opportunity to ask questions as well’.\n\n As a host, you have additional privileges. If someone is being disruptive, or not muting themselves when needed, you can mute them. If someone is being inappropriate and violating the code of conduct, you can eject them from the meeting. If you would like to make an author a co-host, you can do so. Additionally, only hosts can share their screens. You might find it useful to simply keep your screen shared the entire time, so that you can refer to figures in your slides."
       - Question: I’m an author and think my paper has been accidentally left out of the program, but I can’t find my paper. What should I do?
         Answer: "If you can’t find your paper because of difficulty navigating the website, please contact the help desk at #help on Slack."  
           
   - Section: General
     QA:
-      - Question: "What happens to the recorded talks and QA sessions after the conference?"
-        Answer: "All the recordings of the talks and live QA sessions (except for posters), pending the speakers' consent, will be made publicly viewable via ICWSM's YouTube channel after the conference."
       - Question: "Other Questions?"
         Answer: "Contact the volunteers on the #help channel on Slack"
         

@@ -98,7 +98,9 @@ async function make_cal(handleResize = true) {
       'week.dayname.borderTop': '1px solid white',
       'week.dayname.borderBottom': '1px solid white',
       'week.dayname.borderLeft': '1px solid white',
-      'week.dayname.height': '45px'
+      'week.dayname.height': '45px',
+      'week.timegridOneHour.height': '74px',
+      'week.timegridHalfHour.height': '37px'
     },
     template: {
       monthDayname(dayname) {

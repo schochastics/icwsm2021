@@ -51,32 +51,6 @@
     -o-transition: all 0.2s linear;
     transition: all 0.2s linear;
   }
-
-  .myButton {
-	box-shadow:inset 0px 1px 0px 0px #f29c93;
-	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
-	background-color:#fe1a00;
-	border-radius:42px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:28px;
-	font-weight:bold;
-	padding:8px 76px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #b23e35;
-}
-.myButton:hover {
-	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
-	background-color:#ce0100;
-  color: white;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
-
 </style>
 
 <div class="jumbotron jumbotron-fluid back" style="margin-bottom: 0rem !important;">
@@ -131,18 +105,17 @@
 {% endblock %}
 
 {% block content %}
-
 <!-- {{ readme | markdown }} -->
 <h2>Welcome to the Virtual ICWSM 2021</h2>
 <div class="row">
   <div class="col-md-8 col-sm-12">
     <p>The conference comprises the following elements:</p>
     <dl>
-      <dt>Format</dt>
+      <dt style="text-transform: uppercase;">Format</dt>
       <dd>Pre-recorded talks are available to view at your convenience on this website. 
       During the live sessions, presentations have been assigned a one-hour slot
       during which we ask at least one author to be available to interact
-      synchronously with participants on gathertown . (think of it like a virtual conference poster session where authors can interact with participants).  
+      synchronously with participants on gathertown. (tThink of it like a virtual conference poster session where authors can interact with participants).  
       </dd>
       <dd>
         There are two ways of enjoying the conference this year: 
@@ -150,9 +123,9 @@
       <dd>
         <strong>ICWSM Lite - The MiniConf and Slack experience.</strong> Similar to last year’s ICWSM,
         participants can choose a largely solo journey through the talks and
-        events in ICWSM but still meet up with others through Slack and the
-        Single-track events. Limited opportunities to interact with paper
-        authors, but you can always invite them to catch up on Slack!
+        events in ICWSM but still meet up with others through Slack (icwsm-2021.slack.com) and the
+        single-track events. Limited opportunities to interact with paper
+        authors, but you can always invite them to catch up on Slack.
       </dd>
       <dd>
         <strong>ICWSM Deluxe - The Gathertown, MiniConf, and Slack experience.</strong> Enrich
@@ -164,14 +137,14 @@
         questions. And when the sessions are over, unwind with new friends over
         a game of scribbl.
 
-      </dd>
-      <dt>Schedule</dt>
+      </dd> <br>
+      <dt style="text-transform: uppercase;">Schedule</dt>
       <dd>You can find the times for all the live sessions using the <a
       class="text-muted" href="calendar.html">Schedule</a>, where you can choose
-      your timezone and find live sessions that work for you.</dd>
-      <dt> Social Media</dt>
-      <dd> Share papers,  workshops, and demos by using the hashtag  <span style="font-weight: bold; font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;">#ICWSM2021</span></dd>
-      <dt>Code of Conduct</dt>
+      your timezone and find live sessions that work for you.</dd><br>
+      <dt style="text-transform: uppercase;"> Social Media</dt>
+      <dd> Share papers,  workshops, and demos by using the hashtag  <span style="font-weight: bold; font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;">#ICWSM2021</span></dd><br>
+      <dt style="text-transform: uppercase;">Code of Conduct</dt>
       <dd>
         Participants are encouraged to read and follow <a href="https://aaai.org/Conferences/AAAI-19/wp-content/uploads/2019/01/AAAI-19-Code-of-Conduct.1.28.19.Final_.pdf">AAAI's Code of Conduct</a> for Conferences and Events. Additionally, participants are encouraged to be courteous when sharing screen captures and photographs of conference events. Seek permission when possible and respect requests to take down images if those featured ask.
         Concerns around code of conduct or inclusion may be sent to icwsm21@aaai.org.

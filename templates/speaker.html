@@ -22,6 +22,10 @@
       <a class="card-link" data-toggle="collapse" role="button" href="#details">
         Abstract & Bio
       </a>
+    </a>
+    <a class="card-link" target="_blank" href="{{speaker.slack}}">
+        Slack
+    </a>
     </div>
   </div>
 </div>
@@ -39,8 +43,25 @@
     <p></p>
   </div>
 </div>
-
 <!-- Presentation Embed -->
+{{ components.section("Livestream/Replay (provided by SlidesLive)") }}
+
+<div class="col-md-12 col-xs-12 my-auto p-2">
+  <div id="presentation-embed"></div>
+  <script src='https://slideslive.com/embed_presentation.js'></script>
+  <script>
+    embed = new SlidesLiveEmbed("presentation-embed", {
+      presentationId:
+        "{{speaker.presentation_id | default(config.default_presentation_id)}}",
+      autoPlay: false, // change to true to autoplay the embedded presentation
+      verticalEnabled: true,
+      verticalWhenWidthLte: 500,
+      allowHiddenControlsWhenPaused: true,
+      hideTitle: true,
+    });
+  </script>
+</div>
+
 <script>
   add_local_tz = selector  => {
     const regex_time = new RegExp('\\((.*)-(.*) (.*)\\)')
