@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+PRODID:-//ATFutures/ical //EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ical-f9b4ca29-501d-4aec-82cd-44902d2e6457
+DTSTART:20210609T130000
+DTEND:20210609T140000
+SUMMARY:[ICWSM] Session S1
+LOCATION:Virtual Room T
+DESCRIPTION:
+Afra Mashhadi,Samantha G. Winder,Emilia H. Lia,Spencer A. Wood
+Political Bias and Factualness in News Sharing across more than 100,000 Online Communities (URL: poster_A1173.html)
+
+Kristen M. Altenburger,Johan Ugander
+Political Bias and Factualness in News Sharing across more than 100,000 Online Communities (URL: poster_A1006.html)
+
+Kiran Garimella,Tim Smith,Rebecca Weiss,Robert West
+Political Bias and Factualness in News Sharing across more than 100,000 Online Communities (URL: poster_B1059.html)
+
+Galen Weld,Maria Glenski,Tim Althoff
+Political Bias and Factualness in News Sharing across more than 100,000 Online Communities (URL: poster_D1099.html)
+
+END:VEVENT
+END:VCALENDAR

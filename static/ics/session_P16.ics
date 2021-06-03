@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID:-//ATFutures/ical //EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ical-71fdbea3-05fe-4d4f-9d2a-36d4994ebdab
+DTSTART:20210610T164500
+DTEND:20210610T174500
+SUMMARY:[ICWSM] Session P16
+LOCATION:Virtual Room D
+DESCRIPTION:
+Manoel Horta Ribeiro,Jeremy Blackburn,Barry Bradlyn,Emiliano De Cristofaro,Gianluca Stringhini,Summer Long,Stephanie Greenberg,Savvas Zannettou
+Online Communication Shifts in the Midst of the Covid-19 Pandemic: A Case Study on Snapchat (URL: poster_A1190.html)
+
+Amila Silva,Pei-Chi Lo,Ee Peng Lim
+Online Communication Shifts in the Midst of the Covid-19 Pandemic: A Case Study on Snapchat (URL: poster_A1252.html)
+
+Robert Netzorg,Lauren Arnett,Augustin Chaintreau,Eugene Wu
+Online Communication Shifts in the Midst of the Covid-19 Pandemic: A Case Study on Snapchat (URL: poster_A1195.html)
+
+Ramit Sawhney,Harshit Joshi,Alicia Nobles,Rajiv Ratn Shah
+Online Communication Shifts in the Midst of the Covid-19 Pandemic: A Case Study on Snapchat (URL: poster_E1103.html)
+
+Qi Yang,Weinan Wang,Lucas Pierce,Rajan Vaish,Xiaolin Shi,Neil Shah
+Online Communication Shifts in the Midst of the Covid-19 Pandemic: A Case Study on Snapchat (URL: poster_E1136.html)
+
+END:VEVENT
+END:VCALENDAR

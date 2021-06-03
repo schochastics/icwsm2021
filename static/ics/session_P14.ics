@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+PRODID:-//ATFutures/ical //EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ical-bc408e58-5f02-4dd9-8c2c-20a9ba7e88f9
+DTSTART:20210610T164500
+DTEND:20210610T174500
+SUMMARY:[ICWSM] Session P14
+LOCATION:Virtual Room B
+DESCRIPTION:
+Anna Guimarães,Gerhard Weikum
+Political Depolarization of News Articles Using Attribute-Aware Word Embeddings (URL: poster_A1156.html)
+
+Allan Sales,Albin Zehe,Leandro Balby Marinho,Adriano Veloso,Andreas Hotho,Janna Omeliyanenko
+Political Depolarization of News Articles Using Attribute-Aware Word Embeddings (URL: poster_A1171.html)
+
+Xavier Ferrer,Tom Van Nuenen,Jose M. Such,Natalia Criado
+Political Depolarization of News Articles Using Attribute-Aware Word Embeddings (URL: poster_A1174.html)
+
+Ruibo Liu,Lili Wang,Chenyan Jia,Soroush Vosoughi
+Political Depolarization of News Articles Using Attribute-Aware Word Embeddings (URL: poster_A1226.html)
+
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+PRODID:-//ATFutures/ical //EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ical-810912fb-1315-47a8-b1e1-5271bfee4636
+DTSTART:20210608T153000
+DTEND:20210608T163000
+SUMMARY:[ICWSM] Session P4
+LOCATION:Virtual Room D
+DESCRIPTION:
+Michele Coscia,Michael Szell
+More than Meets the Tie: Examining the Role of Interpersonal Relationships in Social Networks (URL: poster_A1121.html)
+
+Ziqian Zeng,Rashidul Islam,Kamrun Naher Keya,James Foulds,Yangqiu Song,Shimei Pan
+More than Meets the Tie: Examining the Role of Interpersonal Relationships in Social Networks (URL: poster_B1057.html)
+
+Leonardo Nizzoli,Serena Tardelli,Marco Avvenuti,Stefano Cresci,Maurizio Tesconi
+More than Meets the Tie: Examining the Role of Interpersonal Relationships in Social Networks (URL: poster_E1062.html)
+
+Minje Choi,Ceren Budak,Daniel M. Romero,David Jurgens
+More than Meets the Tie: Examining the Role of Interpersonal Relationships in Social Networks (URL: poster_E1121.html)
+
+END:VEVENT
+END:VCALENDAR

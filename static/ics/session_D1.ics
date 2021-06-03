@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+PRODID:-//ATFutures/ical //EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ical-c8faf6d7-2d14-4c54-b174-614da85e1bc2
+DTSTART:20210610T141500
+DTEND:20210610T151500
+SUMMARY:[ICWSM] Session D1
+LOCATION:Virtual Room A
+DESCRIPTION:
+Rodolfo Vieira Valentim,Giovanni Comarela,Souneil Park,Diego Sáez-Trumper
+Evolution of Retweet Rates in Twitter User Careers: Analysis and Model (URL: poster_C1019.html)
+
+Manoel Horta Ribeiro,Robert West
+Evolution of Retweet Rates in Twitter User Careers: Analysis and Model (URL: poster_C1026.html)
+
+Hal Roberts,Rahul Bhargava,Linas Valiukas,Dennis Jen,Momin M. Malik,Cindy Sherman Bishop,Emily B. Ndulue,Aashka Dave,Justin Clark,Bruce Etling,Robert Faris,Anushka Shah,Jasmin Rubinovitz,Alexis Hope,Catherine D'ignazio,Fernando Bermejo,Yochai Benkler,Ethan Zuckerman
+Evolution of Retweet Rates in Twitter User Careers: Analysis and Model (URL: poster_C1074.html)
+
+Max Aliapoulios,Emmi Bevensee,Jeremy Blackburn,Barry Bradlyn,Emiliano De Cristofaro,Gianluca Stringhini,Savvas Zannettou
+Evolution of Retweet Rates in Twitter User Careers: Analysis and Model (URL: poster_C1075.html)
+
+Ethan Haworth,Ted Grover,Justin Langston,Ankush Patel,Joseph West,Alex C. Williams
+Evolution of Retweet Rates in Twitter User Careers: Analysis and Model (URL: poster_C1013.html)
+
+Kiran Garimella,Robert West
+Evolution of Retweet Rates in Twitter User Careers: Analysis and Model (URL: poster_C1021.html)
+
+END:VEVENT
+END:VCALENDAR

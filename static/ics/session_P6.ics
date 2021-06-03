@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+PRODID:-//ATFutures/ical //EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ical-59b19726-f021-41c2-885d-237d1c107eda
+DTSTART:20210608T164500
+DTEND:20210608T174500
+SUMMARY:[ICWSM] Session P6
+LOCATION:Virtual Room B
+DESCRIPTION:
+Günce Su Yılmaz,Fiona Gasaway,Blase Ur,Mainack Mondal
+On Positive Moderation Decisions (URL: poster_A1146.html)
+
+Savvas Zannettou
+On Positive Moderation Decisions (URL: poster_D1138.html)
+
+Vibhor Agarwal,Yash Vekaria,Pushkal Agarwal,Sangeeta Mahapatra,Shounak Set,Sakthi Balan Muthiah,Nishanth Sastry,Nicolas Kourtellis
+On Positive Moderation Decisions (URL: poster_D1149.html)
+
+Mattia Samory
+On Positive Moderation Decisions (URL: poster_E1135.html)
+
+END:VEVENT
+END:VCALENDAR

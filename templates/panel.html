@@ -28,6 +28,12 @@
     <div class="text-center p-3">
       <a href="{{panel.link}}" style="font-size: 18px; color:brown; font-weight: bold;">   Submit a question for discussion at the panel</a>
     </div>
+    <div class="text-center p-3">
+      <a
+      href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Plenary+Room&spawnx=16&spawny=30">
+        Virtual Room</a> &nbsp;&nbsp;&nbsp;
+      <a href="https://icwsm-2021.slack.com/channels/panels">Slack</a>
+    </div>
   </div>
 </div>
 <div id="details" class="pp-card m-3">
@@ -40,6 +46,13 @@
     </div>
     <p></p>
   </div>
+  {% for yt in panel.youtube %}
+  <div class="text-center">
+    <iframe width="640" height="360"
+    src="https://www.youtube.com/embed/{{yt}}">
+    </iframe>
+  </div>
+  {% endfor %}
 </div>
 
 <script>

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+PRODID:-//ATFutures/ical //EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ical-b4190e0d-e902-4753-b18b-b8589234b3fb
+DTSTART:20210608T164500
+DTEND:20210608T174500
+SUMMARY:[ICWSM] Session P8
+LOCATION:Virtual Room D
+DESCRIPTION:
+Sanja Šćepanović,Luca Maria Aiello,Ke Zhou,Sagar Joglekar,Daniele Quercia
+Evaluating Audience Loyalty and Authenticity in Influencer Marketing via Multi-task Multi-relational Learning (URL: poster_A1273.html)
+
+Seunghyun Kim,Afsaneh Razi,Gianluca Stringhini,Pamela J. Wisniewski,Munmun De Choudhury
+Evaluating Audience Loyalty and Authenticity in Influencer Marketing via Multi-task Multi-relational Learning (URL: poster_B1060.html)
+
+Junjie Huang,Huawei Shen,Qi Cao,Li Cai,Xueqi Cheng
+Evaluating Audience Loyalty and Authenticity in Influencer Marketing via Multi-task Multi-relational Learning (URL: poster_B1069.html)
+
+Seungbae Kim,Xiusi Chen,Jyun-Yu Jiang,Jinyoung Han,Wei Wang
+Evaluating Audience Loyalty and Authenticity in Influencer Marketing via Multi-task Multi-relational Learning (URL: poster_E1089.html)
+
+END:VEVENT
+END:VCALENDAR

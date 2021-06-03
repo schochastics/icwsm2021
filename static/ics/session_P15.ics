@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID:-//ATFutures/ical //EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ical-0a8d908f-f2f7-42be-9533-c15c5538385f
+DTSTART:20210610T164500
+DTEND:20210610T174500
+SUMMARY:[ICWSM] Session P15
+LOCATION:Virtual Room C
+DESCRIPTION:
+Hao Sha,Mohammad Al Hasan,George Mohler
+It’s a Thin Line Between Love and Hate: Using the Echo in Modeling Dynamics of Racist Online Communities (URL: poster_A1101.html)
+
+Jiongqian Liang,Saket Gurukar,Srinivasan Parthasarathy
+It’s a Thin Line Between Love and Hate: Using the Echo in Modeling Dynamics of Racist Online Communities (URL: poster_A1236.html)
+
+Karishma Sharma,Xinran He,Sungyong Seo,Yan Liu
+It’s a Thin Line Between Love and Hate: Using the Echo in Modeling Dynamics of Racist Online Communities (URL: poster_A1239.html)
+
+William Cai,Johan Ugander
+It’s a Thin Line Between Love and Hate: Using the Echo in Modeling Dynamics of Racist Online Communities (URL: poster_A1106.html)
+
+Eyal Arviv,Simo Hanouna,Oren Tsur
+It’s a Thin Line Between Love and Hate: Using the Echo in Modeling Dynamics of Racist Online Communities (URL: poster_A1191.html)
+
+END:VEVENT
+END:VCALENDAR

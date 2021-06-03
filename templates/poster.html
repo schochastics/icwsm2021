@@ -47,19 +47,21 @@
             {% endfor %}
         </p>
         <p class="card-text text-center">
-            {{paper.track}} 
+            {{paper.track}} <br>
             <strong>Session: </strong>
             {%for session in paper.sessions%}
-            <a href="/papers.html?filter=sessions&search={{session}}">{{session}}</a>
+            <a href="papers.html?filter=sessions&search={{session}}">{{session}}</a>
             {%endfor%}
             ({{paper.topic}})
+            <strong>gather.town: </strong>
+            <a href="{{paper.spawn}}">{{paper.room}}</a>
         </p>
         <div class="text-center p-3">
             <a class="card-link" data-toggle="collapse" role="button"
                href="#details">
                 Abstract
             </a>
-            <a class="card-link" target="_blank" href="{{paper.link}}">
+            <a class="card-link" target="_blank" href="{{paper.href}}">
                 Paper
             </a>
             <a class="card-link" target="_blank" href="{{paper.slack}}">
@@ -112,7 +114,7 @@
 </div>
 
 
-{{ components.section("Poster") }}
+{{ components.section("Highlight Poster") }}
 
 <div role="main" id="pdf_view"></div>
 
@@ -124,7 +126,7 @@
     // render first page of PDF to div
     // PDF name can be bound to variable -- e.g. paper.content.poster_link
     const pdfFile =
-      " {{ paper.poster_pdf | default(config.default_poster_pdf) }}";
+      " {{ paper.pdf_url | default(config.default_poster_pdf) }}";
     initPDFViewer(pdfFile, "#pdf_view");
   });
 </script>

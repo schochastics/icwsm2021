@@ -1,0 +1,57 @@
+{% set active_page = "Login" %}
+{% extends "base.html" %}
+
+{% block top %}
+<style>
+#submit {
+	box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	background-color:#fe1a00;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:8px 36px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+}
+#submit:hover {
+	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+	background-color:#ce0100;
+  color: white;
+}
+#submit:active {
+	position:relative;
+	top:1px;
+}
+
+</style>
+
+{% endblock %}
+
+{% block content %}
+<div>
+<h2>Sign In</h2>
+<form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <p>
+        Enter the access token sent to the email used to register for the
+        conference. <br>
+        If you did not receive one, please contact the helpdesk on slack<br>
+        {{ form.token(size=32) }}
+    </p>
+    <p>{{ form.submit() }}</p>
+</form>
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+         {% for message in messages %}
+            <p>{{ message }}</p>
+            {% endfor %}
+    {% endif %}
+{% endwith %}
+
+</div>
+{% endblock %}

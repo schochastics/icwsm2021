@@ -71,6 +71,11 @@ def home():
     data["committee"] = site_data["committee"]["committee"]
     return render_template("index.html", **data)
 
+# @app.route("/redirect.html")
+# def redirect_page():
+#     data = _data()
+#     return render_template("redirect.html", **data)
+
 @app.route("/mozilla.html")
 def mozilla():
     data = _data()
@@ -102,6 +107,7 @@ def schedule():
     data["day1"] = {
         "speakers": [s for s in site_data["speakers"]
                 if s["day"] == "Tuesday"],
+        "panels" : [format_panel(by_uid["panels"][h["UID"]]) for h in site_data["panels"] if h["day"]=="Tuesday"],
         "highlighted": [
             format_paper(by_uid["papers"][h["UID"]]) for h in site_data["highlighted"] if h["session"]=="S0"
         ],
@@ -109,13 +115,15 @@ def schedule():
     data["day2"] = {
         "speakers": [s for s in site_data["speakers"]
                 if s["day"] == "Wednesday"],
+        "panels" : [format_panel(by_uid["panels"][h["UID"]]) for h in site_data["panels"] if h["day"]=="Wednesday"],
         "highlighted": [
             format_paper(by_uid["papers"][h["UID"]]) for h in site_data["highlighted"] if h["session"]=="S1"
         ],
     }
     data["day3"] = {
         "speakers": [s for s in site_data["speakers"]
-                if s["day"] == "Wednesday"],
+                if s["day"] == "Thursday"],
+        "panels" : [format_panel(by_uid["panels"][h["UID"]]) for h in site_data["panels"] if h["day"]=="Thursday"],
         "highlighted": [
             format_paper(by_uid["papers"][h["UID"]]) for h in site_data["highlighted"] if h["session"]=="S2"
         ],
@@ -138,6 +146,11 @@ def tutorials():
         format_tutorial(tutorial) for tutorial in site_data["tutorials"]
     ]
     return render_template("tutorials.html", **data)
+
+@app.route("/socials.html")
+def socials():
+    data = _data()
+    return render_template("socials.html", **data)
 
 @app.route("/panels.html")
 def panels():
@@ -181,13 +194,13 @@ def format_paper(v):
         "date":v["date"],
         "time": v["time"],
         "topic": v["topic"],
-        "presentation_id": v["presentation_id"]
-        # "TLDR": v["abstract"]
-        # "recs": [],
+        "presentation_id": v["presentation_id"],
+        "room": v["room"],
+        "spawn": v["spawn"],
         # links to external content per poster
-        #"pdf_url": v.get("pdf_url", ""),  # render poster from this PDF
+        "pdf_url": v.get("pdf_url", ""),  # render poster from this PDF
         #"code_link": "",  # link to code
-        #"link": ""  # link to paper
+        "href": v["href"]  # link to paper
     }
 
 
@@ -224,7 +237,7 @@ def format_tutorial(v):
     }
 
 def format_panel(v):
-    list_keys = ["authors","images"]
+    list_keys = ["authors","images","youtube"]
     list_fields = {}
     for key in list_keys:
         list_fields[key] = extract_list_field(v, key)
@@ -240,7 +253,8 @@ def format_panel(v):
         "abstract": v["abstract"],
         "short": v["short"],
         "date":v["date"],
-        "time": v["time"]
+        "time": v["time"],
+        "youtube": list_fields["youtube"]
     }
 
 def format_speaker(v):

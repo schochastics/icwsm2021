@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+PRODID:-//ATFutures/ical //EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ical-427f5432-6e64-4cce-b832-16c86273bb5f
+DTSTART:20210610T141500
+DTEND:20210610T151500
+SUMMARY:[ICWSM] Session D2
+LOCATION:Virtual Room B
+DESCRIPTION:
+Hridoy Sankar Dutta,Udit Arora,Tanmoy Chakraborty
+ESG Tracker: Unbiased and Explainable ESG Profile from Real-time Data (URL: poster_C1053.html)
+
+Cristian Consonni,Silvia Basile,Matteo Manca,Ludovico Boratto,André Freitas,Tatiana Kovacikova,Ghadir Pourhashem,Yannick Cornet
+ESG Tracker: Unbiased and Explainable ESG Profile from Real-time Data (URL: poster_C1064.html)
+
+Keith Cortis,Brian Davis
+ESG Tracker: Unbiased and Explainable ESG Profile from Real-time Data (URL: poster_C1067.html)
+
+Ting-Wei Hsu,Chung-Chi Chen,Hen-Hsen Huang,Hsin-Hsi Chen
+ESG Tracker: Unbiased and Explainable ESG Profile from Real-time Data (URL: poster_C1043.html)
+
+Chung-Chi Chen,Hen-Hsen Huang,Hsin-Hsi Chen
+ESG Tracker: Unbiased and Explainable ESG Profile from Real-time Data (URL: poster_C1045.html)
+
+Elaheh Momeni,Constantin Fraenkel,Patrick Kiss,Andreas Burgmann
+ESG Tracker: Unbiased and Explainable ESG Profile from Real-time Data (URL: poster_C1060.html)
+
+END:VEVENT
+END:VCALENDAR

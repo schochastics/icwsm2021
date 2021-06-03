@@ -19,7 +19,7 @@ organization: ICWSM Organization Committee
 # Remove or change to your chat server.
 #chat_server: miniconf.sloppy.zone
 default_presentation_id: 38922815
-default_poster_pdf: /static/images/GLTR_poster.pdf
+# default_poster_pdf: /static/images/GLTR_poster.pdf
 
 
 # Configuration for auth
@@ -29,7 +29,7 @@ default_poster_pdf: /static/images/GLTR_poster.pdf
 
 use_auth0: true
 auth0_client_id : wzQPlS2Lox3frXC2EtEfnGgWEzG6b03f
-auth0_domain : icwsm2021.us.auth0.com
+auth0_domain : login.icwsm.org #icwsm2021.us.auth0.com
 
 calendar:
   colors: #  Colors for the different event hashtags:

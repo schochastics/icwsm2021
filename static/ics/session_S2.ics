@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+PRODID:-//ATFutures/ical //EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ical-fefd7974-dc30-428c-874b-a3e0664d6f82
+DTSTART:20210610T130000
+DTEND:20210610T140000
+SUMMARY:[ICWSM] Session S2
+LOCATION:Virtual Room T
+DESCRIPTION:
+David Wadden,Tal August,Qisheng Li,Tim Althoff
+Cross-Partisan Discussions on YouTube: Conservatives Talk to Liberals but Liberals Don't Talk to Conservatives (URL: poster_A1096.html)
+
+Fengli Xu,Guozhen Zhang,Yuan Yuan,Hongjia Huang,Diyi Yang,Depeng Jin,Yong Li
+Cross-Partisan Discussions on YouTube: Conservatives Talk to Liberals but Liberals Don't Talk to Conservatives (URL: poster_B1018.html)
+
+Niklas Hopfgartner,Tiago Santos,Michael Auer,Mark Griffiths,Denis Helic
+Cross-Partisan Discussions on YouTube: Conservatives Talk to Liberals but Liberals Don't Talk to Conservatives (URL: poster_B1037.html)
+
+Siqi Wu,Paul Resnick
+Cross-Partisan Discussions on YouTube: Conservatives Talk to Liberals but Liberals Don't Talk to Conservatives (URL: poster_D1064.html)
+
+END:VEVENT
+END:VCALENDAR

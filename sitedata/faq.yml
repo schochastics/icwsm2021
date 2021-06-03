@@ -4,66 +4,77 @@ FAQ:
     QA:
       - Question: How should I navigate this site?
         Answer: "Visit the Schedule and Papers pages. 
-        Each paper has its landing page with a link to the pdf pdf, abstract,
+        Each paper has its landing page with a link to the pdf, abstract,
         embedded video to view the talk, slack channel for asynchronous
-        discussion, and a calendar link."
+        discussion, and a calendar link. During the session, you can also hop
+        directly into the virtual room on gather.town to view the video and
+        potentially meet the author"
       - Question: How can I best plan my time and engage with the conference?
         Answer: "Before the conference, browse this site and you can already
         watch some of the videos of interest. Our visualization with papers with
         similar content can help you to navigate all papers or find more
         interesting papers. Additionally or alternatively, you can walk around
-        in the virtual space and find the content you are most interested in/"
+        in the virtual space and find the content you are most interested in. 
+        During the conference, we recommend to engage via the virtual space on
+        gather town to maximize your conference experience."
       - Question: How can I best engage from my timezone?
         Answer: "We have tried to spread sessions across different time zones,
-        but it is difficult to accommodate all times. Content is streamed 12h
-        apart and authors of papers can choose the most convenient time to be
-        present for Q&A."
+        but it is difficult to accommodate all times. Live content is repeated
+        roughly 12h apart and all videos can be watched on demand, either on
+        this site or the gather town space."
       - Question: What if I have a problem?
-        Answer: "If you have any technical difficulties, please contact #help on slack. If you have any problems with accessing gather town, please contact help+icwsm-2021@virtualchair.net or check https://www.virtualchair.net/guide for help. If you have a problem with inappropriate conduct, please see the below about Accessibility and Safety."
+        Answer: "If you have any technical difficulties, please contact
+        #01-helpdesk on slack. If you have any problems with accessing gather
+        town, please contact help+icwsm-2021@virtualchair.net or check
+        https://www.virtualchair.net/guide for help. If you have a problem with
+        inappropriate conduct, please refer to the Code of Conduct."
       - Question: What tools and logins do I need?
-        Answer: "You need accounts on Slack and Zoom. You should have received
-        an invitation to join the Slack workspace (icwsm2021.slack.com). For
-        Zoom, you can create your own free account. Please be sure you have
-        updated to the latest version of Zoom to have the latest security
-        features. For the virtual space, you will receive your login details via
-        email."
+        Answer: "The only account you need to create is for slack . You should have received
+        an invitation to join the Slack workspace (icwsm2021.slack.com). 
+        For the gather.town, you can login with the email address you used for registration."
       - Question: How can I find other people to chat with during the conference?
         Answer: "Participants are encouraged to interact and discuss with others
-        on gathertown in the designated spots. Alternatively, pparticipants can
-        also chat on slack in the #social channel.
-        Please be advised to be careful about harassment and follow the Code of Conduct (LINK)."
+        on gather town in the designated spots (e.g. the Poster rooms or the garden). Alternatively, participants can
+        also chat on slack in dedicated channels.
+        Please be advised to be careful about harassment and follow the Code of Conduct"
         
   - Section: Live Interaction
     QA:
       - Question: What parts of ICWSM are live?
         Answer: "Panels and Keynote are live. The recording is available
-        straight afterwards. Presentations for papers are recorded but for each
+        afterwards on demand. Presentations for papers are recorded but for each
         paper, there is a 3 minute Q&A session on gather town. Presenters are
-        also advised to be available for questions next to their poster 15 minutes after the
+        also encouraged to be available for questions next to their poster 15 minutes after the
         session"
       - Question: How do I talk to an author at a poster?
         Answer: "There is a 3 minute Q&A session after each presentation and
-        authors are advised to stay at their poster after the session for 15
+        authors are encouraged to stay at their poster after the session for 15
         minutes. You can also talk to authors if you 'bump' into them in the
         virtual space."
       - Question: How do I ask questions of the panel speakers, offline before their live Q&A?
         Answer: "You can submit your question before for any panel here: http://bit.ly/ICWSM2021-panels"
-      - Question: Can I ask questions of the panel speakers live on Zoom?
-        Answer: "The live Q&As allow for questions to be typed. In most cases,
-        especially if there are many questions, the session chair will simply
-        read out the question, for simplicity. However, this is up to the
-        session chair, and in some cases they will allow you to ask a question."
       - Question: How do I ask questions of the invited speakers, offline before their live Q&A?
         Answer: ""
       - Question: Can I ask questions of the invited speakers live on Zoom?
-        Answer: "The live Q&As allow for questions to be typed. In most cases, especially if there are many questions, the session chair will simply read out the question, for simplicity. However, this is up to the session chair, and in some cases they will allow you to ask a question."
-      
+        Answer: ""
+      - Question: Why are recorded presentations so short?
+        Answer: "We have opted for shorter recordings based on feedback from
+        previous participants, one-on-one discussions with attendees, and in
+        particular, to allow for a shorter and more agile virtual conference
+        programme. We believe that these shorter sessions allow more time for
+        live interactions and discussion."
+      - Question: What are spotlight papers?
+        Answer: "Spotlight papers, or papers in the two spotlight sessions, are
+        the top scoring papers at this year’s conference. Spotlight sessions are
+        single track, and it is from these papers that the best paper has been
+        selected."
+        
   - Section: Accessibility and Safety
     QA:
       - Question: How do you ensure safe online engagement?
         Answer: "All participants are bound and expected to uphold the
         conference’s 
-        Code of Conduct, which  can be found online at https://aaai.org/Conferences/AAAI-19/wp-content/uploads/2019/01/AAAI-19-Code-of-Conduct.1.28.19.Final_.pdf"
+        Code of Conduct, which  can be found on top of this page"
       - Question:  General data protection
         Answer: "This site has a single cookie for session management. 
         The live Zoom Q&A sessions for keynotes and panels are recorded.
@@ -74,12 +85,9 @@ FAQ:
   - Section: For Authors
     QA:
       - Question: I’m an author and think my paper has been accidentally left out of the program, but I can’t find my paper. What should I do?
-        Answer: "If you can’t find your paper because of difficulty navigating the website, please contact the help desk at #help on Slack."  
-          
-  - Section: General
-    QA:
-      - Question: "Other Questions?"
-        Answer: "Contact the volunteers on the #help channel on Slack"
+        Answer: "If you can’t find your paper because of difficulty navigating
+        the website, please contact the help desk at #01-helpdesk on Slack or
+        send an email to david.schoch@manchester.ac.uk."  
         
 
 

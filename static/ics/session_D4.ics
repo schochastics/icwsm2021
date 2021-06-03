@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+PRODID:-//ATFutures/ical //EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ical-a1a8a062-4824-4dac-a28d-7135d62d8375
+DTSTART:20210610T141500
+DTEND:20210610T151500
+SUMMARY:[ICWSM] Session D4
+LOCATION:Virtual Room D
+DESCRIPTION:
+Firoj Alam,Fahim Dalvi,Shaden Shaar,Nadir Durrani,Hamdy Mubarak,Alex Nikolov,Giovanni Da San Martino,Ahmed Abdelali,Hassan Sajjad,Kareem Darwish,Preslav Nakov
+Well-Being Depends on Social Comparison: Hierarchical Models of Twitter Language Suggest That Richer Neighbors Make You Less Happy (URL: poster_C1023.html)
+
+Firoj Alam,Hassan Sajjad,Muhammad Imran,Ferda Ofli
+Well-Being Depends on Social Comparison: Hierarchical Models of Twitter Language Suggest That Richer Neighbors Make You Less Happy (URL: poster_C1035.html)
+
+Firoj Alam,Umair Qazi,Muhammad Imran,Ferda Ofli
+Well-Being Depends on Social Comparison: Hierarchical Models of Twitter Language Suggest That Richer Neighbors Make You Less Happy (URL: poster_C1052.html)
+
+Matthew R. Deverna,Francesco Pierri,Bao Tran Truong,John Bollenbacher,David Axelrod,Niklas Loynes,Christopher Torres-Lugo,Kai-Cheng Yang,Filippo Menczer,John Bryden
+Well-Being Depends on Social Comparison: Hierarchical Models of Twitter Language Suggest That Richer Neighbors Make You Less Happy (URL: poster_C1055.html)
+
+Ceren Budak,Ashley Muddiman,Yujin Kim,Caroline C. Murray,Natalie J. Stroud
+Well-Being Depends on Social Comparison: Hierarchical Models of Twitter Language Suggest That Richer Neighbors Make You Less Happy (URL: poster_C1066.html)
+
+Markus Reiter-Haas,Simone Kopeinik,Elisabeth Lex
+Well-Being Depends on Social Comparison: Hierarchical Models of Twitter Language Suggest That Richer Neighbors Make You Less Happy (URL: poster_C1001.html)
+
+Salvatore Giorgi,Sharath Chandra Guntuku,Johannes C. Eichstaedt,Claire Pajot,H. Andrew Schwartz,Lyle H. Ungar
+Well-Being Depends on Social Comparison: Hierarchical Models of Twitter Language Suggest That Richer Neighbors Make You Less Happy (URL: poster_C1084.html)
+
+END:VEVENT
+END:VCALENDAR

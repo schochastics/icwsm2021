@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID:-//ATFutures/ical //EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ical-e8bc0272-da53-4b55-8d2a-ed8ea04a7352
+DTSTART:20210610T164500
+DTEND:20210610T174500
+SUMMARY:[ICWSM] Session P13
+LOCATION:Virtual Room A
+DESCRIPTION:
+Lia Bozarth,Ceren Budak
+Misinformation Adoption or Rejection in the Era of COVID-19 (URL: poster_A1046.html)
+
+Dominic Seyler,Shulong Tan,Dingcheng Li,Jingyuan Zhang,Ping Li
+Misinformation Adoption or Rejection in the Era of COVID-19 (URL: poster_A1108.html)
+
+Sara Abdali,Rutuja Gurav,Siddharth Menon,Daniel Fonseca,Negin Entezari,Neil Shah,Evangelos E. Papalexakis
+Misinformation Adoption or Rejection in the Era of COVID-19 (URL: poster_A1216.html)
+
+Srijan Kumar,Chongyang Bai,V.s. Subrahmanian,Jure Leskovec
+Misinformation Adoption or Rejection in the Era of COVID-19 (URL: poster_B1009.html)
+
+Maxwell Weinzierl,Suellen Hopfer,Sanda M. Harabagiu
+Misinformation Adoption or Rejection in the Era of COVID-19 (URL: poster_D1076.html)
+
+END:VEVENT
+END:VCALENDAR

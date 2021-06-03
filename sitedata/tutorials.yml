@@ -11,8 +11,8 @@
     title: "Engaging the Ethics of “Public” Data in Social Media Research"
     authors: "Casey Fiesler|Katharina Kinder-Kurlanda|Jacob Metcalf|Emmanuel
     Moss|Katie Shilton|Michael Zimmer"
-    link: 
-    logo: 
+    link: https://icwsm.org/2021/index.html#tutorials_schedule
+    logo: https://via.placeholder.com/254x55/FFFFFF/FFFFFF%20?Text=a
     abstract: "This tutorial bridges social media research methods with concepts in ethics and privacy. Researchers studying the web and social media find themselves immersed in a domain where data flows freely and is often considered “public,” but that data is also potentially bound by contextual norms and expectations. While many research communities have engaged with the ethics of data collection, sharing, and retention practices, these debates are often less-visible to parts of the data and computational social science communities. In this tutorial, we will engage the concept of contextual integrity to provide space for the community to discuss how ethical risks emerge when engaging with “public” data, and offer practical methods for addressing this risk. This tutorial will bridge ongoing conversations in research ethics about practices of data collection and retention with emerging practices of data and computational social science researchers. Participants will gain practical methods for identifying, tracking, and mitigating ethical harms related to the collection and use of “public” data in web and social media research."
 -
     UID: c

@@ -31,6 +31,7 @@
       <label for="tzOptions">Timezone:</label>
       <select id="tzOptions" class="selectpicker" data-live-search="true">
       </select>
+      <span style="font-size: 8pt;">(depending on your timezone, you may have to scroll a bit to see the schedule)</span>
     </div>
 
     <!-- full cal for browser-->
@@ -50,6 +51,20 @@ role="tabpanel"
 aria-labelledby="nav-profile-tab"
 >
   <div id="day">
+    <h3>Map of the Virtual World</h3>
+    (Click on a room to spawn at the location) <br>
+    <img src="static/images/venue_map_small.png" usemap="#image-map" style="margin-bottom: 2em;">
+    <map name="image-map">
+        <area target="_blank" alt="Jump to Lobby" title="Jump to Lobby" href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021" coords="313,110,671,377" shape="rect">
+        <area target="_blank" alt="Jump to Garden" title="Jump to Garden" href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Outside&amp;amp;spawnx=50&amp;amp;spawny=12" coords="315,455,650,593" shape="rect">
+        <area target="_blank" alt="Jump to Poster Room A" title="Jump to Poster Room A" href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+A&amp;amp;spawnx=26&amp;amp;spawny=34" coords="299,22,376,72" shape="rect">
+        <area target="_blank" alt="Jump to Poster Room B" title="Jump to Poster Room B" href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+B&amp;amp;spawnx=26&amp;amp;spawny=34" coords="394,24,474,72" shape="rect">
+        <area target="_blank" alt="Jump to Poster Room C" title="Jump to Poster Room C" href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+C&amp;amp;spawnx=26&amp;amp;spawny=34" coords="493,19,573,74" shape="rect">
+        <area target="_blank" alt="Jump to Poster Room D" title="Jump to Poster Room D" href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+D&amp;amp;spawnx=26&amp;amp;spawny=34" coords="593,20,674,75" shape="rect">
+        <area target="_blank" alt="Jump to Spotlight Room" title="Jump to Spotlight Room" href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Spotlight+Room&amp;amp;spawnx=16&amp;amp;spawny=30" coords="708,104,825,206" shape="rect">
+        <area target="_blank" alt="Jump to Plenary Room" title="Jump to Plenary Room" href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Plenary+Room&amp;amp;spawnx=16&amp;amp;spawny=30" coords="905,377,713,242" shape="rect">
+    </map>
+    <br>
     <h3>Types of sessions this year</h3>
     <style type="text/css">
       .tg  {border-collapse:collapse;border-spacing:0;}
@@ -90,7 +105,7 @@ aria-labelledby="nav-profile-tab"
           <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Deluxe</span></td>
         </tr>
         <tr>
-          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Paper sessions (13?)</span></td>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Paper sessions (20)</span></td>
           <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Except for the spotlighted papers, all other </span><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">papers, demos, and short papers</span><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">  will be presented through pre-recorded talks and live Q&amp;A sessions at a specific time. Thumbnails and videos are posted in a “gallery” where participants can walk around and explore each paper. If you missed talking to the authors during the live session, you can still watch the video on the virtual conference website or contact the paper’s authors through Gathertown or Slack.</span></td>
           <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Lite, Deluxe</span></td>
         </tr>
@@ -127,20 +142,24 @@ aria-labelledby="nav-profile-tab"
   >
 
     <div id="day">
-      {{ components.section("Speakers") }}
+      {{ components.section("Keynote") }}
       <div class="speakers">
         {{ components.speakergroup(day1.speakers) }}
       </div>
+      {{ components.section("Panel") }}
+      <div class="speakers">
+        {{ components.panelgroup(day1.panels) }}
+      </div>
       {{ components.section("Paper Sessions") }}
       <div class="papers" style="font-size: 24px;">
-          <a href="/papers.html?filter=sessions&search=P1">Session P1 (Politics and Trump)<span class="session_times">(15:30 - 16:30 GMT)</span></a><br>
-          <a href="/papers.html?filter=sessions&search=P2">Session P2 (Patterns in User Attention)<span class="session_times">(15:30 - 16:30 GMT)</span></a><br>
-          <a href="/papers.html?filter=sessions&search=P3">Session P3 (NLP)<span class="session_times">(15:30 - 16:30 GMT)</span></a><br>
-          <a href="/papers.html?filter=sessions&search=P4">Session P4 (Networks)<span class="session_times">(15:30 - 16:30 GMT)</span></a><br>
-          <a href="/papers.html?filter=sessions&search=P5">Session P5 (User Dynamics)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
-          <a href="/papers.html?filter=sessions&search=P6">Session P6 (Privacy and Moderation)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
-          <a href="/papers.html?filter=sessions&search=P7">Session P7 (Memes and Misinfo)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
-          <a href="/papers.html?filter=sessions&search=P8">Session P8 (Applications)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+          <a href="papers.html?filter=sessions&search=P1">Session P1 (Politics and Trump)<span class="session_times">(15:30 - 16:30 GMT)</span></a><br>
+          <a href="papers.html?filter=sessions&search=P2">Session P2 (Patterns in User Attention)<span class="session_times">(15:30 - 16:30 GMT)</span></a><br>
+          <a href="papers.html?filter=sessions&search=P3">Session P3 (NLP)<span class="session_times">(15:30 - 16:30 GMT)</span></a><br>
+          <a href="papers.html?filter=sessions&search=P4">Session P4 (Networks)<span class="session_times">(15:30 - 16:30 GMT)</span></a><br>
+          <a href="papers.html?filter=sessions&search=P5">Session P5 (User Dynamics)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+          <a href="papers.html?filter=sessions&search=P6">Session P6 (Privacy and Moderation)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+          <a href="papers.html?filter=sessions&search=P7">Session P7 (Memes and Misinfo)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+          <a href="papers.html?filter=sessions&search=P8">Session P8 (Applications)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
       </div>
     </div>
   <script type="text/javascript">
@@ -178,9 +197,13 @@ aria-labelledby="nav-profile-tab"
   >
 
     <div id="day">
-      {{ components.section("Speakers") }}
+      {{ components.section("Keynote") }}
       <div class="speakers">
         {{ components.speakergroup(day2.speakers) }}
+      </div>
+      {{ components.section("Panel") }}
+      <div class="speakers">
+        {{ components.panelgroup(day2.panels) }}
       </div>
       {{ components.section("Spotlight Papers") }}
       <div class="papers">
@@ -188,10 +211,10 @@ aria-labelledby="nav-profile-tab"
       </div>
       {{ components.section("Paper Sessions") }}
       <div class="papers" style="font-size: 24px;">
-          <a href="/papers.html?filter=sessions&search=P9"> Session P9  (Sentiment Analysis)<span class="session_times"> (16:45 - 17:45 GMT)</span></a><br>
-          <a href="/papers.html?filter=sessions&search=P10">Session P10 (Trust and Credibility) <span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
-          <a href="/papers.html?filter=sessions&search=P11">Session P11 (Demographic (Dis)parities)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
-          <a href="/papers.html?filter=sessions&search=P12">Session P12 (Economy)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+          <a href="papers.html?filter=sessions&search=P9"> Session P9  (Sentiment Analysis)<span class="session_times"> (16:45 - 17:45 GMT)</span></a><br>
+          <a href="papers.html?filter=sessions&search=P10">Session P10 (Trust and Credibility) <span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+          <a href="papers.html?filter=sessions&search=P11">Session P11 (Demographic (Dis)parities)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+          <a href="papers.html?filter=sessions&search=P12">Session P12 (Economy)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
       </div>
     </div>
   <script type="text/javascript">
@@ -229,20 +252,24 @@ aria-labelledby="nav-profile-tab"
 >
 
 <div id="day">
+  {{ components.section("Panel") }}
+  <div class="speakers">
+    {{ components.panelgroup(day3.panels) }}
+  </div>
   {{ components.section("Spotlight Papers") }}
   <div class="papers">
     {{ components.highlightgroup(day3.highlighted, 1) }}
   </div>
   {{ components.section("Paper Sessions") }}
   <div class="papers" style="font-size: 24px;">
-      <a href="/papers.html?filter=sessions&search=D1">Posters/Demos 1 <span class="session_times">(14:15 - 15:15 GMT)</span></a><br>
-      <a href="/papers.html?filter=sessions&search=D2">Posters/Demos 2 <span class="session_times">(14:15 - 15:15 GMT)</span></a><br>
-      <a href="/papers.html?filter=sessions&search=D3">Posters/Demos 3 <span class="session_times">(14:15 - 15:15 GMT)</span></a><br>
-      <a href="/papers.html?filter=sessions&search=D4">Posters/Demos 4 <span class="session_times">(14:15 - 15:15 GMT)</span></a><br><br>
-      <a href="/papers.html?filter=sessions&search=P13">Session P13 (Misinformation)<span class="session_times"> (16:45 - 17:45 GMT)</span></a><br>
-      <a href="/papers.html?filter=sessions&search=P14">Session P14 (Text and Bias)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
-      <a href="/papers.html?filter=sessions&search=P15">Session P15 (Social Networks)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
-      <a href="/papers.html?filter=sessions&search=P16">Session P16 (Computation and Psychology)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+      <a href="papers.html?filter=sessions&search=D1">Posters/Demos 1 <span class="session_times">(14:15 - 15:15 GMT)</span></a><br>
+      <a href="papers.html?filter=sessions&search=D2">Posters/Demos 2 <span class="session_times">(14:15 - 15:15 GMT)</span></a><br>
+      <a href="papers.html?filter=sessions&search=D3">Posters/Demos 3 <span class="session_times">(14:15 - 15:15 GMT)</span></a><br>
+      <a href="papers.html?filter=sessions&search=D4">Posters/Demos 4 <span class="session_times">(14:15 - 15:15 GMT)</span></a><br><br>
+      <a href="papers.html?filter=sessions&search=P13">Session P13 (Misinformation)<span class="session_times"> (16:45 - 17:45 GMT)</span></a><br>
+      <a href="papers.html?filter=sessions&search=P14">Session P14 (Text and Bias)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+      <a href="papers.html?filter=sessions&search=P15">Session P15 (Social Networks)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
+      <a href="papers.html?filter=sessions&search=P16">Session P16 (Computation and Psychology)<span class="session_times">(16:45 - 17:45 GMT)</span></a><br>
   </div>
 </div>
 <script type="text/javascript">

@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+PRODID:-//ATFutures/ical //EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ical-10e7c10a-4755-4be1-9671-a84accac558b
+DTSTART:20210608T153000
+DTEND:20210608T163000
+SUMMARY:[ICWSM] Session P1
+LOCATION:Virtual Room A
+DESCRIPTION:
+Zijian An,Kenneth Joseph
+RAFFMAN: Measuring and Analyzing Sentiment in Online Political Forum Discussions with an Application to the Trump Impeachment (URL: poster_A1214.html)
+
+Orestis Papakyriakopoulos,Ethan Zuckerman
+RAFFMAN: Measuring and Analyzing Sentiment in Online Political Forum Discussions with an Application to the Trump Impeachment (URL: poster_D1070.html)
+
+Ashwin Rajadesingan,Ceren Budak,Paul Resnick
+RAFFMAN: Measuring and Analyzing Sentiment in Online Political Forum Discussions with an Application to the Trump Impeachment (URL: poster_D1179.html)
+
+Jakapun Tachaiya,Joobin Gharibshah,Kevin E. Esterling,Michalis Faloutsos
+RAFFMAN: Measuring and Analyzing Sentiment in Online Political Forum Discussions with an Application to the Trump Impeachment (URL: poster_E1113.html)
+
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID:-//ATFutures/ical //EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ical-f557bb5a-102c-4ccb-a63a-e7f637696ffe
+DTSTART:20210609T164500
+DTEND:20210609T174500
+SUMMARY:[ICWSM] Session P9
+LOCATION:Virtual Room A
+DESCRIPTION:
+Shraman Pramanick,Md Shad Akhtar,Tanmoy Chakraborty
+How Metaphors Impact Political Discourse: A Large-Scale Topic-Agnostic Study Using Neural Metaphor Detection (URL: poster_E1145.html)
+
+Shishir Adhikari,Akshay Uppal,Robin Mermelstein,Tanya Berger-Wolf,Elena Zheleva
+How Metaphors Impact Political Discourse: A Large-Scale Topic-Agnostic Study Using Neural Metaphor Detection (URL: poster_E1150.html)
+
+Chan Young Park,Xinru Yan,Anjalie Field,Yulia Tsvetkov
+How Metaphors Impact Political Discourse: A Large-Scale Topic-Agnostic Study Using Neural Metaphor Detection (URL: poster_E1161.html)
+
+Tunazzina Islam,Dan Goldwasser
+How Metaphors Impact Political Discourse: A Large-Scale Topic-Agnostic Study Using Neural Metaphor Detection (URL: poster_E1173.html)
+
+Vinodkumar Prabhakaran,Marek Rei,Ekaterina Shutova
+How Metaphors Impact Political Discourse: A Large-Scale Topic-Agnostic Study Using Neural Metaphor Detection (URL: poster_E1189.html)
+
+END:VEVENT
+END:VCALENDAR

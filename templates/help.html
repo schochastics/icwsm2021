@@ -2,13 +2,47 @@
 {% set page_title = "Help" %}
 {% extends "base.html" %}
 
-{% block tabs %}
-{{ components.tabs([("faq", "FAQ", "active")]) }}
-{% endblock %}
-
 {% block content %}
 <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+  {{components.section("Code of Conduct")}}
+  All persons, organizations and entities that attend AAAI conferences and events are subject to the standards of conduct set forth on the <a href="https://aaai.org/Conferences/code-of-conduct.php" target="_blank">AAAI Code of Conduct for Events and Conferences</a>. AAAI expects all community members to formally endorse this code of conduct, and to actively prevent and discourage any undesired behaviors. Everyone should feel empowered to politely engage when they or others are disrespected, and to raise awareness and understanding of this code of conduct. AAAI event participants asked to stop their unacceptable behavior are expected to comply immediately. Sponsors are also subject to this code of conduct in their participation in AAAI events.
+<br><br>
+Additionally, participants are encouraged to be courteous when sharing screen captures and photographs of conference events. Seek permission when possible and respect requests to take down images if those featured ask. Concerns around code of conduct or inclusion may be sent to <a href="mailto:icwsm21@aaai.org" target="_blank">icwsm21@aaai.org</a>.
+<br><br>
+
+Any community member can report violations of the ICWSM Code of Conduct. Reports can be named or anonymous. We encourage peers and especially senior community members to make reports on behalf of colleagues who are not in a position to do so themselves, preferably with their consent. Options for reporting are as follows:
+<ul>
+ 	<li>Contact anyone on the ICWSM 2021 reporting response team: Eni Mustafaraj, David Schoch and Kokil Jaidka:
+<ul>
+<li>via private message on the ICWSM Gather Virtual Space</li>
+<li>via email: <a href="mailto:reporting@icwsm.org" target="_blank">reporting@icwsm.org</a></li>
+<li> via <a href="http://bit.ly/icwsm-report" target="_blank">web form</a>, which can be submitted anonymously</li>
+</ul>
+</li>
+
+<li> Contact the ICWSM 2021 DEI Council Chair:<a href="mailto:b.welles@northeastern.edu" target="_blank">Brooke Foucault Welles</a></li>
+
+<li>Contact the ICWSM 2021 General Chair: <a href="mailto:j.r.c.nurse@kent.ac.uk" target="_blank">Jason R.C. Nurse</a></li>
+  
+<li>Contact the ICWSM Steering Committee Chair: <a href="mailto:juergen.pfeffer@tum.de" target="_blank">Juergen Pfeffer</a>
+  
+<li> Contact AAAI about violations of the code of conduct: <a href="mailto:icwsm21@aaai.org" target="_blank">icwsm21@aaai.org</a>.</li>
+</ul>
+  {{components.section("Tutorial Videos")}}
   <!-- FAQ -->
+  <div class="text-center">
+    <h3> Navigating the Virtual World</h3>
+    <iframe width="640" height="360"
+      src="https://www.youtube.com/embed/wga3440szqw">
+    </iframe>
+    <h4>Resources</h4>
+    <a href="static/virtualchair/ICWSM_Virtual_Chair_Attendee_Guide.pdf" target="_blank">Attendee Guide from Virtual Chair</a><br>
+    <a href="static/virtualchair/ICWSM_Virtual_Chair_Troubleshoot_Guide.pdf"  target="_blank">Troubleshoot Guide from Virtual Chair</a>
+    <h3> Navigating the Website</h3>
+    <iframe width="640" height="360"
+    src="https://www.youtube.com/embed/UeJ9i3posN8">
+    </iframe>
+  </div>
   <div
     class="tab-pane active"
     id="tab-faq"

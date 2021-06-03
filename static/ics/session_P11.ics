@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID:-//ATFutures/ical //EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ical-2731552c-0e20-458e-ac1e-06fc0128d424
+DTSTART:20210609T164500
+DTEND:20210609T174500
+SUMMARY:[ICWSM] Session P11
+LOCATION:Virtual Room C
+DESCRIPTION:
+Derek Lim,Austin R. Benson
+Imagine All the People: Characterizing Social Music Sharing on Reddit (URL: poster_B1022.html)
+
+Alice Wang,Aasish Pappu,Henriette Cramer
+Imagine All the People: Characterizing Social Music Sharing on Reddit (URL: poster_E1037.html)
+
+Isaac Johnson,Florian Lemmerich,Diego Sáez-Trumper,Robert West,Markus Strohmaier,Leila Zia
+Imagine All the People: Characterizing Social Music Sharing on Reddit (URL: poster_E1057.html)
+
+Ayan Sengupta,William Scott Paka,Suman Roy,Gaurav Ranjan,Tanmoy Chakraborty
+Imagine All the People: Characterizing Social Music Sharing on Reddit (URL: poster_E1094.html)
+
+Veniamin Veselovsky,Isaac Waller,Ashton Anderson
+Imagine All the People: Characterizing Social Music Sharing on Reddit (URL: poster_E1179.html)
+
+END:VEVENT
+END:VCALENDAR

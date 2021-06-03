@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+PRODID:-//ATFutures/ical //EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ical-69386638-0055-47ad-89f2-586455ccf265
+DTSTART:20210609T164500
+DTEND:20210609T174500
+SUMMARY:[ICWSM] Session P12
+LOCATION:Virtual Room D
+DESCRIPTION:
+David Solans,Christopher Tauchmann,Aideen Farrell,Karolin Kappler,Hans-Hendrik Huber,Carlos Castillo,Kristian Kersting
+Estimating the impact of Airbnb on the local economy: Evidence from the restaurant industry (URL: poster_A1098.html)
+
+Ayan Kumar Bhowmick,Soumajit Pramanik,Sayan Pathak,Bivas Mitra
+Estimating the impact of Airbnb on the local economy: Evidence from the restaurant industry (URL: poster_B1067.html)
+
+Davide Proserpio,Isamar Troncoso,Francesca Valsesia
+Estimating the impact of Airbnb on the local economy: Evidence from the restaurant industry (URL: poster_C2000.html)
+
+Yongseok Kim,Davide Proserpio,Suman Basuroy
+Estimating the impact of Airbnb on the local economy: Evidence from the restaurant industry (URL: poster_C2001.html)
+
+END:VEVENT
+END:VCALENDAR

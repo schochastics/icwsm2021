@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+PRODID:-//ATFutures/ical //EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ical-d7b8ee8f-7364-43d0-9836-54a2c9b3f89a
+DTSTART:20210608T164500
+DTEND:20210608T174500
+SUMMARY:[ICWSM] Session P7
+LOCATION:Virtual Room C
+DESCRIPTION:
+William Theisen,Joel Brogan,Pamela Bilo Thomas,Daniel Moreira,Pascal Phoa,Tim Weninger,Walter Scheirer
+Partisan Responses to Fact-Checking in Online News Platforms: Evidence from a Political Rumor about the North Korean Leader (URL: poster_A1103.html)
+
+Sina Mohseni,Fan Yang,Shiva Pentyala,Mengnan Du,Yi Liu,Nic Lupfer,Xia Hu,Shuiwang Ji,Eric Ragan
+Partisan Responses to Fact-Checking in Online News Platforms: Evidence from a Political Rumor about the North Korean Leader (URL: poster_B1016.html)
+
+Yuping Wang,Fatemeh Tahmasbi,Jeremy Blackburn,Barry Bradlyn,Emiliano De Cristofaro,David Magerman,Savvas Zannettou,Gianluca Stringhini
+Partisan Responses to Fact-Checking in Online News Platforms: Evidence from a Political Rumor about the North Korean Leader (URL: poster_E1165.html)
+
+Taeyoung Kang,Jaeung Sim
+Partisan Responses to Fact-Checking in Online News Platforms: Evidence from a Political Rumor about the North Korean Leader (URL: poster_E1070.html)
+
+END:VEVENT
+END:VCALENDAR

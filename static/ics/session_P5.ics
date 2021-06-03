@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID:-//ATFutures/ical //EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ical-f91f92f3-f001-49be-9c61-4e5eba1782cb
+DTSTART:20210608T164500
+DTEND:20210608T174500
+SUMMARY:[ICWSM] Session P5
+LOCATION:Virtual Room A
+DESCRIPTION:
+Juhi Kulshrestha,Marcos Oliveira,Orkut Karaçalık,Denis Bonnay,Claudia Wagner
+RecTen: A Recursive Hierarchical Low Rank Tensor Factorization Method to Discover Hierarchical Patterns from Multi-modal Data (URL: poster_A1099.html)
+
+Manoel Horta Ribeiro,Kristina Gligorić,Maxime Peyrard,Florian Lemmerich,Markus Strohmaier,Robert West
+RecTen: A Recursive Hierarchical Low Rank Tensor Factorization Method to Discover Hierarchical Patterns from Multi-modal Data (URL: poster_B1086.html)
+
+Jason Shuo Zhang,Brian Keegan,Qin Lv,Chenhao Tan
+RecTen: A Recursive Hierarchical Low Rank Tensor Factorization Method to Discover Hierarchical Patterns from Multi-modal Data (URL: poster_D1087.html)
+
+Genki Kusano,Masafumi Oyamada
+RecTen: A Recursive Hierarchical Low Rank Tensor Factorization Method to Discover Hierarchical Patterns from Multi-modal Data (URL: poster_E1104.html)
+
+Risul Islam,Md Omar Faruk Rokon,Evangelos E. Papalexakis,Michalis Faloutsos
+RecTen: A Recursive Hierarchical Low Rank Tensor Factorization Method to Discover Hierarchical Patterns from Multi-modal Data (URL: poster_E1133.html)
+
+END:VEVENT
+END:VCALENDAR

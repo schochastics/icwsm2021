@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID:-//ATFutures/ical //EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ical-ddea7b34-c6a0-4e76-8d36-b58ba6fb7bb2
+DTSTART:20210608T153000
+DTEND:20210608T163000
+SUMMARY:[ICWSM] Session P3
+LOCATION:Virtual Room C
+DESCRIPTION:
+Mattia Samory,Indira Sen,Julian Kohne,Fabian Flöck,Claudia Wagner
+Measuring Societal Biases from Text Corpora with Smoothed First-Order Co-occurrence (URL: poster_A1178.html)
+
+M. Janina Sarol,Ly Dinh,Jana Diesner
+Measuring Societal Biases from Text Corpora with Smoothed First-Order Co-occurrence (URL: poster_A1184.html)
+
+Ammar Rashed,Mucahid Kutlu,Kareem Darwish,Tamer Elsayed,Cansın Bayrak
+Measuring Societal Biases from Text Corpora with Smoothed First-Order Co-occurrence (URL: poster_A1274.html)
+
+Stepan Zakharov,Omri Hadar,Tovit Hakak,Dina Grossman,Yifat Ben-David Kolikant,Oren Tsur
+Measuring Societal Biases from Text Corpora with Smoothed First-Order Co-occurrence (URL: poster_A1091.html)
+
+Navid Rekabsaz,Robert West,James Henderson,Allan Hanbury
+Measuring Societal Biases from Text Corpora with Smoothed First-Order Co-occurrence (URL: poster_D1137.html)
+
+END:VEVENT
+END:VCALENDAR

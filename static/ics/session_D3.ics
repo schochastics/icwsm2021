@@ -1,0 +1,32 @@
+BEGIN:VCALENDAR
+PRODID:-//ATFutures/ical //EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ical-1e8ff25c-1a62-4da5-9efa-6805a88bcce1
+DTSTART:20210610T141500
+DTEND:20210610T151500
+SUMMARY:[ICWSM] Session D3
+LOCATION:Virtual Room C
+DESCRIPTION:
+Anton Abilov,Yiqing Hua,Hana Matatov,Ofra Amir,Mor Naaman
+SIGNLENS: A Tool for Analyzing People's Polarization Social Relationship Based on Signed Graph Modeling (URL: poster_C1007.html)
+
+Tarunima Prabhakar,Anushree Gupta,Kruttika Nadig,Denny George
+SIGNLENS: A Tool for Analyzing People's Polarization Social Relationship Based on Signed Graph Modeling (URL: poster_C1020.html)
+
+Tuğrulcan Elmas,Rebekah Overdorf,Karl Aberer
+SIGNLENS: A Tool for Analyzing People's Polarization Social Relationship Based on Signed Graph Modeling (URL: poster_C1041.html)
+
+Blyth Crawford,Florence Keen,Guillermo Suarez-Tangil
+SIGNLENS: A Tool for Analyzing People's Polarization Social Relationship Based on Signed Graph Modeling (URL: poster_C1068.html)
+
+Amar Budhiraja,Ankur Sharma,Rahul Agrawal,Monojit Choudhury,Joyojeet Pal
+SIGNLENS: A Tool for Analyzing People's Polarization Social Relationship Based on Signed Graph Modeling (URL: poster_C1058.html)
+
+Junjie Huang,Huawei Shen,Xueqi Cheng
+SIGNLENS: A Tool for Analyzing People's Polarization Social Relationship Based on Signed Graph Modeling (URL: poster_C1003.html)
+
+END:VEVENT
+END:VCALENDAR

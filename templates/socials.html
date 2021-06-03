@@ -1,0 +1,171 @@
+{% set active_page = "Socials" %}
+{% extends "base.html" %}
+
+{% block content %}
+<div class="cards row">
+<!-- Social 1 -->
+    <div class="col-md-12 col-sm-12 p-3" style="box-sizing: border-box;">
+        <div class="card" style="display: block; overflow: hidden; width: 100%;">
+        <div
+            class="card-header text-center"
+            style="min-height: 250px; width: 100%;"
+        >
+            <span class="text-muted">
+            <h3 class="card-title main-title">
+                Social hour (sponsored by Facebook)
+            </h3>
+            </span>
+            <div class="card-subtitle text-loud">
+                In the garden of the gather.town space (<a href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Outside&amp;amp;spawnx=50&amp;amp;spawny=12">Jump to Garden</a>)
+            </div>
+            
+            <div class="text-center p-3">
+            2021-06-08 <span class="session_times">(18:00 - 19:00 GMT)</span>
+            </div>
+            <div class="m-3 text-left card-subtitle">
+            <span style="font-weight: 700;">Description: </span> TBA
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Social 2 -->
+    <div class="col-md-12 col-sm-12 p-3" style="box-sizing: border-box;">
+        <div class="card" style="display: block; overflow: hidden; width: 100%;">
+        <div
+            class="card-header text-center"
+            style="min-height: 250px; width: 100%;"
+        >
+            <span class="text-muted">
+            <h3 class="card-title main-title">
+                Welcoming first-time attendees to ICWSM: A get-together for first timers and experienced ICWSM-ers 
+            </h3>
+            </span>
+            <div class="card-subtitle text-loud">
+                In the garden of the gather.town space (<a href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Outside&amp;amp;spawnx=50&amp;amp;spawny=12">Jump to Garden</a>)
+            </div>
+            
+            <div class="text-center p-3">
+            2021-06-08 <span class="session_times">(18:00 - 19:00 GMT)</span>
+            </div>
+            <div class="m-3 text-left card-subtitle">
+            <span style="font-weight: 700;">Description: </span> TBA
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Social 3 -->
+    <div class="col-md-12 col-sm-12 p-3" style="box-sizing: border-box;">
+        <div class="card" style="display: block; overflow: hidden; width: 100%;">
+        <div
+            class="card-header text-center"
+            style="min-height: 250px; width: 100%;"
+        >
+            <span class="text-muted">
+            <h3 class="card-title main-title">
+                Sponsor Hour 
+            </h3>
+            </span>
+            <div class="card-subtitle text-loud">
+            Lobby of gather town space (<a href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021">Jump to Lobby</a>)
+            </div>
+            
+            <div class="text-center p-3">
+            2021-06-09 <span class="session_times">(18:00 - 19:00 GMT)</span>
+            </div>
+            <div class="m-3 text-left card-subtitle">
+            <!-- <span style="font-weight: 700;">Description: </span> -->
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Social 4 -->
+    <div class="col-md-12 col-sm-12 p-3" style="box-sizing: border-box;">
+        <div class="card" style="display: block; overflow: hidden; width: 100%;">
+        <div
+            class="card-header text-center"
+            style="min-height: 250px; width: 100%;"
+        >
+            <span class="text-muted">
+            <h3 class="card-title main-title">
+                Birds of a Feather 
+            </h3>
+            </span>
+            <div class="card-subtitle text-loud">
+            In the garden of the gather.town space (<a href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Outside&amp;amp;spawnx=50&amp;amp;spawny=12">Jump to Garden</a>)
+            </div>
+            
+            <div class="text-center p-3">
+            2021-06-09 <span class="session_times">(18:00 - 19:00 GMT)</span>
+            </div>
+            <div class="m-3 text-left card-subtitle">
+            <span style="font-weight: 700;">Description: </span><br>
+            Politics, Economy and Demographic (dis)parities (Table 1+2)  <br>
+            Web, Text and NLP (Table 3+4)  <br>
+            Users, Networks and Psychology (Table 5+6) <br>
+            Privacy, Trust, Fairness and Misinformation (Table 7) <br>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Social 5 -->
+    <div class="col-md-12 col-sm-12 p-3" style="box-sizing: border-box;">
+        <div class="card" style="display: block; overflow: hidden; width: 100%;">
+        <div
+            class="card-header text-center"
+            style="min-height: 250px; width: 100%;"
+        >
+            <span class="text-muted">
+            <h3 class="card-title main-title">
+                Social Hour 
+            </h3>
+            </span>
+            <div class="card-subtitle text-loud">
+            Where?
+            </div>
+            
+            <div class="text-center p-3">
+            2021-06-09 <span class="session_times">(18:00 - 19:00 GMT)</span>
+            </div>
+            <div class="m-3 text-left card-subtitle">
+            <span style="font-weight: 700;">Description: </span> TBA
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+<script>
+    add_local_tz = selector  => {
+      const regex_time = new RegExp('\\((.*)-(.*) (.*)\\)')
+      const guess_tz = moment.tz.guess(true);
+  
+  
+      $(selector).each(function(){
+          const t = $(this).text()
+          const res = regex_time.exec(t)
+          if (res){
+              const start_time = moment.utc('2021-05-05 '+res[1],'YYYY-MM-DD HH:mm');
+              const end_time = moment.utc('2021-05-05 '+res[2],'YYYY-MM-DD HH:mm');
+              console.log(start_time,end_time,"--- start_time,end_time");
+              // console.log(start_time.tz(guess_tz).format('h:mm A'),"--- start_time.");
+              // console.log(end_time.tz(guess_tz).format('h:mm A z'),"--- start_time.");
+              const local_start = start_time.tz(guess_tz).format('HH:mm');
+              const local_end_and_tz = end_time.tz(guess_tz).format('HH:mm z');
+              $(this).text(`(${res[1]}-${res[2]} ${res[3]} / ${local_start}-${local_end_and_tz})`)
+  
+          }
+      })
+  }
+  </script>
+  <script>
+    $(document).ready(()=>{
+      add_local_tz('.session_times');
+    })
+  </script>
+{% endblock %}

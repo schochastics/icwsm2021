@@ -234,7 +234,7 @@ const card_detail = (paper, show) => {
         <p class="card-text"><span class="font-weight-bold">Keywords:</span>
             ${paper.keywords.map(keyword).join(", ")}
         </p>
-        <p class="card-text"> ${paper.TLDR}</p>
+        <p class="card-text"> ${paper.abstract}</p>
         </div>
     </div>
 `;
@@ -304,10 +304,6 @@ const card_html = (paper) =>
   } </h5></a>
                 <h6 class="card-subtitle text-muted" align="center">
                         ${paper.authors.join(", ")}
-                </h6>
-                <br>
-                <h6 class="card-subtitle text-muted" align="center">
-                ${paper.track}
                 </h6>
                 ${card_image(paper, render_mode !== MODE.mini)}
                 

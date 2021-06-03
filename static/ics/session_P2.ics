@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+PRODID:-//ATFutures/ical //EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ical-75b51246-5325-449d-9ac4-d0e66ba9ce70
+DTSTART:20210608T153000
+DTEND:20210608T163000
+SUMMARY:[ICWSM] Session P2
+LOCATION:Virtual Room B
+DESCRIPTION:
+Kunwoo Park,Haewoon Kwak,Jisun An,Sanjay Chawla
+CEAM: The Effectiveness of Cyclic and Ephemeral Attention Models of User Behavior on Social Platforms (URL: poster_A1180.html)
+
+Lihong He,Chen Shen,Arjun Mukherjee,Slobodan Vucetic,Eduard Dragut
+CEAM: The Effectiveness of Cyclic and Ephemeral Attention Models of User Behavior on Social Platforms (URL: poster_A1188.html)
+
+Ryota Kobayashi,Patrick Gildersleve,Takeaki Uno,Renaud Lambiotte
+CEAM: The Effectiveness of Cyclic and Ephemeral Attention Models of User Behavior on Social Platforms (URL: poster_B1096.html)
+
+Farhan Asif Chowdhury,Yozen Liu,Koustuv Saha,Nicholas Vincent,Leonardo Neves,Neil Shah,Maarten W. Bos
+CEAM: The Effectiveness of Cyclic and Ephemeral Attention Models of User Behavior on Social Platforms (URL: poster_D1142.html)
+
+END:VEVENT
+END:VCALENDAR

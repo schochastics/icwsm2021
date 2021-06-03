@@ -1,0 +1,26 @@
+BEGIN:VCALENDAR
+PRODID:-//ATFutures/ical //EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:ical-4bede9a8-e5ae-4952-8cc6-5e24c0b711c9
+DTSTART:20210609T164500
+DTEND:20210609T174500
+SUMMARY:[ICWSM] Session P10
+LOCATION:Virtual Room B
+DESCRIPTION:
+Diogo Pacheco,Pik-Mai Hui,Christopher Torres-Lugo,Bao Tran Truong,Alessandro Flammini,Filippo Menczer
+Computational Analysis of Bot Activity in the Asia-Pacific: A Comparative Study of Four National Elections (URL: poster_A1062.html)
+
+Ansel Maclaughlin,Tao Chen,Burcu Karagol Ayan,Dan Roth
+Computational Analysis of Bot Activity in the Asia-Pacific: A Comparative Study of Four National Elections (URL: poster_A1071.html)
+
+Taehyun Kim,Hyomin Shin,Hyung Ju Hwang,Seungwon Jeong
+Computational Analysis of Bot Activity in the Asia-Pacific: A Comparative Study of Four National Elections (URL: poster_A1093.html)
+
+Joshua Uyheng,Kathleen M. Carley
+Computational Analysis of Bot Activity in the Asia-Pacific: A Comparative Study of Four National Elections (URL: poster_E1149.html)
+
+END:VEVENT
+END:VCALENDAR

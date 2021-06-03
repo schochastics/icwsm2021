@@ -389,6 +389,10 @@ body .carousel-control-prev {
 	top:1px;
 }
 
+.hidden {
+  display: none;
+}
+
 /*@supports (-webkit-text-stroke: 1px gray) {*/
 /*  .checkbox-paper {*/
 /*    opacity: 0.2;*/
