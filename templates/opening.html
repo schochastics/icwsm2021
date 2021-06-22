@@ -1,0 +1,71 @@
+{% set active_page = "Opening" %}
+{% extends "base.html" %}
+
+{% block content %}
+<div class="cards row">
+    <div class="col-md-12 col-sm-12 p-3" style="box-sizing: border-box;">
+        <div class="card" style="display: block; overflow: hidden; width: 100%;">
+        <div
+            class="card-header text-center"
+            style="min-height: 250px; width: 100%;"
+        >
+            <span class="text-muted">
+            <h3 class="card-title main-title">
+                Opening remarks
+            </h3>
+            </span>
+            <div class="card-subtitle text-loud">
+                In the plenary room of the gather.town space (<a
+                href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Plenary+Room&spawnx=16&spawny=30">Jump
+                to plenary room</a>)
+            </div>
+            <div class="text-center p-3">
+                <img src="https://icwsm.org/2021/img/oc_chairs/Jason_Nurse.jpg" height=150>
+            </div>
+              <div class="card-subtitle text-loud">
+                Jason Nurse
+              </div>
+            <div class="text-center p-3">
+            2021-06-08 <span class="session_times">(13:00 - 13:15 GMT)</span>
+            </div>
+        </div>
+    </div>
+    {{ components.section("Recording") }}
+        <div class="text-center">
+            <iframe width="640" height="360"
+            src="https://www.youtube.com/embed/ksV6wIegGZ4">
+            </iframe>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+    add_local_tz = selector  => {
+      const regex_time = new RegExp('\\((.*)-(.*) (.*)\\)')
+      const guess_tz = moment.tz.guess(true);
+  
+  
+      $(selector).each(function(){
+          const t = $(this).text()
+          const res = regex_time.exec(t)
+          if (res){
+              const start_time = moment.utc('2021-05-05 '+res[1],'YYYY-MM-DD HH:mm');
+              const end_time = moment.utc('2021-05-05 '+res[2],'YYYY-MM-DD HH:mm');
+              console.log(start_time,end_time,"--- start_time,end_time");
+              // console.log(start_time.tz(guess_tz).format('h:mm A'),"--- start_time.");
+              // console.log(end_time.tz(guess_tz).format('h:mm A z'),"--- start_time.");
+              const local_start = start_time.tz(guess_tz).format('HH:mm');
+              const local_end_and_tz = end_time.tz(guess_tz).format('HH:mm z');
+              $(this).text(`(${res[1]}-${res[2]} ${res[3]} / ${local_start}-${local_end_and_tz})`)
+  
+          }
+      })
+  }
+  </script>
+  <script>
+    $(document).ready(()=>{
+      add_local_tz('.session_times');
+    })
+  </script>
+{% endblock %}

@@ -4,9 +4,9 @@ VERSION:2.0
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
-UID:ical-a1a8a062-4824-4dac-a28d-7135d62d8375
-DTSTART:20210610T141500
-DTEND:20210610T151500
+UID:ical-45437809-b91f-4682-b15b-3ed82a5ea6b5
+DTSTART:20210610T141500Z
+DTEND:20210610T151500Z
 SUMMARY:[ICWSM] Session D4
 LOCATION:Virtual Room D
 DESCRIPTION:
@@ -26,7 +26,7 @@ Ceren Budak,Ashley Muddiman,Yujin Kim,Caroline C. Murray,Natalie J. Stroud
 Well-Being Depends on Social Comparison: Hierarchical Models of Twitter Language Suggest That Richer Neighbors Make You Less Happy (URL: poster_C1066.html)
 
 Markus Reiter-Haas,Simone Kopeinik,Elisabeth Lex
-Well-Being Depends on Social Comparison: Hierarchical Models of Twitter Language Suggest That Richer Neighbors Make You Less Happy (URL: poster_C1001.html)
+Well-Being Depends on Social Comparison: Hierarchical Models of Twitter Language Suggest That Richer Neighbors Make You Less Happy (URL: poster_C100Z1.html)
 
 Salvatore Giorgi,Sharath Chandra Guntuku,Johannes C. Eichstaedt,Claire Pajot,H. Andrew Schwartz,Lyle H. Ungar
 Well-Being Depends on Social Comparison: Hierarchical Models of Twitter Language Suggest That Richer Neighbors Make You Less Happy (URL: poster_C1084.html)

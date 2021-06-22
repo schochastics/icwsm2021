@@ -27,13 +27,25 @@
   >
     <div class="form-group col">
       <a href="https://www.icwsm.org/2021/program/icwsm_program.pdf" target="_blank"
-      class="myButton-small">Download PDF Version</a>
+      class="myButton-small">Download PDF Version (UTC)</a>
       <label for="tzOptions">Timezone:</label>
       <select id="tzOptions" class="selectpicker" data-live-search="true">
       </select>
-      <span style="font-size: 8pt;">(depending on your timezone, you may have to scroll a bit to see the schedule)</span>
+      <span style="font-size: 8pt;">(depending on your timezone, you may have to
+      scroll a bit to see the schedule)</span>
     </div>
-
+    <form>
+      set link to
+      <label class="radio-inline">
+        <input type="radio" name="optradio" id="normal" checked> description
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="optradio" id="virtual">virtual room
+      </label>
+      <span style="font-size: 8pt;">
+      (if you change to "virtual room" you will spawn at the gather town room of
+      the event)</span>
+    </form>
     <!-- full cal for browser-->
     <div id="calendar" class="d-none d-sm-block" style="width: 100% !important;position: absolute;left: 0;">
     </div>
@@ -56,13 +68,13 @@ aria-labelledby="nav-profile-tab"
     <img src="static/images/venue_map_small.png" usemap="#image-map" style="margin-bottom: 2em;">
     <map name="image-map">
         <area target="_blank" alt="Jump to Lobby" title="Jump to Lobby" href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021" coords="313,110,671,377" shape="rect">
-        <area target="_blank" alt="Jump to Garden" title="Jump to Garden" href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Outside&amp;amp;spawnx=50&amp;amp;spawny=12" coords="315,455,650,593" shape="rect">
-        <area target="_blank" alt="Jump to Poster Room A" title="Jump to Poster Room A" href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+A&amp;amp;spawnx=26&amp;amp;spawny=34" coords="299,22,376,72" shape="rect">
-        <area target="_blank" alt="Jump to Poster Room B" title="Jump to Poster Room B" href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+B&amp;amp;spawnx=26&amp;amp;spawny=34" coords="394,24,474,72" shape="rect">
-        <area target="_blank" alt="Jump to Poster Room C" title="Jump to Poster Room C" href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+C&amp;amp;spawnx=26&amp;amp;spawny=34" coords="493,19,573,74" shape="rect">
-        <area target="_blank" alt="Jump to Poster Room D" title="Jump to Poster Room D" href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+D&amp;amp;spawnx=26&amp;amp;spawny=34" coords="593,20,674,75" shape="rect">
-        <area target="_blank" alt="Jump to Spotlight Room" title="Jump to Spotlight Room" href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Spotlight+Room&amp;amp;spawnx=16&amp;amp;spawny=30" coords="708,104,825,206" shape="rect">
-        <area target="_blank" alt="Jump to Plenary Room" title="Jump to Plenary Room" href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Plenary+Room&amp;amp;spawnx=16&amp;amp;spawny=30" coords="905,377,713,242" shape="rect">
+        <area target="_blank" alt="Jump to Garden" title="Jump to Garden" href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Outside&spawnx=50&spawny=12" coords="315,455,650,593" shape="rect">
+        <area target="_blank" alt="Jump to Poster Room A" title="Jump to Poster Room A" href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+A&spawnx=26&spawny=34" coords="299,22,376,72" shape="rect">
+        <area target="_blank" alt="Jump to Poster Room B" title="Jump to Poster Room B" href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+B&spawnx=26&spawny=34" coords="394,24,474,72" shape="rect">
+        <area target="_blank" alt="Jump to Poster Room C" title="Jump to Poster Room C" href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+C&spawnx=26&spawny=34" coords="493,19,573,74" shape="rect">
+        <area target="_blank" alt="Jump to Poster Room D" title="Jump to Poster Room D" href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+D&spawnx=26&spawny=34" coords="593,20,674,75" shape="rect">
+        <area target="_blank" alt="Jump to Spotlight Room" title="Jump to Spotlight Room" href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Spotlight+Room&spawnx=16&spawny=30" coords="708,104,825,206" shape="rect">
+        <area target="_blank" alt="Jump to Plenary Room" title="Jump to Plenary Room" href="https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Plenary+Room&spawnx=16&spawny=30" coords="905,377,713,242" shape="rect">
     </map>
     <br>
     <h3>Types of sessions this year</h3>
@@ -106,7 +118,7 @@ aria-labelledby="nav-profile-tab"
         </tr>
         <tr>
           <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Paper sessions (20)</span></td>
-          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Except for the spotlighted papers, all other </span><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">papers, demos, and short papers</span><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">  will be presented through pre-recorded talks and live Q&amp;A sessions at a specific time. Thumbnails and videos are posted in a “gallery” where participants can walk around and explore each paper. If you missed talking to the authors during the live session, you can still watch the video on the virtual conference website or contact the paper’s authors through Gathertown or Slack.</span></td>
+          <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Except for the spotlighted papers, all other </span><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000;background-color:transparent">papers, demos, and short papers</span><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">  will be presented through pre-recorded talks and live Q&A sessions at a specific time. Thumbnails and videos are posted in a “gallery” where participants can walk around and explore each paper. If you missed talking to the authors during the live session, you can still watch the video on the virtual conference website or contact the paper’s authors through Gathertown or Slack.</span></td>
           <td class="tg-0lax"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Lite, Deluxe</span></td>
         </tr>
         <tr>
@@ -310,9 +322,6 @@ window.onload = () => {
         if (res){
             const start_time = moment.utc('2021-05-05 '+res[1],'YYYY-MM-DD HH:mm');
             const end_time = moment.utc('2021-05-05 '+res[2],'YYYY-MM-DD HH:mm');
-            console.log(start_time,end_time,"--- start_time,end_time");
-            // console.log(start_time.tz(guess_tz).format('h:mm A'),"--- start_time.");
-            // console.log(end_time.tz(guess_tz).format('h:mm A z'),"--- start_time.");
             const local_start = start_time.tz(guess_tz).format('HH:mm');
             const local_end_and_tz = end_time.tz(guess_tz).format('HH:mm z');
             $(this).text(`(${res[1]}-${res[2]} ${res[3]} / ${local_start}-${local_end_and_tz})`)

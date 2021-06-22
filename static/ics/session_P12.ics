@@ -4,9 +4,9 @@ VERSION:2.0
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
-UID:ical-69386638-0055-47ad-89f2-586455ccf265
-DTSTART:20210609T164500
-DTEND:20210609T174500
+UID:ical-6c8487d2-666f-4bf6-ab8f-7511e399a06f
+DTSTART:20210609T164500Z
+DTEND:20210609T174500Z
 SUMMARY:[ICWSM] Session P12
 LOCATION:Virtual Room D
 DESCRIPTION:
@@ -20,7 +20,7 @@ Davide Proserpio,Isamar Troncoso,Francesca Valsesia
 Estimating the impact of Airbnb on the local economy: Evidence from the restaurant industry (URL: poster_C2000.html)
 
 Yongseok Kim,Davide Proserpio,Suman Basuroy
-Estimating the impact of Airbnb on the local economy: Evidence from the restaurant industry (URL: poster_C2001.html)
+Estimating the impact of Airbnb on the local economy: Evidence from the restaurant industry (URL: poster_C200Z1.html)
 
 END:VEVENT
 END:VCALENDAR

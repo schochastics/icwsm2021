@@ -152,6 +152,11 @@ def socials():
     data = _data()
     return render_template("socials.html", **data)
 
+@app.route("/opening.html")
+def opening():
+    data = _data()
+    return render_template("opening.html", **data)
+
 @app.route("/panels.html")
 def panels():
     data = _data()
@@ -254,6 +259,8 @@ def format_panel(v):
         "short": v["short"],
         "date":v["date"],
         "time": v["time"],
+        "date1":v["date1"],
+        "time1": v["time1"],
         "youtube": list_fields["youtube"]
     }
 

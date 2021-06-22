@@ -125,8 +125,18 @@ async function make_cal(handleResize = true) {
   calendar.on({
     clickSchedule(e) {
       const s = e.schedule;
-      if (s.location.length > 0) {
-        window.open(s.location, "_blanket");
+      if(document.getElementById("normal").checked){
+        if (s.location.length > 0) {
+          window.open(s.location, "_blank");
+        }
+      }
+      if(document.getElementById("virtual").checked){
+        if (s.body.length > 0) {
+          // var res = s.location.match(/=\s*(.*)$/);
+          // i = s.location.lastIndexOf('=');
+          // var sess = s.location.substr(i+1,s.location.length);
+          window.open(s.body, "_blank");
+        }
       }
     },
   });

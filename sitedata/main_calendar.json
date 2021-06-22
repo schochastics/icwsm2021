@@ -4,7 +4,7 @@
         "start": "2021-06-07T14:00:00+01:00",
         "end": "2021-06-07T18:00:00+01:00",
         "location": "workshops.html",
-        "link": "workshops.html",
+        "body": "workshops.html",
         "category": "time",
         "calendarId": "wor"
     },
@@ -13,7 +13,7 @@
         "start": "2021-06-07T19:00:00+01:00",
         "end": "2021-06-07T23:00:00+01:00",
         "location": "workshops.html",
-        "link": "workshops.html",
+        "body": "workshops.html",
         "category": "time",
         "calendarId": "wor"
     },
@@ -22,7 +22,7 @@
         "start": "2021-06-07T14:00:00+01:00",
         "end": "2021-06-07T17:30:00+01:00",
         "location": "tutorials.html",
-        "link": "tutorials.html",
+        "body": "tutorials.html",
         "category": "time",
         "calendarId": "tut"
     },
@@ -31,7 +31,7 @@
         "start": "2021-06-07T19:00:00+01:00",
         "end": "2021-06-07T20:30:00+01:00",
         "location": "tutorials.html",
-        "link": "tutorials.html",
+        "body": "tutorials.html",
         "category": "time",
         "calendarId": "tut"
     },
@@ -40,7 +40,7 @@
         "start": "2021-06-07T14:00:00+01:00",
         "end": "2021-06-07T18:00:00+01:00",
         "location": "https://sites.google.com/view/icwsm2021datachallenge",
-        "link": "https://sites.google.com/view/icwsm2021datachallenge",
+        "body": "https://sites.google.com/view/icwsm2021datachallenge",
         "category": "time",
         "calendarId": "dat"
     },
@@ -49,7 +49,7 @@
         "start": "2021-06-07T19:00:00+01:00",
         "end": "2021-06-07T21:00:00+01:00",
         "location": "https://sites.google.com/view/icwsm2021datachallenge",
-        "link": "https://sites.google.com/view/icwsm2021datachallenge",
+        "body": "https://sites.google.com/view/icwsm2021datachallenge",
         "category": "time",
         "calendarId": "dat"
     },
@@ -58,7 +58,7 @@
         "start": "2021-06-07T18:00:00+01:00",
         "end": "2021-06-07T19:00:00+01:00",
         "location": "mozilla.html",
-        "link": "mozilla.html",
+        "body": "mozilla.html",
         "category": "time",
         "calendarId": "moz"
     },
@@ -66,8 +66,8 @@
         "title": "Opening remarks",
         "start": "2021-06-08T14:00:00+01:00",
         "end": "2021-06-08T14:10:00+01:00",
-        "location": null,
-        "link": null,
+        "location": "opening.html",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Plenary+Room&spawnx=16&spawny=30",
         "category": "time",
         "calendarId": "---"
     },
@@ -76,16 +76,16 @@
         "start": "2021-06-08T14:15:00+01:00",
         "end": "2021-06-08T15:00:00+01:00",
         "location": "panel_p1.html",
-        "link": "panel_p1.html",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Plenary+Room&spawnx=16&spawny=30",
         "category": "time",
         "calendarId": "pan"
     },
     {
-        "title": "Keynote by Rediet Abebe: 'Technical and Humanistic Perspectives on Data Inequality'",
+        "title": "Keynote by Rediet Abebe: 'Technical and Humanistic Perspectives on Data Inequalities'",
         "start": "2021-06-08T15:15:00+01:00",
         "end": "2021-06-08T16:15:00+01:00",
         "location": "speaker_1.html",
-        "link": "speaker_1.html",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Plenary+Room&spawnx=16&spawny=30",
         "category": "time",
         "calendarId": "key"
     },
@@ -94,7 +94,7 @@
         "start": "2021-06-08T16:30:00+01:00",
         "end": "2021-06-08T17:30:00+01:00",
         "location": "papers.html?filter=sessions&search=P1",
-        "link": "papers.html?filter=sessions&search=P1",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+A&spawnx=26&spawny=34",
         "category": "time",
         "calendarId": "pos"
     },
@@ -103,7 +103,7 @@
         "start": "2021-06-08T16:30:00+01:00",
         "end": "2021-06-08T17:30:00+01:00",
         "location": "papers.html?filter=sessions&search=P2",
-        "link": "papers.html?filter=sessions&search=P2",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+B&spawnx=26&spawny=34",
         "category": "time",
         "calendarId": "pos"
     },
@@ -112,7 +112,7 @@
         "start": "2021-06-08T16:30:00+01:00",
         "end": "2021-06-08T17:30:00+01:00",
         "location": "papers.html?filter=sessions&search=P3",
-        "link": "papers.html?filter=sessions&search=P3",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+C&spawnx=26&spawny=34",
         "category": "time",
         "calendarId": "pos"
     },
@@ -121,7 +121,7 @@
         "start": "2021-06-08T16:30:00+01:00",
         "end": "2021-06-08T17:30:00+01:00",
         "location": "papers.html?filter=sessions&search=P4",
-        "link": "papers.html?filter=sessions&search=P4",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+D&spawnx=26&spawny=34",
         "category": "time",
         "calendarId": "pos"
     },
@@ -130,7 +130,7 @@
         "start": "2021-06-08T17:45:00+01:00",
         "end": "2021-06-08T18:45:00+01:00",
         "location": null,
-        "link": null,
+        "body": null,
         "category": "time",
         "calendarId": "soc"
     },
@@ -139,7 +139,7 @@
         "start": "2021-06-08T17:45:00+01:00",
         "end": "2021-06-08T18:45:00+01:00",
         "location": "papers.html?filter=sessions&search=P5",
-        "link": "papers.html?filter=sessions&search=P5",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+A&spawnx=26&spawny=34",
         "category": "time",
         "calendarId": "pos"
     },
@@ -148,7 +148,7 @@
         "start": "2021-06-08T17:45:00+01:00",
         "end": "2021-06-08T18:45:00+01:00",
         "location": "papers.html?filter=sessions&search=P6",
-        "link": "papers.html?filter=sessions&search=P6",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+B&spawnx=26&spawny=34",
         "category": "time",
         "calendarId": "pos"
     },
@@ -157,7 +157,7 @@
         "start": "2021-06-08T17:45:00+01:00",
         "end": "2021-06-08T18:45:00+01:00",
         "location": "papers.html?filter=sessions&search=P7",
-        "link": "papers.html?filter=sessions&search=P7",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+C&spawnx=26&spawny=34",
         "category": "time",
         "calendarId": "pos"
     },
@@ -166,7 +166,7 @@
         "start": "2021-06-08T17:45:00+01:00",
         "end": "2021-06-08T18:45:00+01:00",
         "location": "papers.html?filter=sessions&search=P8",
-        "link": "papers.html?filter=sessions&search=P8",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+D&spawnx=26&spawny=34",
         "category": "time",
         "calendarId": "pos"
     },
@@ -174,17 +174,17 @@
         "title": "Social Hour",
         "start": "2021-06-08T19:00:00+01:00",
         "end": "2021-06-08T20:00:00+01:00",
-        "location": null,
-        "link": null,
+        "location": "socials.html",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Outside&spawnx=50&spawny=12",
         "category": "time",
         "calendarId": "soc"
     },
     {
-        "title": "(Replay) Keynote by Rediet Abebe: 'Technical and Humanistic Perspectives on Data Inequality'",
+        "title": "(Replay/Watch Party) Keynote by Rediet Abebe: 'Technical and Humanistic Perspectives on Data Inequalities'",
         "start": "2021-06-09T03:00:00+01:00",
         "end": "2021-06-09T04:00:00+01:00",
         "location": "speaker_1.html",
-        "link": "speaker_1.html",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Plenary+Room&spawnx=16&spawny=30",
         "category": "time",
         "calendarId": "key"
     },
@@ -193,16 +193,16 @@
         "start": "2021-06-09T04:00:00+01:00",
         "end": "2021-06-09T05:00:00+01:00",
         "location": "panel_p1.html",
-        "link": "panel_p1.html",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Plenary+Room&spawnx=16&spawny=30",
         "category": "time",
         "calendarId": "pan"
     },
     {
-        "title": "(Preplay) Spotlight Session 1",
+        "title": "(Preplay/Watch Party) Spotlight Session 1",
         "start": "2021-06-09T05:00:00+01:00",
         "end": "2021-06-09T06:00:00+01:00",
         "location": "papers.html?filter=sessions&search=S1",
-        "link": "papers.html?filter=sessions&search=S1",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Spotlight+Room&spawnx=16&spawny=30",
         "category": "time",
         "calendarId": "spo"
     },
@@ -211,7 +211,7 @@
         "start": "2021-06-09T06:00:00+01:00",
         "end": "2021-06-09T07:00:00+01:00",
         "location": "socials.html",
-        "link": "socials.html",
+        "body":"https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Outside&spawnx=50&spawny=12",
         "category": "time",
         "calendarId": "soc"
     },
@@ -220,7 +220,7 @@
         "start": "2021-06-09T13:00:00+01:00",
         "end": "2021-06-09T14:00:00+01:00",
         "location": "socials.html",
-        "link": "socials.html",
+        "body":"https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Outside&spawnx=50&spawny=12",
         "category": "time",
         "calendarId": "soc"
     },
@@ -229,7 +229,7 @@
         "start": "2021-06-09T14:00:00+01:00",
         "end": "2021-06-09T15:00:00+01:00",
         "location": "papers.html?filter=sessions&search=S1",
-        "link": "papers.html?filter=sessions&search=S1",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Spotlight+Room&spawnx=16&spawny=30",
         "category": "time",
         "calendarId": "spo"
     },
@@ -238,7 +238,7 @@
         "start": "2021-06-09T15:15:00+01:00",
         "end": "2021-06-09T16:15:00+01:00",
         "location": "speaker_2.html",
-        "link": "speaker_2.html",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Plenary+Room&spawnx=16&spawny=30",
         "category": "time",
         "calendarId": "key"
     },
@@ -247,7 +247,7 @@
         "start": "2021-06-09T16:30:00+01:00",
         "end": "2021-06-09T17:30:00+01:00",
         "location": "panel_p2.html",
-        "link": "panel_p2.html",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Plenary+Room&spawnx=16&spawny=30",
         "category": "time",
         "calendarId": "pan"
     },
@@ -256,7 +256,7 @@
         "start": "2021-06-09T17:45:00+01:00",
         "end": "2021-06-09T18:45:00+01:00",
         "location": "papers.html?filter=sessions&search=P9",
-        "link": "papers.html?filter=sessions&search=P9",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+A&spawnx=26&spawny=34",
         "category": "time",
         "calendarId": "pos"
     },
@@ -265,7 +265,7 @@
         "start": "2021-06-09T17:45:00+01:00",
         "end": "2021-06-09T18:45:00+01:00",
         "location": "papers.html?filter=sessions&search=P10",
-        "link": "papers.html?filter=sessions&search=P10",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+B&spawnx=26&spawny=34",
         "category": "time",
         "calendarId": "pos"
     },
@@ -274,7 +274,7 @@
         "start": "2021-06-09T17:45:00+01:00",
         "end": "2021-06-09T18:45:00+01:00",
         "location": "papers.html?filter=sessions&search=P11",
-        "link": "papers.html?filter=sessions&search=P11",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+C&spawnx=26&spawny=34",
         "category": "time",
         "calendarId": "pos"
     },
@@ -283,7 +283,7 @@
         "start": "2021-06-09T17:45:00+01:00",
         "end": "2021-06-09T18:45:00+01:00",
         "location": "papers.html?filter=sessions&search=P12",
-        "link": "papers.html?filter=sessions&search=P12",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+D&spawnx=26&spawny=34",
         "category": "time",
         "calendarId": "pos"
     },
@@ -292,34 +292,34 @@
         "start": "2021-06-09T19:00:00+01:00",
         "end": "2021-06-09T20:00:00+01:00",
         "location": "socials.html",
-        "link": "socials.html",
+        "body":"https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Outside&spawnx=50&spawny=12",
         "category": "time",
         "calendarId": "soc"
     },
     {
-        "title": "(Replay) Keynote by Virgilio Almeida: 'All Paths From Blogs to Social Media Point to Need of Digital Governance'",
+        "title": "(Replay/Watch Party) Keynote by Virgilio Almeida: 'All Paths From Blogs to Social Media Point to Need of Digital Governance'",
         "start": "2021-06-10T03:00:00+01:00",
         "end": "2021-06-10T04:00:00+01:00",
         "location": "speaker_2.html",
-        "link": "speaker_2.html",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Plenary+Room&spawnx=16&spawny=30",
         "category": "time",
         "calendarId": "key"
     },
     {
-        "title": "(Replay) Panel: Women in Social Computing",
+        "title": "(Replay/Watch Party) Panel: Women in Social Computing",
         "start": "2021-06-10T04:00:00+01:00",
         "end": "2021-06-10T05:00:00+01:00",
         "location": "panel_p2.html",
-        "link": "panel_p2.html",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Plenary+Room&spawnx=16&spawny=30",
         "category": "time",
         "calendarId": "pan"
     },
     {
-        "title": "(Preplay) Spotlight Session 2",
+        "title": "(Preplay/Watch Party) Spotlight Session 2",
         "start": "2021-06-10T05:00:00+01:00",
         "end": "2021-06-10T06:00:00+01:00",
         "location": "papers.html?filter=sessions&search=S2",
-        "link": "papers.html?filter=sessions&search=S2",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Spotlight+Room&spawnx=16&spawny=30",
         "category": "time",
         "calendarId": "spo"
     },
@@ -328,7 +328,7 @@
         "start": "2021-06-10T06:00:00+01:00",
         "end": "2021-06-10T07:00:00+01:00",
         "location": "socials.html",
-        "link": "socials.html",
+        "body":"https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Outside&spawnx=50&spawny=12",
         "category": "time",
         "calendarId": "soc"
     },
@@ -337,7 +337,7 @@
         "start": "2021-06-10T13:00:00+01:00",
         "end": "2021-06-10T14:00:00+01:00",
         "location": "socials.html",
-        "link": "socials.html",
+        "body":"https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Outside&spawnx=50&spawny=12",
         "category": "time",
         "calendarId": "soc"
     },
@@ -346,7 +346,7 @@
         "start": "2021-06-10T14:00:00+01:00",
         "end": "2021-06-10T15:00:00+01:00",
         "location": "papers.html?filter=sessions&search=S2",
-        "link": "papers.html?filter=sessions&search=S2",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Spotlight+Room&spawnx=16&spawny=30",
         "category": "time",
         "calendarId": "spo"
     },
@@ -355,7 +355,7 @@
         "start": "2021-06-10T15:15:00+01:00",
         "end": "2021-06-10T16:15:00+01:00",
         "location": "papers.html?filter=sessions&search=D1",
-        "link": "papers.html?filter=sessions&search=D1",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+A&spawnx=26&spawny=34",
         "category": "time",
         "calendarId": "pos"
     },
@@ -364,7 +364,7 @@
         "start": "2021-06-10T15:15:00+01:00",
         "end": "2021-06-10T16:15:00+01:00",
         "location": "papers.html?filter=sessions&search=D2",
-        "link": "papers.html?filter=sessions&search=D2",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+B&spawnx=26&spawny=34",
         "category": "time",
         "calendarId": "pos"
     },
@@ -373,7 +373,7 @@
         "start": "2021-06-10T15:15:00+01:00",
         "end": "2021-06-10T16:15:00+01:00",
         "location": "papers.html?filter=sessions&search=D3",
-        "link": "papers.html?filter=sessions&search=D3",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+C&spawnx=26&spawny=34",
         "category": "time",
         "calendarId": "pos"
     },
@@ -382,7 +382,7 @@
         "start": "2021-06-10T15:15:00+01:00",
         "end": "2021-06-10T16:15:00+01:00",
         "location": "papers.html?filter=sessions&search=D4",
-        "link": "papers.html?filter=sessions&search=D4",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+DA&spawnx=26&spawny=34",
         "category": "time",
         "calendarId": "pos"
     },
@@ -391,7 +391,7 @@
         "start": "2021-06-10T16:30:00+01:00",
         "end": "2021-06-10T17:30:00+01:00",
         "location": "panel_p3.html",
-        "link": "panel_p3.html",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Plenary+Room&spawnx=16&spawny=30",
         "category": "time",
         "calendarId": "pan"
     },
@@ -400,7 +400,7 @@
         "start": "2021-06-10T17:45:00+01:00",
         "end": "2021-06-10T18:45:00+01:00",
         "location": "papers.html?filter=sessions&search=P13",
-        "link": "papers.html?filter=sessions&search=P13",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+A&spawnx=26&spawny=34",
         "category": "time",
         "calendarId": "pos"
     },
@@ -409,7 +409,7 @@
         "start": "2021-06-10T17:45:00+01:00",
         "end": "2021-06-10T18:45:00+01:00",
         "location": "papers.html?filter=sessions&search=P14",
-        "link": "papers.html?filter=sessions&search=P14",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+B&spawnx=26&spawny=34",
         "category": "time",
         "calendarId": "pos"
     },
@@ -418,7 +418,7 @@
         "start": "2021-06-10T17:45:00+01:00",
         "end": "2021-06-10T18:45:00+01:00",
         "location": "papers.html?filter=sessions&search=P15",
-        "link": "papers.html?filter=sessions&search=P15",
+        "body": "phttps://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+C&spawnx=26&spawny=34",
         "category": "time",
         "calendarId": "pos"
     },
@@ -427,16 +427,16 @@
         "start": "2021-06-10T17:45:00+01:00",
         "end": "2021-06-10T18:45:00+01:00",
         "location": "papers.html?filter=sessions&search=P16",
-        "link": "papers.html?filter=sessions&search=P16",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Poster+Room+D&spawnx=26&spawny=34",
         "category": "time",
         "calendarId": "pos"
     },
     {
-        "title": "Townhall",
+        "title": "Awards and Town Hall",
         "start": "2021-06-10T19:00:00+01:00",
         "end": "2021-06-10T20:00:00+01:00",
-        "location": null,
-        "link": null,
+        "location": "socials.html",
+        "body": "https://gather.town/app/InwIvgJ3kGcjFNss/icwsm-2021?map=Plenary+Room&spawnx=16&spawny=30",
         "category": "time",
         "calendarId": "soc"
     }

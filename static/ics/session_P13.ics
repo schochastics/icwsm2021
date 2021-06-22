@@ -4,9 +4,9 @@ VERSION:2.0
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
-UID:ical-e8bc0272-da53-4b55-8d2a-ed8ea04a7352
-DTSTART:20210610T164500
-DTEND:20210610T174500
+UID:ical-d15354b0-fefe-4ec7-ad16-a46069977b9e
+DTSTART:20210610T164500Z
+DTEND:20210610T174500Z
 SUMMARY:[ICWSM] Session P13
 LOCATION:Virtual Room A
 DESCRIPTION:
@@ -20,7 +20,7 @@ Sara Abdali,Rutuja Gurav,Siddharth Menon,Daniel Fonseca,Negin Entezari,Neil Shah
 Misinformation Adoption or Rejection in the Era of COVID-19 (URL: poster_A1216.html)
 
 Srijan Kumar,Chongyang Bai,V.s. Subrahmanian,Jure Leskovec
-Misinformation Adoption or Rejection in the Era of COVID-19 (URL: poster_B1009.html)
+Misinformation Adoption or Rejection in the Era of COVID-19 (URL: poster_B100Z9.html)
 
 Maxwell Weinzierl,Suellen Hopfer,Sanda M. Harabagiu
 Misinformation Adoption or Rejection in the Era of COVID-19 (URL: poster_D1076.html)
