@@ -28,8 +28,8 @@ default_presentation_id: 38922815
 #pass: mIniconf1_
 
 use_auth0: false
-auth0_client_id : #wzQPlS2Lox3frXC2EtEfnGgWEzG6b03f
-auth0_domain : #login.icwsm.org #icwsm2021.us.auth0.com
+auth0_client_id : 
+auth0_domain : 
 
 calendar:
   colors: #  Colors for the different event hashtags:
